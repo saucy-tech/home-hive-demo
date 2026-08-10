@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+<title>The Home Hive</title>
+<meta name="description" content="This week at preschool, folded into the night we're already having." />
+
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content="#FFC22E" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Home Hive" />
+<link rel="apple-touch-icon" href="/icons/icon-180.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/app.css" />
+</head>
+<body>
+
+<!-- ───────────────────────── top bar ───────────────────────── -->
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <span class="brand-hex" aria-hidden="true">🐝</span>
+      <span class="brand-txt">The Home <span class="drip">Hive</span></span>
+    </div>
+
+    <div class="topbar-right">
+      <label class="wk-pick">
+        <span class="sr-only">Week</span>
+        <select id="weekSel"></select>
+      </label>
+
+      <div class="modes" role="tablist" aria-label="Mode">
+        <button class="mode" id="modePlan" role="tab" aria-selected="true">Plan</button>
+        <button class="mode" id="modePlay" role="tab" aria-selected="false">Play</button>
+      </div>
+
+      <button class="icon-btn" id="soundBtn" aria-pressed="true" title="Read aloud">🔊</button>
+      <span class="sync" id="sync" aria-live="polite"></span>
+    </div>
+  </div>
+</header>
+
+<!-- ───────────────────────── PLAN MODE ───────────────────────── -->
+<main class="wrap" id="planMode">
+
+  <section class="hero">
+    <p class="eyebrow" id="heroEyebrow"></p>
+    <h1 id="heroTheme"></h1>
+    <p class="sub" id="heroIntro"></p>
+    <details class="gelds">
+      <summary>What the school is measuring</summary>
+      <ul id="geldsList"></ul>
+    </details>
+  </section>
+
+  <div class="comb" id="comb" role="tablist" aria-label="Days of the week"></div>
+
+  <div class="cols">
+    <div class="col-main">
+      <section class="card" id="dayCard" role="tabpanel" aria-live="polite">
+        <h2 id="dayTitle"></h2>
+        <p class="school" id="daySchool"></p>
+        <div id="moves"></div>
+      </section>
+    </div>
+
+    <div class="col-side">
+      <section class="card">
+        <h2>The books</h2>
+        <p class="school">Read the real thing if you have it — he needs to see you turn the pages. The videos are for the car and the nights you're wiped out.</p>
+        <div id="books"></div>
+      </section>
+
+      <section class="card">
+        <h2>What he should have by Friday</h2>
+        <div class="goal-split">
+          <div>
+            <h3 class="goal-h class">The class</h3>
+            <ul class="goals" id="goalsClass"></ul>
+          </div>
+          <div>
+            <!-- Filled with the child's name from weeks/index.json. -->
+            <h3 class="goal-h his" id="goalsHisHead"></h3>
+            <ul class="goals his" id="goalsHis"></ul>
+          </div>
+        </div>
+        <p class="school weekend" id="weekend"></p>
+      </section>
+
+      <section class="card">
+        <h2>What I noticed</h2>
+        <p class="school">Shared between both of you. This is what you read back at the parent conference.</p>
+        <textarea id="notes" rows="5" placeholder="Wednesday — named &quot;frustrated&quot; on his own, no prompt."></textarea>
+        <p class="note-meta" id="noteMeta"></p>
+      </section>
+
+      <section class="card quiet">
+        <h2>Reset</h2>
+        <p class="school">Clears every check, feeling and note for this week only. Other weeks are untouched.</p>
+        <button class="reset" id="reset">Start this week over</button>
+      </section>
+    </div>
+  </div>
+</main>
+
+<!-- ───────────────────────── PLAY MODE ───────────────────────── -->
+<main class="wrap play" id="playMode" hidden>
+  <div id="playHome">
+    <div class="play-head">
+      <!-- Filled from weeks/index.json at render; no name lives in the markup. -->
+      <h1 id="playHi">Hi!</h1>
+      <div class="jar" title="Honey earned this week">
+        <div class="jar-fill" id="jarFill"></div>
+        <span class="jar-count" id="jarCount">0</span>
+      </div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+  </div>
+
+  <div id="playGame" hidden>
+    <button class="back" id="backBtn">‹ Back</button>
+    <div id="gameStage"></div>
+  </div>
+</main>
+
+<!-- ───────────────────────── video overlay ───────────────────────── -->
+<div class="veil" id="veil" hidden>
+  <div class="veil-box">
+    <button class="veil-x" id="veilX" aria-label="Close video">✕</button>
+    <div class="veil-title" id="veilTitle"></div>
+    <div class="player-wrap"><div id="player"></div></div>
+    <!-- Built fresh by app.js on every open — the "can't embed" fallback used
+         to overwrite fixed markup here and break the next video. -->
+    <div class="veil-done" id="veilDone" hidden></div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

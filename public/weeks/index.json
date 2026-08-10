@@ -1,0 +1,13 @@
+{
+  "child": "Sam",
+  "class": "Sunflower Room",
+  "weeks": [
+    {
+      "id": "2026-09-07",
+      "start": "2026-09-07",
+      "label": "Sep 7–11",
+      "theme": "Weather & Seasons",
+      "themeSub": "Sky, Rain & Wind"
+    }
+  ]
+}
