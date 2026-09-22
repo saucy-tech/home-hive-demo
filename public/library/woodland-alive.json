@@ -1,0 +1,112 @@
+{
+  "id": "woodland-alive",
+  "title": "Alive or Not Alive?",
+  "yes": {
+    "label": "Alive",
+    "emoji": "✅"
+  },
+  "no": {
+    "label": "Not alive",
+    "emoji": "🟠"
+  },
+  "yesSay": "Alive.",
+  "noSay": "Not alive.",
+  "retry": "Listen once more and choose a pile.",
+  "items": [
+    {
+      "text": "A fox walks between the trees.",
+      "yes": true,
+      "note": "A fox breathes, eats and grows."
+    },
+    {
+      "text": "A squirrel climbs a trunk.",
+      "yes": true,
+      "note": "A squirrel eats nuts and grows."
+    },
+    {
+      "text": "An owl sits on a branch.",
+      "yes": true,
+      "note": "An owl breathes even when it sits still."
+    },
+    {
+      "text": "A deer nibbles leaves.",
+      "yes": true,
+      "note": "A deer eats plants to help its body grow."
+    },
+    {
+      "text": "A rabbit hops under a bush.",
+      "yes": true,
+      "note": "A rabbit breathes and eats."
+    },
+    {
+      "text": "A bear drinks from a stream.",
+      "yes": true,
+      "note": "A bear needs food and water."
+    },
+    {
+      "text": "A raccoon washes food in a puddle.",
+      "yes": true,
+      "note": "A raccoon is an animal with a living body."
+    },
+    {
+      "text": "A hedgehog sniffs the ground.",
+      "yes": true,
+      "note": "A hedgehog eats small animals and grows."
+    },
+    {
+      "text": "A rock rests beside a tree.",
+      "yes": false,
+      "note": "A rock has no living body."
+    },
+    {
+      "text": "A plastic fox sits on a shelf.",
+      "yes": false,
+      "note": "A toy fox does not eat or grow."
+    },
+    {
+      "text": "A metal fence stands beside the woods.",
+      "yes": false,
+      "note": "People made the fence from metal."
+    },
+    {
+      "text": "A glass marble rolls down a hill.",
+      "yes": false,
+      "note": "Rolling does not make a marble alive."
+    },
+    {
+      "text": "A wooden bench stands by the path.",
+      "yes": false,
+      "note": "The wood in a bench is no longer a living tree."
+    },
+    {
+      "text": "A bear sleeps in its den.",
+      "yes": true,
+      "note": "A sleeping bear still breathes.",
+      "hard": true
+    },
+    {
+      "text": "A robot owl turns its head.",
+      "yes": false,
+      "note": "A motor moves the toy owl.",
+      "hard": true
+    },
+    {
+      "text": "A tree stands still all day.",
+      "yes": true,
+      "note": "A tree takes in water and grows.",
+      "hard": true
+    },
+    {
+      "text": "A dead leaf blows across the path.",
+      "yes": false,
+      "note": "Wind moves the leaf that is no longer alive.",
+      "hard": true
+    },
+    {
+      "text": "A stuffed rabbit has soft fur.",
+      "yes": false,
+      "note": "The stuffing cannot breathe or grow.",
+      "hard": true
+    }
+  ]
+}

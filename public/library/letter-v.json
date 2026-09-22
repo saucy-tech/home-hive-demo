@@ -1,0 +1,110 @@
+{
+  "letter": "V",
+  "sound": "vvv",
+  "example": "van",
+  "yes": [
+    {
+      "word": "van",
+      "emoji": "🚐"
+    },
+    {
+      "word": "vet",
+      "emoji": "🧑‍⚕️"
+    },
+    {
+      "word": "vest",
+      "emoji": "🦺"
+    },
+    {
+      "word": "vase",
+      "emoji": "🏺"
+    },
+    {
+      "word": "vine",
+      "emoji": "🌿"
+    },
+    {
+      "word": "violin",
+      "emoji": "🎻"
+    },
+    {
+      "word": "vacuum",
+      "emoji": "🧹"
+    },
+    {
+      "word": "volcano",
+      "emoji": "🌋"
+    },
+    {
+      "word": "vegetable",
+      "emoji": "🥕"
+    },
+    {
+      "word": "vulture",
+      "emoji": "🦅"
+    },
+    {
+      "word": "valentine",
+      "emoji": "💌"
+    },
+    {
+      "word": "village",
+      "emoji": "🏘️"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "beaver",
+      "emoji": "🦫",
+      "hard": true
+    },
+    {
+      "word": "oven",
+      "emoji": "♨️",
+      "hard": true
+    },
+    {
+      "word": "avocado",
+      "emoji": "🥑",
+      "hard": true
+    },
+    {
+      "word": "shovel",
+      "emoji": "⛏️",
+      "hard": true
+    },
+    {
+      "word": "river",
+      "emoji": "🏞️",
+      "hard": true
+    }
+  ]
+}

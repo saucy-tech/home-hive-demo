@@ -1,0 +1,110 @@
+{
+  "letter": "R",
+  "sound": "rrr",
+  "example": "rabbit",
+  "yes": [
+    {
+      "word": "rabbit",
+      "emoji": "🐇"
+    },
+    {
+      "word": "rat",
+      "emoji": "🐀"
+    },
+    {
+      "word": "rug",
+      "emoji": "🧶"
+    },
+    {
+      "word": "ring",
+      "emoji": "💍"
+    },
+    {
+      "word": "rain",
+      "emoji": "🌧️"
+    },
+    {
+      "word": "rainbow",
+      "emoji": "🌈"
+    },
+    {
+      "word": "robot",
+      "emoji": "🤖"
+    },
+    {
+      "word": "rocket",
+      "emoji": "🚀"
+    },
+    {
+      "word": "rake",
+      "emoji": "🧹"
+    },
+    {
+      "word": "rose",
+      "emoji": "🌹"
+    },
+    {
+      "word": "rock",
+      "emoji": "🪨"
+    },
+    {
+      "word": "ribbon",
+      "emoji": "🎀"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "carrot",
+      "emoji": "🥕",
+      "hard": true
+    },
+    {
+      "word": "parrot",
+      "emoji": "🦜",
+      "hard": true
+    },
+    {
+      "word": "giraffe",
+      "emoji": "🦒",
+      "hard": true
+    },
+    {
+      "word": "cherry",
+      "emoji": "🍒",
+      "hard": true
+    },
+    {
+      "word": "cereal",
+      "emoji": "🥣",
+      "hard": true
+    }
+  ]
+}

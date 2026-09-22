@@ -1,0 +1,108 @@
+{
+  "id": "neighborhood-places",
+  "title": "Neighborhood Places",
+  "noun": "places",
+  "matchName": "Neighborhood Places",
+  "basic": [
+    {
+      "id": "home",
+      "label": "Home",
+      "icon": "🏠",
+      "say": "the home",
+      "note": "Your family eats, rests and plays at home."
+    },
+    {
+      "id": "school",
+      "label": "School",
+      "icon": "🏫",
+      "say": "the school",
+      "note": "Children learn and play together at school."
+    },
+    {
+      "id": "park",
+      "label": "Park",
+      "icon": "🛝",
+      "say": "the park",
+      "note": "The park has room to run and play."
+    },
+    {
+      "id": "library",
+      "label": "Library",
+      "icon": "📚",
+      "say": "the library",
+      "note": "You borrow books from the library and bring them back."
+    },
+    {
+      "id": "store",
+      "label": "Store",
+      "icon": "🛒",
+      "say": "the store",
+      "note": "You pay for the things you take from the store."
+    },
+    {
+      "id": "church",
+      "label": "Church",
+      "icon": "⛪",
+      "say": "the church",
+      "note": "We gather at church to worship God."
+    }
+  ],
+  "advanced": [
+    {
+      "id": "fire-station",
+      "label": "Fire station",
+      "icon": "🚒",
+      "say": "the fire station",
+      "note": "Firefighters keep their trucks ready at the fire station."
+    },
+    {
+      "id": "post-office",
+      "label": "Post office",
+      "icon": "📮",
+      "say": "the post office",
+      "note": "Letters leave the post office on their way to other homes."
+    },
+    {
+      "id": "hospital",
+      "label": "Hospital",
+      "icon": "🏥",
+      "say": "the hospital",
+      "note": "Doctors and nurses care for sick and hurt people at the hospital."
+    },
+    {
+      "id": "bakery",
+      "label": "Bakery",
+      "icon": "🥖",
+      "say": "the bakery",
+      "note": "Bakers make bread in the bakery."
+    },
+    {
+      "id": "bus-stop",
+      "label": "Bus stop",
+      "icon": "🚏",
+      "say": "the bus stop",
+      "note": "You wait beside your grown-up at the bus stop."
+    },
+    {
+      "id": "crosswalk",
+      "label": "Crosswalk",
+      "icon": "🚶",
+      "say": "the crosswalk",
+      "note": "You cross with your grown-up at the crosswalk after checking traffic."
+    },
+    {
+      "id": "sidewalk",
+      "label": "Sidewalk",
+      "icon": "👟",
+      "say": "the sidewalk",
+      "note": "The sidewalk keeps walkers beside the road."
+    },
+    {
+      "id": "playground",
+      "label": "Playground",
+      "icon": "🛝⚽",
+      "say": "the playground",
+      "note": "You take turns on the playground equipment."
+    }
+  ]
+}

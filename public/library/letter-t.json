@@ -1,0 +1,110 @@
+{
+  "letter": "T",
+  "sound": "tuh",
+  "example": "turtle",
+  "yes": [
+    {
+      "word": "turtle",
+      "emoji": "🐢"
+    },
+    {
+      "word": "tiger",
+      "emoji": "🐅"
+    },
+    {
+      "word": "tent",
+      "emoji": "⛺"
+    },
+    {
+      "word": "ten",
+      "emoji": "🔟"
+    },
+    {
+      "word": "top",
+      "emoji": "🌀"
+    },
+    {
+      "word": "tub",
+      "emoji": "🛁"
+    },
+    {
+      "word": "taco",
+      "emoji": "🌮"
+    },
+    {
+      "word": "tomato",
+      "emoji": "🍅"
+    },
+    {
+      "word": "train",
+      "emoji": "🚂"
+    },
+    {
+      "word": "tree",
+      "emoji": "🌳"
+    },
+    {
+      "word": "tooth",
+      "emoji": "🦷"
+    },
+    {
+      "word": "towel",
+      "emoji": "🧻"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "igloo",
+      "emoji": "🧊"
+    },
+    {
+      "word": "jam",
+      "emoji": "🫙"
+    },
+    {
+      "word": "guitar",
+      "emoji": "🎸",
+      "hard": true
+    },
+    {
+      "word": "octopus",
+      "emoji": "🐙",
+      "hard": true
+    },
+    {
+      "word": "cactus",
+      "emoji": "🌵",
+      "hard": true
+    },
+    {
+      "word": "tractor",
+      "emoji": "🚜",
+      "hard": true
+    },
+    {
+      "word": "pretzel",
+      "emoji": "🥨",
+      "hard": true
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "letter": "M",
+  "sound": "mmm",
+  "example": "moon",
+  "yes": [
+    {
+      "word": "moon",
+      "emoji": "🌙"
+    },
+    {
+      "word": "mouse",
+      "emoji": "🐭"
+    },
+    {
+      "word": "monkey",
+      "emoji": "🐒"
+    },
+    {
+      "word": "milk",
+      "emoji": "🥛"
+    },
+    {
+      "word": "mitten",
+      "emoji": "🧤"
+    },
+    {
+      "word": "map",
+      "emoji": "🗺️"
+    },
+    {
+      "word": "mop",
+      "emoji": "🧹"
+    },
+    {
+      "word": "mug",
+      "emoji": "☕"
+    },
+    {
+      "word": "mushroom",
+      "emoji": "🍄"
+    },
+    {
+      "word": "mountain",
+      "emoji": "⛰️"
+    },
+    {
+      "word": "mouth",
+      "emoji": "👄"
+    },
+    {
+      "word": "melon",
+      "emoji": "🍈"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "lemon",
+      "emoji": "🍋",
+      "hard": true
+    },
+    {
+      "word": "camel",
+      "emoji": "🐪",
+      "hard": true
+    },
+    {
+      "word": "pumpkin",
+      "emoji": "🎃",
+      "hard": true
+    },
+    {
+      "word": "hammer",
+      "emoji": "🔨",
+      "hard": true
+    },
+    {
+      "word": "tomato",
+      "emoji": "🍅",
+      "hard": true
+    }
+  ]
+}

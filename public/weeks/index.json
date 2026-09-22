@@ -1,0 +1,24 @@
+{
+  "child": "Sam",
+  "class": "Sunflower Room",
+
+  "topics": [
+    { "id": "school",  "name": "Preschool",     "emoji": "🏫", "dir": "/weeks" },
+    { "id": "body",    "name": "Body & Doctor", "emoji": "🫀", "dir": "/topics/body" },
+    { "id": "code",    "name": "Code",          "emoji": "💻", "dir": "/topics/code" },
+    { "id": "ai",      "name": "Smart Machines","emoji": "🧠", "dir": "/topics/ai" },
+    { "id": "bitcoin", "name": "Money",         "emoji": "🟠", "dir": "/topics/bitcoin" },
+    { "id": "robots",  "name": "Robots",        "emoji": "🤖", "dir": "/topics/robots" },
+    { "id": "build",   "name": "Build & Fix",   "emoji": "🔧", "dir": "/topics/build" }
+  ],
+
+  "weeks": [
+    {
+      "id": "2026-09-07",
+      "start": "2026-09-07",
+      "label": "Sep 7–11",
+      "theme": "Weather & Seasons",
+      "themeSub": "Sky, Rain & Wind"
+    }
+  ]
+}

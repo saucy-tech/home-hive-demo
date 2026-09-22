@@ -1,0 +1,110 @@
+{
+  "letter": "N",
+  "sound": "nnn",
+  "example": "nest",
+  "yes": [
+    {
+      "word": "nest",
+      "emoji": "🪺"
+    },
+    {
+      "word": "net",
+      "emoji": "🥅"
+    },
+    {
+      "word": "nose",
+      "emoji": "👃"
+    },
+    {
+      "word": "nail",
+      "emoji": "🔩"
+    },
+    {
+      "word": "nut",
+      "emoji": "🥜"
+    },
+    {
+      "word": "nine",
+      "emoji": "9️⃣"
+    },
+    {
+      "word": "noodles",
+      "emoji": "🍜"
+    },
+    {
+      "word": "nurse",
+      "emoji": "🧑‍⚕️"
+    },
+    {
+      "word": "night",
+      "emoji": "🌃"
+    },
+    {
+      "word": "neck",
+      "emoji": "🧣"
+    },
+    {
+      "word": "notebook",
+      "emoji": "📓"
+    },
+    {
+      "word": "nap",
+      "emoji": "😴"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "banana",
+      "emoji": "🍌",
+      "hard": true
+    },
+    {
+      "word": "bunny",
+      "emoji": "🐰",
+      "hard": true
+    },
+    {
+      "word": "dinner",
+      "emoji": "🍽️",
+      "hard": true
+    },
+    {
+      "word": "penny",
+      "emoji": "🪙",
+      "hard": true
+    },
+    {
+      "word": "honey",
+      "emoji": "🍯",
+      "hard": true
+    }
+  ]
+}

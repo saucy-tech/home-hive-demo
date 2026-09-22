@@ -1,0 +1,112 @@
+{
+  "id": "safe-or-not",
+  "title": "Safe or Not Safe?",
+  "yes": {
+    "label": "Safe",
+    "emoji": "✅"
+  },
+  "no": {
+    "label": "Not safe",
+    "emoji": "🟠"
+  },
+  "yesSay": "Safe.",
+  "noSay": "Not safe.",
+  "retry": "Listen once more and choose a pile.",
+  "items": [
+    {
+      "text": "You hold your grown-up’s hand beside the road.",
+      "yes": true,
+      "note": "Stay beside your grown-up near traffic."
+    },
+    {
+      "text": "You run into the road after a ball.",
+      "yes": false,
+      "note": "Stop and let your grown-up get the ball."
+    },
+    {
+      "text": "You wear your buckled helmet on your bike.",
+      "yes": true,
+      "note": "A helmet helps protect your head."
+    },
+    {
+      "text": "You touch a hot stove.",
+      "yes": false,
+      "note": "Keep your hands away from the hot stove."
+    },
+    {
+      "text": "You stay buckled in your car seat.",
+      "yes": true,
+      "note": "The buckle holds you in your seat."
+    },
+    {
+      "text": "You put a bead in your mouth.",
+      "yes": false,
+      "note": "A small bead can block your breathing."
+    },
+    {
+      "text": "You walk beside the pool with your grown-up.",
+      "yes": true,
+      "note": "Your grown-up stays close beside the water."
+    },
+    {
+      "text": "You climb onto a window ledge.",
+      "yes": false,
+      "note": "Keep your feet on the floor near a window."
+    },
+    {
+      "text": "You tell your teacher about broken glass.",
+      "yes": true,
+      "note": "Let a grown-up clear away sharp glass."
+    },
+    {
+      "text": "You poke a fork into an outlet.",
+      "yes": false,
+      "note": "Keep things out of electrical outlets."
+    },
+    {
+      "text": "You stop when your grown-up calls stop.",
+      "yes": true,
+      "note": "Stopping gives your grown-up time to help you."
+    },
+    {
+      "text": "You take medicine from the shelf yourself.",
+      "yes": false,
+      "note": "Your grown-up gives you the right medicine."
+    },
+    {
+      "text": "You put toys away from the stairs.",
+      "yes": true,
+      "note": "Clear steps give feet room to walk."
+    },
+    {
+      "text": "A ball rolls under a parked car, and you wait for your grown-up.",
+      "yes": true,
+      "note": "A parked car can start moving, so stay out from under it.",
+      "hard": true
+    },
+    {
+      "text": "The light turns green, and you run across alone.",
+      "yes": false,
+      "note": "Cross with your grown-up after checking that traffic has stopped.",
+      "hard": true
+    },
+    {
+      "text": "You leave your backpack inside during a fire drill.",
+      "yes": true,
+      "note": "Keep moving outside with your teacher instead of stopping for things.",
+      "hard": true
+    },
+    {
+      "text": "You pet a friendly-looking dog without asking its grown-up.",
+      "yes": false,
+      "note": "Ask your grown-up and the dog’s grown-up before you touch it.",
+      "hard": true
+    },
+    {
+      "text": "You tell a uniformed helper you are lost while you stay in the store.",
+      "yes": true,
+      "note": "Ask the helper to bring your grown-up to you.",
+      "hard": true
+    }
+  ]
+}

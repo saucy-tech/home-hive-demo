@@ -1,0 +1,110 @@
+{
+  "letter": "K",
+  "sound": "kuh",
+  "example": "kite",
+  "yes": [
+    {
+      "word": "kite",
+      "emoji": "🪁"
+    },
+    {
+      "word": "key",
+      "emoji": "🔑"
+    },
+    {
+      "word": "kitten",
+      "emoji": "🐱"
+    },
+    {
+      "word": "kangaroo",
+      "emoji": "🦘"
+    },
+    {
+      "word": "king",
+      "emoji": "🤴"
+    },
+    {
+      "word": "kick",
+      "emoji": "🦵"
+    },
+    {
+      "word": "kitchen",
+      "emoji": "🍳"
+    },
+    {
+      "word": "kettle",
+      "emoji": "🫖"
+    },
+    {
+      "word": "koala",
+      "emoji": "🐨"
+    },
+    {
+      "word": "kayak",
+      "emoji": "🛶"
+    },
+    {
+      "word": "kiwi",
+      "emoji": "🥝"
+    },
+    {
+      "word": "kiss",
+      "emoji": "😘"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "hat",
+      "emoji": "🎩"
+    },
+    {
+      "word": "chicken",
+      "emoji": "🐔",
+      "hard": true
+    },
+    {
+      "word": "raccoon",
+      "emoji": "🦝",
+      "hard": true
+    },
+    {
+      "word": "pumpkin",
+      "emoji": "🎃",
+      "hard": true
+    },
+    {
+      "word": "bacon",
+      "emoji": "🥓",
+      "hard": true
+    },
+    {
+      "word": "vacuum",
+      "emoji": "🧹",
+      "hard": true
+    }
+  ]
+}

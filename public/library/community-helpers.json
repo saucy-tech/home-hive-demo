@@ -1,0 +1,108 @@
+{
+  "id": "community-helpers",
+  "title": "Community Helpers",
+  "noun": "helpers",
+  "matchName": "Community Helpers",
+  "basic": [
+    {
+      "id": "firefighter",
+      "label": "Firefighter",
+      "icon": "🧑‍🚒",
+      "say": "the firefighter",
+      "note": "A firefighter puts out fires and helps people get out."
+    },
+    {
+      "id": "doctor",
+      "label": "Doctor",
+      "icon": "🧑‍⚕️",
+      "say": "the doctor",
+      "note": "A doctor checks your body when you feel sick."
+    },
+    {
+      "id": "teacher",
+      "label": "Teacher",
+      "icon": "🧑‍🏫",
+      "say": "the teacher",
+      "note": "A teacher helps you learn and practise."
+    },
+    {
+      "id": "farmer",
+      "label": "Farmer",
+      "icon": "🧑‍🌾",
+      "say": "the farmer",
+      "note": "A farmer grows food and cares for farm animals."
+    },
+    {
+      "id": "cook",
+      "label": "Cook",
+      "icon": "🧑‍🍳",
+      "say": "the cook",
+      "note": "A cook prepares food for people to eat."
+    },
+    {
+      "id": "police-officer",
+      "label": "Police officer",
+      "icon": "👮",
+      "say": "the police officer",
+      "note": "A police officer can help you find your grown-up."
+    }
+  ],
+  "advanced": [
+    {
+      "id": "nurse",
+      "label": "Nurse",
+      "icon": "👩‍⚕️",
+      "say": "the nurse",
+      "note": "A nurse checks your temperature and cares for you."
+    },
+    {
+      "id": "dentist",
+      "label": "Dentist",
+      "icon": "🦷",
+      "say": "the dentist",
+      "note": "A dentist checks and cleans your teeth."
+    },
+    {
+      "id": "mail-carrier",
+      "label": "Mail carrier",
+      "icon": "📬",
+      "say": "the mail carrier",
+      "note": "A mail carrier brings letters to your mailbox."
+    },
+    {
+      "id": "librarian",
+      "label": "Librarian",
+      "icon": "📚",
+      "say": "the librarian",
+      "note": "A librarian helps you find a book to borrow."
+    },
+    {
+      "id": "bus-driver",
+      "label": "Bus driver",
+      "icon": "🚌",
+      "say": "the bus driver",
+      "note": "A bus driver takes people from stop to stop."
+    },
+    {
+      "id": "sanitation-worker",
+      "label": "Sanitation worker",
+      "icon": "🚛",
+      "say": "the sanitation worker",
+      "note": "A sanitation worker collects the trash."
+    },
+    {
+      "id": "builder",
+      "label": "Builder",
+      "icon": "👷",
+      "say": "the builder",
+      "note": "A builder puts walls and roofs together."
+    },
+    {
+      "id": "veterinarian",
+      "label": "Veterinarian",
+      "icon": "🐾",
+      "say": "the veterinarian",
+      "note": "A veterinarian checks and treats sick animals."
+    }
+  ]
+}

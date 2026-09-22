@@ -1,0 +1,103 @@
+{
+  "letter": "O",
+  "sound": "short o",
+  "example": "octopus",
+  "yes": [
+    {
+      "word": "octopus",
+      "emoji": "🐙"
+    },
+    {
+      "word": "ox",
+      "emoji": "🐂"
+    },
+    {
+      "word": "otter",
+      "emoji": "🦦"
+    },
+    {
+      "word": "ostrich",
+      "emoji": "🐦"
+    },
+    {
+      "word": "olive",
+      "emoji": "🫒"
+    },
+    {
+      "word": "odd",
+      "emoji": "🧦"
+    },
+    {
+      "word": "opposite",
+      "emoji": "↔️"
+    },
+    {
+      "word": "opera",
+      "emoji": "🎭"
+    },
+    {
+      "word": "omelet",
+      "emoji": "🍳"
+    },
+    {
+      "word": "octagon",
+      "emoji": "🛑"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "hat",
+      "emoji": "🎩"
+    },
+    {
+      "word": "jam",
+      "emoji": "🫙"
+    },
+    {
+      "word": "pot",
+      "emoji": "🍲",
+      "hard": true
+    },
+    {
+      "word": "sock",
+      "emoji": "🧦",
+      "hard": true
+    },
+    {
+      "word": "fox",
+      "emoji": "🦊",
+      "hard": true
+    },
+    {
+      "word": "top",
+      "emoji": "🌀",
+      "hard": true
+    },
+    {
+      "word": "doll",
+      "emoji": "🪆",
+      "hard": true
+    }
+  ],
+  "phonicsNote": "Short o as in octopus only, following American pronunciation. Ten examples; avoid long o and the variable vowel in dog."
+}

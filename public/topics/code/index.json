@@ -1,0 +1,17 @@
+{
+  "label": "Code",
+  "weeks": [
+    {
+      "id": "code-01",
+      "start": "2026-08-10",
+      "label": "Unit 1",
+      "theme": "Tell It Exactly"
+    },
+    {
+      "id": "code-02",
+      "start": "2026-09-21",
+      "label": "Unit 2",
+      "theme": "If This, Then That—Do It Again"
+    }
+  ]
+}

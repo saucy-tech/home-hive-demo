@@ -1,0 +1,299 @@
+{
+  "id": "money-01",
+  "start": "2026-08-10",
+  "label": "Unit 1",
+  "theme": "Only Twenty-One",
+  "themeSub": "Counting, keeping, and what's actually yours",
+  "focusLabel": "What this unit is training",
+  "intro": "The money ideas a four-year-old can genuinely hold are: some things there are only so many of, saving means not spending yet, and a thing is yours if you're the one holding the key to it. So the counting band here goes to 21 rather than 11 — that number is going to mean something to him later, and he might as well be able to count it now. No prices, no charts, no talk about going up.",
+
+  "gelds": [
+    { "text": "Counts to 21, forwards and back" },
+    { "text": "Says which of two piles is more, by counting rather than by looking" },
+    { "text": "Knows a secret you never tell, and can name one" },
+    { "text": "Says what's his and what isn't, and why" },
+    { "text": "Can wait a week for something better than what he'd get today" }
+  ],
+
+  "tryTitle": "Try these any evening",
+  "tryNote": "The jar is the whole unit. Everything else here is a way of talking about the jar.",
+
+  "daily": [
+    {
+      "id": "jar",
+      "slot": "play",
+      "when": "Anytime · 2 min",
+      "title": "The jar that doesn't get opened",
+      "do": "One jar, real coins, and a thing he's saving for that he picked. Every coin goes in with him watching, and you both count what's in there afterwards.",
+      "stretch": "He says how many more he needs, not just how many he has. Counting on from where he is beats starting at one, and it's the same skill the school asked for.",
+      "skill": "Counting on, with a reason to"
+    },
+    {
+      "id": "secret",
+      "slot": "dinner",
+      "when": "Dinner · 1 min",
+      "title": "Tell or don't tell?",
+      "do": "Name something and he says whether it's a telling thing or a keeping thing. How old he is: tell. The code for the front door: keep. Where the jar lives: keep.",
+      "stretch": "Ask him WHY the keeping ones get kept. \"Because somebody could take it\" is the answer you're after, and it's the whole idea behind a key.",
+      "skill": "Some things are secret, and he can say why"
+    },
+    {
+      "id": "wait",
+      "slot": "bath",
+      "when": "Anytime · 1 min",
+      "title": "One now or three later",
+      "do": "Real offer, occasionally, and honour whichever he picks: one thing now, or three on Saturday. Don't lecture the choice — just make the offer real and let him feel it.",
+      "stretch": "After he chooses, ask what he'd tell a friend to do. Advising somebody else is where he'll say the thing he can't quite do yet.",
+      "skill": "Waiting on purpose"
+    }
+  ],
+
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Counts to 21 and back down without help",
+      "Picks the bigger pile of two that are one apart, by counting both",
+      "Says \"there's only so many\" about something, in his own words",
+      "Knows his key is a secret and secrets like that never get told",
+      "Has waited for something at least once and can tell you about it"
+    ]
+  },
+
+  "weekend": "Let him pay for something himself, with cash, and take the change back. Handing it over and getting less back is a lesson no game can do.",
+
+  "songs": [
+    {
+      "id": "money-song",
+      "title": "Only Twenty-One",
+      "emoji": "🎤",
+      "style": "A bouncy preschool counting sing-along with banjo, marimba and hand claps. Slow, steady tempo a four-year-old can count along with, one warm friendly voice, a simple repeated melody, every word and number clear. Singing starts within the first two seconds, and it ends cleanly with no long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "One, two, three, four, five, six, seven,",
+        "eight, nine, ten — don't stop!",
+        "Eleven, twelve, thirteen, fourteen,",
+        "fifteen, sixteen — up we hop!",
+        "Seventeen, eighteen, nineteen, twenty,",
+        "one more makes twenty-one!",
+        "Some things, there's only so many —",
+        "when they're gone, they're gone.",
+        "That's why we count so carefully,",
+        "all the way to twenty-one.",
+        "My key is a special secret,",
+        "I never give it away.",
+        "I can save and I can wait —",
+        "what's mine is mine to stay!"
+      ]
+    }
+  ],
+
+  "games": {
+    "numbers": { "classMax": 10, "stretchMax": 30, "easyLabel": "Easy" },
+    "compare": {
+      "title": "Which Pile is More?",
+      "sub": "Count them both",
+      "icon": "🪙",
+      "noun": "coins",
+      "max": 12
+    },
+    "naming": [
+      {
+        "id": "money-words",
+        "title": "Money Words",
+        "matchName": "Money",
+        "noun": "money words",
+        "emoji": "🪙",
+        "sub": "What they mean",
+        "basic": [
+          { "id": "coin", "label": "Coin", "icon": "🪙", "say": "a coin" },
+          { "id": "dollar", "label": "Dollar", "icon": "💵", "say": "a dollar" },
+          { "id": "wallet", "label": "Wallet", "icon": "👛", "say": "a wallet" },
+          { "id": "store", "label": "Store", "icon": "🏪", "say": "the store" },
+          { "id": "jar", "label": "Saving jar", "icon": "🫙", "say": "the saving jar" },
+          { "id": "price", "label": "Price", "icon": "🏷️", "say": "the price" }
+        ],
+        "advanced": [
+          { "id": "bitcoin", "label": "Bitcoin", "icon": "🟠", "say": "bitcoin",
+            "note": "Bitcoin is money that lives on computers. Nobody can ever make more than twenty-one million." },
+          { "id": "sat", "label": "Sat", "icon": "✨", "say": "a sat",
+            "note": "A sat is the tiniest piece of a bitcoin, the way a penny is a tiny piece of a dollar." },
+          { "id": "key", "label": "Key", "icon": "🔑", "say": "a key",
+            "note": "Your key is the secret that proves the money is yours. You never tell anybody your key." },
+          { "id": "block", "label": "Block", "icon": "🧱", "say": "a block",
+            "note": "A block is one page in a book that everybody in the world can read." },
+          { "id": "chain", "label": "Chain", "icon": "⛓️", "say": "a chain",
+            "note": "The pages are chained together, so nobody can go back and change an old one." },
+          { "id": "miner", "label": "Miner", "icon": "⛏️", "say": "a miner",
+            "note": "Miners are computers that do hard work to write the next page." },
+          { "id": "save", "label": "Save", "icon": "🐷", "say": "save",
+            "note": "Saving is keeping your money and not spending it yet." },
+          { "id": "offering", "label": "Offering", "icon": "🧺", "say": "the offering",
+            "note": "The offering is the money we give to God at church. It comes out first, before we spend any." }
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "money-secret",
+        "title": "Keep It or Tell It?",
+        "emoji": "🤫",
+        "sub": "Secrets and not-secrets",
+        "yes": { "label": "Keep it secret", "emoji": "🤫" },
+        "no": { "label": "You can tell", "emoji": "🗣️" },
+        "yesSay": "Yes. That one you keep.",
+        "noSay": "Right. That one is safe to tell.",
+        "retry": "Think about whether somebody could use it to take something.",
+        "items": [
+          { "text": "The secret words that unlock your money.", "yes": true,
+            "note": "That's a key. Tell it to somebody and the money is theirs." },
+          { "text": "How old you are.", "yes": false, "note": "Nobody can do anything with that." },
+          { "text": "The code for the front door.", "yes": true,
+            "note": "A code is a key for a house." },
+          { "text": "Your favourite colour.", "yes": false, "note": "Tell the whole world." },
+          { "text": "Where the saving jar is hidden.", "yes": true,
+            "note": "You can't spend it if somebody else took it." },
+          { "text": "The name of your school.", "yes": false, "hard": true,
+            "note": "Fine for people we know. Not for a stranger on a screen." },
+          { "text": "Your password.", "yes": true, "note": "Passwords are keys. Same rule." },
+          { "text": "What you want for your birthday.", "yes": false, "note": "Please tell us that one." },
+          { "text": "How much money is in the jar.", "yes": true, "hard": true,
+            "note": "Family can know. It isn't for the playground." },
+          { "text": "The name of your dog.", "yes": false, "note": "Nothing unlocks with that." },
+          { "text": "The numbers on the card Mom pays with.", "yes": true, "hard": true,
+            "note": "Tricky one. They look like plain numbers. Those numbers ARE the money." },
+          { "text": "Where you live.", "yes": true,
+            "note": "That's for family and the people who pick you up. Not for a stranger, and not for a screen." },
+          { "text": "Your teacher's name.", "yes": false, "note": "Safe to say." },
+          { "text": "The word that unlocks Dad's phone.", "yes": true,
+            "note": "Even to a friend. Especially to a friend who asks." },
+          { "text": "Your best friend's name.", "yes": false, "note": "Tell away. Friends are for talking about." },
+          { "text": "Where Mom keeps the spare house key.", "yes": true,
+            "note": "A hiding place is a secret too. Tell it and the key isn't hidden any more." },
+          { "text": "That you have a saving jar.", "yes": false, "hard": true,
+            "note": "Having a jar isn't a secret. Where it is, and how much is in it, are." },
+          { "text": "A secret that makes your tummy feel bad.", "yes": false, "hard": true,
+            "note": "A secret that scares you is never one you keep. That one comes straight to us." }
+        ]
+      },
+      {
+        "id": "money-mine",
+        "title": "Mine or Not Mine?",
+        "emoji": "🙋",
+        "sub": "Whose is it?",
+        "yes": { "label": "Mine", "emoji": "🙋" },
+        "no": { "label": "Not mine", "emoji": "✋" },
+        "yesSay": "Yes. That one is yours.",
+        "noSay": "Right. That one is not yours.",
+        "retry": "Think about who it belongs to. Did somebody give it to you?",
+        "items": [
+          { "text": "The toy you brought from home.", "yes": true, "note": "You brought it, and you take it home." },
+          { "text": "A toy from the store nobody paid for.", "yes": false,
+            "note": "Until somebody pays, it belongs to the store." },
+          { "text": "The dollar Grandma gave you.", "yes": true, "note": "She gave it to you. It's yours to keep or save." },
+          { "text": "Money you found in Mom's purse.", "yes": false,
+            "note": "Found in somebody's bag is not the same as given." },
+          { "text": "The picture you drew at school.", "yes": true, "note": "You made it. That makes it yours." },
+          { "text": "The library book in your bag.", "yes": false, "hard": true,
+            "note": "It's yours to READ, and then it goes back. Borrowed isn't owned." },
+          { "text": "The coins in your saving jar.", "yes": true, "note": "In your jar, saved by you." },
+          { "text": "A bike somebody left outside your house.", "yes": false,
+            "note": "Left somewhere isn't given away. Somebody is looking for it." },
+          { "text": "The snack in your lunchbox.", "yes": true, "note": "Packed for you, with your name on the box." },
+          { "text": "Your friend's crayon you took home in your pocket.", "yes": false,
+            "note": "Even by accident, it goes back tomorrow." },
+          { "text": "A dollar you found on the sidewalk.", "yes": false, "hard": true,
+            "note": "Tricky. Somebody dropped that, so you look for who lost it, and then you hand it to a grown-up." },
+          { "text": "The tablet you play on.", "yes": false, "hard": true,
+            "note": "You use it. It's the family's, which is why we say when." },
+          { "text": "The shirt you're wearing.", "yes": true, "note": "Yours, until you grow out of it." },
+          { "text": "A toy you swapped for, fair and square, and both said yes.", "yes": true, "hard": true,
+            "note": "Both of you agreed, so the swap is real. That's what a trade is." },
+          { "text": "The Bible with your name written inside the cover.", "yes": true,
+            "note": "Given to you, with your name in it. Yours to keep." },
+          { "text": "The offering money Mom hands you at church.", "yes": false, "hard": true,
+            "note": "You carry it to the basket. It was never yours to keep. It's for God." },
+          { "text": "The truck your friend let you play with.", "yes": false,
+            "note": "Playing with it doesn't make it yours. Hand it back when you're done." },
+          { "text": "The coins you earned picking up sticks in the yard.", "yes": true,
+            "note": "You did the job. Earned means yours." }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "money-order",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "How it works",
+        "sets": [
+          {
+            "goal": "Saving up for something big",
+            "steps": [
+              { "icon": "🎯", "text": "Pick the thing you want" },
+              { "icon": "🪙", "text": "Put a coin in the jar" },
+              { "icon": "⏳", "text": "Wait, and don't spend it" },
+              { "icon": "🛍️", "text": "Count it, and go buy it" }
+            ]
+          },
+          {
+            "goal": "Buying something at the store",
+            "steps": [
+              { "icon": "🏷️", "text": "Look at the price" },
+              { "icon": "💵", "text": "Hand over the money" },
+              { "icon": "🪙", "text": "Take your change back" }
+            ]
+          },
+          {
+            "goal": "Sending a bitcoin",
+            "steps": [
+              { "icon": "🗣️", "text": "Say who you want to send it to" },
+              { "icon": "🔑", "text": "Sign it with your secret key" },
+              { "icon": "💻", "text": "All the computers check it" },
+              { "icon": "🧱", "text": "It gets written in the book forever" }
+            ]
+          },
+          {
+            "goal": "Earning it first",
+            "steps": [
+              { "icon": "🧹", "text": "Do the job all the way" },
+              { "icon": "👀", "text": "Show somebody it's done" },
+              { "icon": "🪙", "text": "Get paid" },
+              { "icon": "🫙", "text": "Put some in the jar" }
+            ]
+          },
+          {
+            "goal": "Giving at church",
+            "steps": [
+              { "icon": "🪙", "text": "Take a coin out of your jar" },
+              { "icon": "🚗", "text": "Bring it to church" },
+              { "icon": "🧺", "text": "Wait for the basket to come" },
+              { "icon": "🙌", "text": "Put it in" },
+              { "icon": "🙏", "text": "Say thank you to God" }
+            ]
+          },
+          {
+            "goal": "Counting the jar",
+            "steps": [
+              { "icon": "🪙", "text": "Tip the coins out" },
+              { "icon": "➡️", "text": "Line them up in a row" },
+              { "icon": "🔢", "text": "Count them one by one" },
+              { "icon": "🗣️", "text": "Say the number out loud" },
+              { "icon": "🫙", "text": "Put them all back in" }
+            ]
+          },
+          {
+            "goal": "Buying ice cream with your own money",
+            "steps": [
+              { "icon": "🫙", "text": "Count what's in the jar" },
+              { "icon": "👛", "text": "Put the coins in your pocket" },
+              { "icon": "🚶", "text": "Walk up to the counter" },
+              { "icon": "🗣️", "text": "Say what you want" },
+              { "icon": "💵", "text": "Hand over the money" },
+              { "icon": "🍦", "text": "Take the ice cream and your change" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

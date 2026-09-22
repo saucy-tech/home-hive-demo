@@ -1,0 +1,562 @@
+{
+  "id": "robots-02",
+  "start": "2026-09-21",
+  "label": "Unit 2",
+  "theme": "Notice, Then Move",
+  "intro": "A sensor notices; a motor moves. Put a visible block in the pretend robot path and give it a rule before it starts. Then move the same toy load with a ramp or lever and ask where the push came from.",
+  "focusLabel": "What this unit is training",
+  "gelds": [
+    {
+      "text": "Sensor cue, human rule and motor action"
+    },
+    {
+      "text": "Power, switch and obstacle checks"
+    },
+    {
+      "text": "Planning four or five moves"
+    },
+    {
+      "text": "Ramps, levers and wheels moved by hand"
+    },
+    {
+      "text": "Choosing a machine while keeping the decision with a person"
+    }
+  ],
+  "tryTitle": "Try these any evening",
+  "tryNote": "Use a toy load, a board ramp and a ruler balanced on a block. Keep loads light enough to move with one finger.",
+  "daily": [
+    {
+      "id": "notice",
+      "slot": "play",
+      "when": "Floor play · 3 min",
+      "title": "Block means stop",
+      "do": "Say the robot rule: stop when you see a block. Walk toward a block together and stop. Ask what he noticed.",
+      "stretch": "Change the rule to turn left at the block; he predicts the move and explains the cue, the person who chose the rule and the motor that would move a real robot.",
+      "skill": "Separating sensing, rules and movement"
+    },
+    {
+      "id": "load",
+      "slot": "play",
+      "when": "Table time · 4 min",
+      "title": "Move the same load",
+      "do": "Push a toy car up a low board ramp, then lift a light block with a ruler lever. He names the tool. Keep the load the same when comparing.",
+      "stretch": "He explains how the ramp, lever or wheels helped, chooses one for moving that load again, and says whose hand supplied the push instead of a battery.",
+      "skill": "Simple machines and the source of motion"
+    },
+    {
+      "id": "route",
+      "slot": "play",
+      "when": "Floor play · 4 min",
+      "title": "Plan, then check",
+      "do": "Say a short robot route before trying it. When the toy will not move, check its power, switch and path in that order with a grown-up. The toy stays closed.",
+      "stretch": "Plan four or five directions before Run, then explain which machine could repeat that trip and which destination a person still needs to choose.",
+      "skill": "Planning, troubleshooting and human decisions"
+    }
+  ],
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Explains how battery, switch, sensor, and motor each help a powered robot notice and move.",
+      "Predicts a pretend robot's action from a visible sensor cue and a stated human instruction.",
+      "Plans a four- or five-step robot route before Run and checks power, switch, then obstacles when a toy will not move.",
+      "Names a ramp, lever, and wheel and demonstrates how one helps move a toy load without needing its own battery.",
+      "Chooses a suitable machine for a repeated moving job and explains which decision still belongs to a person."
+    ]
+  },
+  "weekend": "Set up a small delivery route for blocks. He chooses a ramp or wheeled toy, gives the pretend sensor a rule, and explains which decisions you made before anything moved.",
+  "songs": [
+    {
+      "id": "robots-02-song",
+      "title": "Notice, Then Go",
+      "emoji": "🎤",
+      "style": "Start singing immediately, with no instrumental intro. Bouncy plucked bass, light drums and woodblocks with a steady walking beat. One clear warm voice, short repeated melody, steady preschool pace, clean ending without a long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "Sensor spots it, motor goes.",
+        "Follow the rule the person chose.",
+        "Roll the load, lift it slow.",
+        "Simple tools help make it go.",
+        "See the block and stop right there.",
+        "Turn when told, leave room to spare.",
+        "Battery gives power to run.",
+        "Switch turns on; the job's begun.",
+        "Ramp and lever, wheel that rolls,",
+        "Hands can push toward our goals.",
+        "Sensor spots it, motor goes.",
+        "Follow the rule the person chose."
+      ]
+    }
+  ],
+  "games": {
+    "code": {
+      "title": "Code the Robot",
+      "sub": "Write the program",
+      "actor": "🤖",
+      "goal": "🔋",
+      "lines": {
+        "start": "Tell the robot how to get to the battery.",
+        "wall": "The robot bumped into something. Fix your program and try again.",
+        "stop": "The robot stopped in the wrong place. Fix your program and try again.",
+        "win": "Your robot made it to the battery!"
+      }
+    },
+    "naming": [
+      {
+        "id": "robots-02-parts",
+        "title": "Notice and Move",
+        "emoji": "🔎",
+        "sub": "Find the picture",
+        "matchName": "Notice and Move",
+        "noun": "pictures",
+        "basic": [
+          {
+            "id": "battery",
+            "label": "Battery",
+            "icon": "🔋",
+            "say": "battery",
+            "note": "A battery supplies power to a battery toy."
+          },
+          {
+            "id": "switch",
+            "label": "Switch",
+            "icon": "🔘",
+            "say": "switch",
+            "note": "The switch lets you turn the toy on or off."
+          },
+          {
+            "id": "wheel",
+            "label": "Wheel",
+            "icon": "🛞",
+            "say": "wheel",
+            "note": "A wheel rolls as the toy moves."
+          },
+          {
+            "id": "robot",
+            "label": "Robot",
+            "icon": "🤖",
+            "say": "robot",
+            "note": "A person gives a robot instructions for its job."
+          },
+          {
+            "id": "block",
+            "label": "Block",
+            "icon": "🧱",
+            "say": "block",
+            "note": "A block can be an obstacle in the robot path."
+          },
+          {
+            "id": "hand",
+            "label": "Hand",
+            "icon": "✋",
+            "say": "hand",
+            "note": "Your hand supplies the push for a hand-powered toy."
+          }
+        ],
+        "advanced": [
+          {
+            "id": "sensor",
+            "label": "Sensor",
+            "icon": "📡",
+            "say": "sensor",
+            "note": "A sensor detects something such as light or an obstacle."
+          },
+          {
+            "id": "motor",
+            "label": "Motor",
+            "icon": "⚙️",
+            "say": "motor",
+            "note": "A motor uses power to make a part move."
+          },
+          {
+            "id": "ramp",
+            "label": "Ramp",
+            "icon": "📐",
+            "say": "ramp",
+            "note": "A ramp gives a load a sloping path up or down."
+          },
+          {
+            "id": "lever",
+            "label": "Lever",
+            "icon": "🥄",
+            "say": "lever",
+            "note": "A spoon can act as a lever when it pivots on a support."
+          },
+          {
+            "id": "pulley",
+            "label": "Pulley",
+            "icon": "🪢",
+            "say": "pulley",
+            "note": "A pulley guides a rope over a wheel to help move a load."
+          },
+          {
+            "id": "camera",
+            "label": "Camera",
+            "icon": "📷",
+            "say": "camera",
+            "note": "A camera sensor captures light to make a picture."
+          },
+          {
+            "id": "light",
+            "label": "Light",
+            "icon": "💡",
+            "say": "light",
+            "note": "A light can be the visible cue in a robot rule."
+          },
+          {
+            "id": "load",
+            "label": "Load",
+            "icon": "📦",
+            "say": "load",
+            "note": "The load is the thing the machine moves."
+          }
+        ]
+      }
+    ],
+    "pattern": {
+      "title": "Repeat the Parts",
+      "use": "robots-02-parts"
+    },
+    "sort": [
+      {
+        "id": "robots-02-sense-move",
+        "title": "Noticing or Moving?",
+        "emoji": "🧺",
+        "sub": "Sensing or Moving",
+        "yes": {
+          "label": "Sensing",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Moving",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Sensing.",
+        "noSay": "Right. Moving.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "The robot sensor detects a block ahead.",
+            "yes": true,
+            "note": "The sensor is noticing the block."
+          },
+          {
+            "text": "The robot wheels roll forward.",
+            "yes": false,
+            "note": "Rolling wheels move the robot."
+          },
+          {
+            "text": "The camera detects light from the window.",
+            "yes": true,
+            "note": "The camera is sensing light."
+          },
+          {
+            "text": "The motor turns the toy arm.",
+            "yes": false,
+            "note": "Turning the arm is movement."
+          },
+          {
+            "text": "The touch sensor detects your finger.",
+            "yes": true,
+            "note": "The sensor notices the touch."
+          },
+          {
+            "text": "The robot gripper lifts a block.",
+            "yes": false,
+            "note": "The gripper moves the block upward."
+          },
+          {
+            "text": "The microphone detects a clap.",
+            "yes": true,
+            "note": "The microphone senses sound."
+          },
+          {
+            "text": "The robot drives left.",
+            "yes": false,
+            "note": "Driving changes the robot position."
+          },
+          {
+            "text": "The sensor detects a dark line on the floor.",
+            "yes": true,
+            "note": "The line is information the sensor notices."
+          },
+          {
+            "text": "The wheels are still while the sensor detects a nearby box.",
+            "yes": true,
+            "note": "The robot can notice something while its wheels stay still.",
+            "hard": true
+          },
+          {
+            "text": "After the sensor finds a box, the arm lifts it; sort the lifting.",
+            "yes": false,
+            "note": "The lifting part moves the box.",
+            "hard": true
+          },
+          {
+            "text": "The robot rolls while its camera detects a red card; sort the detecting.",
+            "yes": true,
+            "note": "The camera sensing and wheels moving are different jobs.",
+            "hard": true
+          },
+          {
+            "text": "A person pushes the robot with its power off; sort the rolling.",
+            "yes": false,
+            "note": "It is movement even though a hand supplies the push.",
+            "hard": true
+          },
+          {
+            "text": "A motor turns the camera toward the door; sort the turning.",
+            "yes": false,
+            "note": "Turning the camera is movement, before its next picture.",
+            "hard": true
+          }
+        ]
+      },
+      {
+        "id": "robots-02-power",
+        "title": "Battery or Hand?",
+        "emoji": "🧺",
+        "sub": "Battery-powered or Hand-powered",
+        "yes": {
+          "label": "Battery-powered",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Hand-powered",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Battery-powered.",
+        "noSay": "Right. Hand-powered.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "A toy car drives using its battery.",
+            "yes": true,
+            "note": "The battery supplies the car power."
+          },
+          {
+            "text": "Your hand pushes a wooden car.",
+            "yes": false,
+            "note": "Your hand supplies the push."
+          },
+          {
+            "text": "A battery fan spins its blades.",
+            "yes": true,
+            "note": "The fan motor uses battery power."
+          },
+          {
+            "text": "Your hand lifts a toy load with a ruler lever.",
+            "yes": false,
+            "note": "Your hand pushes the lever."
+          },
+          {
+            "text": "A battery robot walks across the mat.",
+            "yes": true,
+            "note": "Its motors use the battery power."
+          },
+          {
+            "text": "You pull a rope over a pulley to lift a block.",
+            "yes": false,
+            "note": "You supply the pull on the rope."
+          },
+          {
+            "text": "A battery train drives around its track.",
+            "yes": true,
+            "note": "The train uses battery power to move."
+          },
+          {
+            "text": "You push a toy box up a ramp.",
+            "yes": false,
+            "note": "The ramp has no battery; you push the box."
+          },
+          {
+            "text": "A battery screwdriver turns a screw.",
+            "yes": true,
+            "note": "The motor uses battery power to turn."
+          },
+          {
+            "text": "The robot battery is removed and you push it by hand.",
+            "yes": false,
+            "note": "This movement comes from your hand, not a battery.",
+            "hard": true
+          },
+          {
+            "text": "A battery motor pulls the rope over a pulley.",
+            "yes": true,
+            "note": "The pulley helps, but the battery motor supplies this pull.",
+            "hard": true
+          },
+          {
+            "text": "You turn a screwdriver with your wrist.",
+            "yes": false,
+            "note": "This screwdriver uses the turn of your hand.",
+            "hard": true
+          },
+          {
+            "text": "A battery car drives up a wooden ramp.",
+            "yes": true,
+            "note": "The ramp has no battery, but the car does.",
+            "hard": true
+          },
+          {
+            "text": "You turn a toy crank that lifts a load with no battery attached.",
+            "yes": false,
+            "note": "Your hand powers the crank and the lift.",
+            "hard": true
+          }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "robots-02-actions",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "First, then, last",
+        "sets": [
+          {
+            "goal": "Follow the stop rule",
+            "steps": [
+              {
+                "icon": "📣",
+                "text": "Say stop when the sensor sees a block"
+              },
+              {
+                "icon": "▶️",
+                "text": "Start the pretend robot"
+              },
+              {
+                "icon": "🧱",
+                "text": "The sensor notices the block"
+              },
+              {
+                "icon": "🛑",
+                "text": "Stop at the block"
+              }
+            ]
+          },
+          {
+            "goal": "Roll the load",
+            "steps": [
+              {
+                "icon": "📦",
+                "text": "Choose the light load"
+              },
+              {
+                "icon": "🛒",
+                "text": "Put it in the wheeled toy"
+              },
+              {
+                "icon": "✋",
+                "text": "Push the toy"
+              },
+              {
+                "icon": "🏁",
+                "text": "Stop at the delivery spot"
+              }
+            ]
+          },
+          {
+            "goal": "Try a ruler lever",
+            "steps": [
+              {
+                "icon": "🧱",
+                "text": "Place the support block"
+              },
+              {
+                "icon": "📏",
+                "text": "Balance the ruler on it"
+              },
+              {
+                "icon": "📦",
+                "text": "Put the light load on one end"
+              },
+              {
+                "icon": "👇",
+                "text": "Press the other end to lift it"
+              }
+            ]
+          },
+          {
+            "goal": "Check the stopped toy",
+            "steps": [
+              {
+                "icon": "🛑",
+                "text": "Stop trying to run the toy"
+              },
+              {
+                "icon": "🔋",
+                "text": "Ask Dad to check the power"
+              },
+              {
+                "icon": "🔘",
+                "text": "Check the switch together"
+              },
+              {
+                "icon": "🧱",
+                "text": "Clear the obstacle in the path"
+              },
+              {
+                "icon": "▶️",
+                "text": "Try the toy again"
+              }
+            ]
+          },
+          {
+            "goal": "Try the ramp",
+            "steps": [
+              {
+                "icon": "📦",
+                "text": "Choose a light toy load"
+              },
+              {
+                "icon": "📐",
+                "text": "Set a low steady ramp"
+              },
+              {
+                "icon": "✋",
+                "text": "Push the load up the ramp"
+              },
+              {
+                "icon": "👀",
+                "text": "Watch how the load moves"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say how the ramp helped your hand"
+              }
+            ]
+          },
+          {
+            "goal": "Plan a robot delivery",
+            "steps": [
+              {
+                "icon": "🏁",
+                "text": "Choose the delivery spot"
+              },
+              {
+                "icon": "🗺️",
+                "text": "Lay out four direction arrows"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say the route before Run"
+              },
+              {
+                "icon": "🧱",
+                "text": "Put a visible block beside the route"
+              },
+              {
+                "icon": "📣",
+                "text": "Give the rule to stop when the sensor sees the block"
+              },
+              {
+                "icon": "▶️",
+                "text": "Run the route and follow the stop rule"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

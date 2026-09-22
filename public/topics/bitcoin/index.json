@@ -1,0 +1,17 @@
+{
+  "label": "Money",
+  "weeks": [
+    {
+      "id": "money-01",
+      "start": "2026-08-10",
+      "label": "Unit 1",
+      "theme": "Only Twenty-One"
+    },
+    {
+      "id": "money-02",
+      "start": "2026-09-21",
+      "label": "Unit 2",
+      "theme": "Earn, Save, Spend, Give"
+    }
+  ]
+}

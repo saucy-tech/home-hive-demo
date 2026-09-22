@@ -1,0 +1,30 @@
+{
+  // Config for the SANITIZED PUBLIC DEMO — not the household app.
+  //
+  // sanitize-fork.sh promotes this file to `wrangler.jsonc` in the fork and
+  // deletes the real one, so a bare `wrangler deploy` inside the demo repo
+  // cannot target production even if someone forgets a -c flag.
+  //
+  // Two deliberate omissions, each sufficient on its own:
+  //   · no kv_namespaces — `env.HIVE` is undefined, so /api/* answers 404
+  //     with no store behind it to read or write
+  //   · no routes — this lives on workers.dev, because a demo is a showcase
+  //     and not a service; there is no DNS record to create and no zone to
+  //     touch. Access does not gate workers.dev, which is exactly why nothing
+  //     private may ever be deployed here.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "home-hive-demo",
+  "main": "src/index.js",
+  "compatibility_date": "2026-06-01",
+
+  "workers_dev": true,
+
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+
+  "observability": {
+    "enabled": true
+  }
+}

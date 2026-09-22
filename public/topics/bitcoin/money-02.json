@@ -1,0 +1,557 @@
+{
+  "id": "money-02",
+  "start": "2026-09-21",
+  "label": "Unit 2",
+  "theme": "Earn, Save, Spend, Give",
+  "intro": "Put the play coins on the table and give each one a place: save, spend or give. Keep the totals small enough to check by hand. The giving jar has a person at the other end, and we thank God for what we have.",
+  "focusLabel": "What this unit is training",
+  "gelds": [
+    {
+      "text": "Counting on and backward to twenty-one"
+    },
+    {
+      "text": "Extra earning beside ordinary helping"
+    },
+    {
+      "text": "One coin in one jar"
+    },
+    {
+      "text": "Waiting for a goal and recounting after spending"
+    },
+    {
+      "text": "Giving to help someone and thanking God"
+    }
+  ],
+  "tryTitle": "Try these any evening",
+  "tryNote": "Use large pretend coins. Agree on any paid extra job before it starts; ordinary family helping still belongs to all of us.",
+  "daily": [
+    {
+      "id": "jars",
+      "slot": "play",
+      "when": "Table time · 4 min",
+      "title": "Give every coin one home",
+      "do": "Count six play coins into save, spend and give jars. He chooses where each goes. One coin cannot be in two jars.",
+      "stretch": "Build the pile to twenty-one, count backward, then compare two piles one apart; before moving one coin, he predicts each new total and checks it.",
+      "skill": "Conservation and one-apart comparisons"
+    },
+    {
+      "id": "earn",
+      "slot": "play",
+      "when": "After dinner · 3 min",
+      "title": "Agree before the job",
+      "do": "Name a normal family job, then agree on one extra job and its pretend pay. He does the extra job and counts the coins with you. The agreement comes first.",
+      "stretch": "He explains why ordinary helping was not a paid deal, chooses a savings goal, and says how many more coins it needs after putting his earnings away.",
+      "skill": "An earning agreement and a savings gap"
+    },
+    {
+      "id": "choose",
+      "slot": "play",
+      "when": "Table time · 4 min",
+      "title": "Spend one, give one",
+      "do": "Price a pretend item at one coin; he pays from the spend jar and recounts. Then name someone the give jar could help.",
+      "stretch": "He predicts what remains before paying, keeps the pretend private key to himself, and chooses a gift with a reason it helps; finish by thanking God together.",
+      "skill": "Planning a choice and protecting private information"
+    }
+  ],
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Counts a collection to 21, counts backward, and compares two counted piles one apart.",
+      "Names an agreed extra job that earns money and distinguishes it from ordinary family helping.",
+      "Divides play coins among save, spend, and give and explains that the same coin cannot go in two jars.",
+      "Waits toward a named savings goal, recounts after spending one coin, and keeps the private-key rule when pretending to pay.",
+      "Chooses someone to help with the giving jar, says how the gift helps, and thanks God for what he has."
+    ]
+  },
+  "weekend": "Choose one real giving plan together, with a grown-up handling the money. Let him name who it helps and say the thank-you prayer; the amount is your decision.",
+  "songs": [
+    {
+      "id": "money-02-song",
+      "title": "Three Little Jars",
+      "emoji": "🎤",
+      "style": "Start singing immediately, with no instrumental intro. Warm acoustic guitar, soft bass and a gentle swaying rhythm. One clear warm voice, short repeated melody, steady preschool pace, clean ending without a long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "Save a little, spend with care.",
+        "Give a little, we can share.",
+        "Thank You, God, for what we hold.",
+        "Help us give with hearts of gold.",
+        "One coin here, one coin there.",
+        "One coin cannot be a pair.",
+        "Count what's left and let it stay.",
+        "Save toward another day.",
+        "Earn the pay we first agreed.",
+        "Give to help somebody's need.",
+        "Save a little, spend with care.",
+        "Give a little, we can share."
+      ]
+    }
+  ],
+  "games": {
+    "numbers": {
+      "classMax": 10,
+      "stretchMax": 30,
+      "easyLabel": "Easy"
+    },
+    "compare": {
+      "title": "Which Has More Coins?",
+      "icon": "🪙",
+      "noun": "coins",
+      "max": 12
+    },
+    "naming": [
+      {
+        "id": "money-02-jars",
+        "title": "Money Choices",
+        "emoji": "🔎",
+        "sub": "Find the picture",
+        "matchName": "Money Choices",
+        "noun": "pictures",
+        "basic": [
+          {
+            "id": "coin",
+            "label": "Coin",
+            "icon": "🪙",
+            "say": "coin",
+            "note": "Count each coin once before choosing a jar."
+          },
+          {
+            "id": "jar",
+            "label": "Jar",
+            "icon": "🫙",
+            "say": "jar",
+            "note": "A jar holds the coins you put aside."
+          },
+          {
+            "id": "gift",
+            "label": "Gift",
+            "icon": "🎁",
+            "say": "gift",
+            "note": "A gift goes to somebody else."
+          },
+          {
+            "id": "basket",
+            "label": "Basket",
+            "icon": "🧺",
+            "say": "basket",
+            "note": "A basket can hold the things you plan to buy."
+          },
+          {
+            "id": "apple",
+            "label": "Apple",
+            "icon": "🍎",
+            "say": "apple",
+            "note": "An apple can be something on a shopping list."
+          },
+          {
+            "id": "toy-car",
+            "label": "Toy car",
+            "icon": "🚗",
+            "say": "toy car",
+            "note": "A toy car can be a named savings goal."
+          }
+        ],
+        "advanced": [
+          {
+            "id": "save-jar",
+            "label": "Save jar",
+            "icon": "🫙⏳",
+            "say": "save jar",
+            "note": "Coins in the save jar wait for a goal."
+          },
+          {
+            "id": "spend-jar",
+            "label": "Spend jar",
+            "icon": "🫙🛒",
+            "say": "spend jar",
+            "note": "Coins in the spend jar can pay for a planned purchase."
+          },
+          {
+            "id": "give-jar",
+            "label": "Give jar",
+            "icon": "🫙🎁",
+            "say": "give jar",
+            "note": "Coins in the give jar help someone else."
+          },
+          {
+            "id": "job-agreement",
+            "label": "Job agreement",
+            "icon": "🤝",
+            "say": "job agreement",
+            "note": "Agree with a grown-up on an extra job and its pay before starting."
+          },
+          {
+            "id": "price-tag",
+            "label": "Price tag",
+            "icon": "🏷️",
+            "say": "price tag",
+            "note": "The price tag tells how much the item costs."
+          },
+          {
+            "id": "receipt",
+            "label": "Receipt",
+            "icon": "🧾",
+            "say": "receipt",
+            "note": "A receipt records what was bought."
+          },
+          {
+            "id": "private-key",
+            "label": "Private key",
+            "icon": "🔑",
+            "say": "private key",
+            "note": "A private key stays private; it can unlock your money."
+          },
+          {
+            "id": "savings-goal",
+            "label": "Savings goal",
+            "icon": "🎯",
+            "say": "savings goal",
+            "note": "A savings goal names what you are waiting to buy."
+          }
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "money-02-save-spend",
+        "title": "Save or Spend?",
+        "emoji": "🧺",
+        "sub": "Saving or Spending",
+        "yes": {
+          "label": "Saving",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Spending",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Saving.",
+        "noSay": "Right. Spending.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "You put a coin aside for a toy you will buy later.",
+            "yes": true,
+            "note": "That coin waits for the toy goal."
+          },
+          {
+            "text": "You pay one coin for the pretend apple now.",
+            "yes": false,
+            "note": "That coin pays for something now."
+          },
+          {
+            "text": "You leave three coins in the save jar for later.",
+            "yes": true,
+            "note": "The coins stay put for a later choice."
+          },
+          {
+            "text": "You hand the shopkeeper two coins for a book.",
+            "yes": false,
+            "note": "The coins leave to pay for the book."
+          },
+          {
+            "text": "You add your extra-job coin to the bike fund.",
+            "yes": true,
+            "note": "You are building the pile for the bike."
+          },
+          {
+            "text": "You pay for a snack with the spend jar.",
+            "yes": false,
+            "note": "You are using coins to buy the snack."
+          },
+          {
+            "text": "You count the toy fund and put every coin back.",
+            "yes": true,
+            "note": "Counting did not spend any of the saved coins."
+          },
+          {
+            "text": "You buy a pencil with one of your coins.",
+            "yes": false,
+            "note": "The coin pays for the pencil."
+          },
+          {
+            "text": "You wait and keep the money for your named goal.",
+            "yes": true,
+            "note": "Waiting leaves the money saved."
+          },
+          {
+            "text": "You move saved money to a different jar but keep it for the same goal.",
+            "yes": true,
+            "note": "A different container did not turn the money into a purchase.",
+            "hard": true
+          },
+          {
+            "text": "You take a coin from the save jar and pay for a toy today.",
+            "yes": false,
+            "note": "The jar name does not change the act of buying.",
+            "hard": true
+          },
+          {
+            "text": "You use the spend jar coin to start saving for a later book.",
+            "yes": true,
+            "note": "This time you put the coin aside instead of buying.",
+            "hard": true
+          },
+          {
+            "text": "You buy the toy after saving for weeks.",
+            "yes": false,
+            "note": "The waiting was saving; paying today is spending.",
+            "hard": true
+          },
+          {
+            "text": "You pay for a cheaper toy and still have coins left.",
+            "yes": false,
+            "note": "Paying is spending even when some money remains.",
+            "hard": true
+          }
+        ]
+      },
+      {
+        "id": "money-02-share-safe",
+        "title": "Safe to Give or Share?",
+        "emoji": "🧺",
+        "sub": "Safe to share or Keep it private",
+        "yes": {
+          "label": "Safe to share",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Keep it private",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Safe to share.",
+        "noSay": "Right. Keep it private.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "With Dad, you give the agreed gift coins to the food collection.",
+            "yes": true,
+            "note": "Dad helps the gift reach the collection."
+          },
+          {
+            "text": "You tell a stranger your private key.",
+            "yes": false,
+            "note": "A private key can unlock your money."
+          },
+          {
+            "text": "You tell a friend your favorite color.",
+            "yes": true,
+            "note": "A favorite color does not unlock an account."
+          },
+          {
+            "text": "You send a game player your home address.",
+            "yes": false,
+            "note": "Your home address stays with trusted grown-ups."
+          },
+          {
+            "text": "You give Mom the drawing you made for her.",
+            "yes": true,
+            "note": "You chose to give your own drawing."
+          },
+          {
+            "text": "You tell a stranger your account password.",
+            "yes": false,
+            "note": "Passwords belong with you and your trusted grown-up."
+          },
+          {
+            "text": "With Mom, you give your chosen toy to the family collection.",
+            "yes": true,
+            "note": "Mom helps with giving a toy you chose."
+          },
+          {
+            "text": "You post the door code in a game chat.",
+            "yes": false,
+            "note": "A door code lets someone into a private place."
+          },
+          {
+            "text": "You tell a friend you saved five play coins.",
+            "yes": true,
+            "note": "A pretend coin count is not a private key."
+          },
+          {
+            "text": "A stranger promises to pay you after you send your private key.",
+            "yes": false,
+            "note": "A promise of money does not make the private key safe to share.",
+            "hard": true
+          },
+          {
+            "text": "You show a pretend price of three coins on your shop sign.",
+            "yes": true,
+            "note": "A shop price is meant for customers to see.",
+            "hard": true
+          },
+          {
+            "text": "A game asks for your address to send a free gift, and you type it in.",
+            "yes": false,
+            "note": "Ask your grown-up instead of giving the game your address.",
+            "hard": true
+          },
+          {
+            "text": "With Dad beside you, you hand over the agreed donation without showing a password.",
+            "yes": true,
+            "note": "Giving the gift does not require sharing your password.",
+            "hard": true
+          },
+          {
+            "text": "Someone says the secret code is needed for charity, and you send it.",
+            "yes": false,
+            "note": "Helping someone does not mean handing out a secret code.",
+            "hard": true
+          }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "money-02-choices",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "First, then, last",
+        "sets": [
+          {
+            "goal": "Start a savings goal",
+            "steps": [
+              {
+                "icon": "🚗",
+                "text": "Choose the toy car goal"
+              },
+              {
+                "icon": "🏷️",
+                "text": "Find its pretend price"
+              },
+              {
+                "icon": "🪙",
+                "text": "Count what you already have"
+              },
+              {
+                "icon": "🫙",
+                "text": "Put those coins aside for the car"
+              }
+            ]
+          },
+          {
+            "goal": "Pay for a one-coin apple",
+            "steps": [
+              {
+                "icon": "🍎",
+                "text": "Pick the pretend apple"
+              },
+              {
+                "icon": "🏷️",
+                "text": "Check that it costs one coin"
+              },
+              {
+                "icon": "🤲",
+                "text": "Pay the coin"
+              },
+              {
+                "icon": "🧮",
+                "text": "Count what remains"
+              }
+            ]
+          },
+          {
+            "goal": "Give a drawing",
+            "steps": [
+              {
+                "icon": "👵",
+                "text": "Choose Grandma for the gift"
+              },
+              {
+                "icon": "🖍️",
+                "text": "Draw her a picture"
+              },
+              {
+                "icon": "🎁",
+                "text": "Give her the picture"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Tell her why you made it"
+              }
+            ]
+          },
+          {
+            "goal": "Earn for an extra job",
+            "steps": [
+              {
+                "icon": "🤝",
+                "text": "Agree on the extra job and pay"
+              },
+              {
+                "icon": "🧽",
+                "text": "Do the agreed job"
+              },
+              {
+                "icon": "👀",
+                "text": "Ask Dad to check it"
+              },
+              {
+                "icon": "🪙",
+                "text": "Count the agreed pay together"
+              },
+              {
+                "icon": "🫙",
+                "text": "Put the earned coins in your chosen jar"
+              }
+            ]
+          },
+          {
+            "goal": "Save one more coin",
+            "steps": [
+              {
+                "icon": "🎯",
+                "text": "Name the savings goal"
+              },
+              {
+                "icon": "🧮",
+                "text": "Count the saved coins"
+              },
+              {
+                "icon": "➕",
+                "text": "Add the new earned coin"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say how many more the goal needs"
+              },
+              {
+                "icon": "⏳",
+                "text": "Leave the coins saved for later"
+              }
+            ]
+          },
+          {
+            "goal": "Use the giving jar",
+            "steps": [
+              {
+                "icon": "🫙",
+                "text": "Count the giving coins with Dad"
+              },
+              {
+                "icon": "🤔",
+                "text": "Choose together who to help"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say how the gift will help"
+              },
+              {
+                "icon": "🎁",
+                "text": "Prepare the agreed gift"
+              },
+              {
+                "icon": "🤲",
+                "text": "Give it with Dad"
+              },
+              {
+                "icon": "🙏",
+                "text": "Thank God for what you have"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

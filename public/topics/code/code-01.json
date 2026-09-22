@@ -1,0 +1,294 @@
+{
+  "id": "code-01",
+  "start": "2026-08-10",
+  "label": "Unit 1",
+  "theme": "Tell It Exactly",
+  "themeSub": "Steps, in order, and the bug you go back and fix",
+  "focusLabel": "What this unit is training",
+  "intro": "Nothing here is about a screen. Programming at four is three ideas: instructions happen in the order you gave them, the machine does what you said instead of what you meant, and a thing that went wrong is a thing you go back and change. Code the Bee is the whole unit in one game — he builds the program before anything runs, and a bad run leaves it on screen so the next tap is a fix rather than a guess.",
+
+  "gelds": [
+    { "text": "Puts steps in order and can say which one comes first" },
+    { "text": "Gives an instruction exact enough to follow — three steps, not \"over there\"" },
+    { "text": "Plans the whole thing before starting it" },
+    { "text": "Finds his own mistake and changes that one step" },
+    { "text": "Spots a repeat, and can say what comes next because of it" }
+  ],
+
+  "tryTitle": "Try these any evening",
+  "tryNote": "The robot game at the top is the one to do first, and it works anywhere — hallway, driveway, grocery aisle. You are the robot. Be a very literal robot.",
+
+  "daily": [
+    {
+      "id": "robot",
+      "slot": "play",
+      "when": "Anytime · 5 min",
+      "title": "You be the robot",
+      "do": "He gives you instructions to get across the room. You do EXACTLY what he says, in order, and nothing else. \"Go\" gets you walking into the wall. He'll laugh, then he'll get specific.",
+      "stretch": "He has to say all the steps BEFORE you start moving, and then you run them all without stopping. That's the difference between telling somebody what to do and writing a program.",
+      "skill": "Plan the whole thing, then run it"
+    },
+    {
+      "id": "debug",
+      "slot": "dinner",
+      "when": "Anytime · 2 min",
+      "title": "Find the broken step",
+      "do": "Tell him a four-step routine he knows, with one step in the wrong place: put your shoes on, walk outside, put your socks on, get in the car. \"Which one is wrong?\"",
+      "stretch": "He fixes it by MOVING one step rather than starting the list over. Finding which step is wrong is the skill; redoing the whole thing is avoiding it.",
+      "skill": "Debugging — change the one thing"
+    },
+    {
+      "id": "loop",
+      "slot": "bath",
+      "when": "Bath · 2 min",
+      "title": "Say it once, do it four times",
+      "do": "Instead of \"scrub, scrub, scrub, scrub,\" say \"scrub four times.\" Then let him give you one: one instruction, a number of times. That's a loop, and he'll use the word if you do.",
+      "stretch": "Ask him for something that repeats until something else happens: pour until the cup is full. Until is a different idea from four times, and it's the harder one.",
+      "skill": "Repeat a number of times, or until"
+    }
+  ],
+
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Builds a three or four step program before pressing Run, instead of tapping and hoping",
+      "Says up, down, left and right and means them",
+      "Fixes a program that bumped instead of clearing the whole thing",
+      "Says \"there's a bug\" about a mistake — his or anybody's — without it meaning he failed",
+      "Puts a four-step routine in order with no prompting"
+    ]
+  },
+
+  "weekend": "Let him direct you making his sandwich, step by step, and follow it literally. Bread on the plate is not the same instruction as bread out of the bag. That's the funniest twenty minutes in the unit and it teaches the whole thing.",
+
+  "songs": [
+    {
+      "id": "code-song",
+      "title": "Step by Step",
+      "emoji": "🎤",
+      "style": "A playful preschool sing-along with plucky pizzicato strings, toy piano and light hand claps. Slow, steady tempo a four-year-old can sing with, one warm friendly voice, a simple repeated melody, every word clear. Singing starts within the first two seconds, and it ends cleanly with no long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "Step by step, one at a time —",
+        "that's the way to code.",
+        "Tell it up, tell it down,",
+        "tell it where to go.",
+        "The bee does what I say,",
+        "not what I meant to say.",
+        "If it bumps into a wall,",
+        "there's a bug — that's okay!",
+        "I don't quit, I go back,",
+        "I fix that little bug.",
+        "I press run and watch it go —",
+        "my bee found the flower. Buzz, buzz!"
+      ]
+    }
+  ],
+
+  "games": {
+    "code": {
+      "title": "Code the Bee",
+      "sub": "Write the program",
+      "actor": "🐝",
+      "goal": "🌻",
+      "lines": {
+        "start": "Tell the bee how to get to the flower.",
+        "wall": "The bee bumped into something. Fix your program and try again.",
+        "stop": "The bee stopped in the wrong place. Fix your program and try again.",
+        "win": "Your bee found the flower!"
+      }
+    },
+    "naming": [
+      {
+        "id": "code-words",
+        "title": "Code Words",
+        "matchName": "Code",
+        "noun": "code words",
+        "emoji": "💻",
+        "sub": "What they mean",
+        "basic": [
+          { "id": "computer", "label": "Computer", "icon": "💻", "say": "the computer" },
+          { "id": "screen", "label": "Screen", "icon": "🖥️", "say": "the screen" },
+          { "id": "keyboard", "label": "Keyboard", "icon": "⌨️", "say": "the keyboard" },
+          { "id": "mouse", "label": "Mouse", "icon": "🖱️", "say": "the mouse" },
+          { "id": "button", "label": "Button", "icon": "🔘", "say": "the button" },
+          { "id": "robot", "label": "Robot", "icon": "🤖", "say": "the robot" }
+        ],
+        "advanced": [
+          { "id": "step", "label": "Step", "icon": "👣", "say": "a step",
+            "note": "A step is one thing you tell the computer to do." },
+          { "id": "program", "label": "Program", "icon": "📜", "say": "a program",
+            "note": "A program is all your steps, in the order you want them." },
+          { "id": "loop", "label": "Loop", "icon": "🔁", "say": "a loop",
+            "note": "A loop is doing the same step again and again." },
+          { "id": "bug", "label": "Bug", "icon": "🐛", "say": "a bug",
+            "note": "A bug is a step that came out wrong. Everybody makes them." },
+          { "id": "fix", "label": "Fix", "icon": "🔧", "say": "a fix",
+            "note": "Fixing means finding the one step that was wrong and changing it." },
+          { "id": "run", "label": "Run", "icon": "▶️", "say": "run",
+            "note": "Run means go — do all my steps, starting now." },
+          { "id": "arrow", "label": "Arrow", "icon": "➡️", "say": "an arrow",
+            "note": "An arrow is one step, and it points the way the bee will go." },
+          { "id": "order", "label": "Order", "icon": "🔢", "say": "the order",
+            "note": "The order is which step comes first. Change the order and you get a different program." }
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "code-clear",
+        "title": "Clear or Too Fuzzy?",
+        "emoji": "🌫️",
+        "sub": "Could a robot do it?",
+        "yes": { "label": "Clear enough", "emoji": "✅" },
+        "no": { "label": "Too fuzzy", "emoji": "🌫️" },
+        "yesSay": "Yes. A robot could do that one.",
+        "noSay": "Right. That one is too fuzzy for a robot.",
+        "retry": "Think about a robot trying to do it. Would it know exactly what to do?",
+        "items": [
+          { "text": "Walk three steps forward.", "yes": true,
+            "note": "Three is a number. A robot can count." },
+          { "text": "Walk a little bit.", "yes": false,
+            "note": "How much is a little bit? A robot has no idea." },
+          { "text": "Pick up the red block.", "yes": true,
+            "note": "One block, one colour. Nothing left to guess." },
+          { "text": "Clean up.", "yes": false,
+            "note": "Clean up which things, and put them where?" },
+          { "text": "Turn left.", "yes": true,
+            "note": "Left is left. That one is exact." },
+          { "text": "Go over there.", "yes": false,
+            "note": "Over where? A robot can't follow your finger." },
+          { "text": "Stop.", "yes": true,
+            "note": "Short, and completely clear." },
+          { "text": "Be good.", "yes": false,
+            "note": "Even people argue about that one." },
+          { "text": "Put the blue cup on the table.", "yes": true,
+            "note": "What to pick up, and where to put it. That's a whole step." },
+          { "text": "Hurry up.", "yes": false,
+            "note": "It says how, not what. A robot needs a what." },
+          { "text": "Count to five.", "yes": true,
+            "note": "Start, finish, and one step at a time." },
+          { "text": "Make it look nicer.", "yes": false, "hard": true,
+            "note": "Nicer to who? A robot can't decide that for you." },
+          { "text": "Wait until the light turns green.", "yes": true, "hard": true,
+            "note": "Tricky, but yes — a robot can watch and wait for a thing to happen." },
+          { "text": "Bring me a snack I'd like.", "yes": false, "hard": true,
+            "note": "It would have to know YOU. A step can't be about a favourite." },
+          { "text": "Jump two times.", "yes": true,
+            "note": "Two is a number. Jump, jump, done." },
+          { "text": "Put both shoes by the door.", "yes": true,
+            "note": "Both shoes, one spot. Nothing to guess." },
+          { "text": "Be careful.", "yes": false, "hard": true,
+            "note": "It sounds like an instruction, but it doesn't say what to do." },
+          { "text": "Get the big one.", "yes": false, "hard": true,
+            "note": "Big compared to what? Big is only a word until you say bigger than the cup." }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "code-order",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "Order matters",
+        "sets": [
+          {
+            "goal": "Making toast",
+            "steps": [
+              { "icon": "🍞", "text": "Put the bread in the toaster" },
+              { "icon": "⬇️", "text": "Push the lever down" },
+              { "icon": "⏲️", "text": "Wait for it to pop up" },
+              { "icon": "🧈", "text": "Put butter on it" }
+            ]
+          },
+          {
+            "goal": "Fixing a bug",
+            "steps": [
+              { "icon": "▶️", "text": "Run your program" },
+              { "icon": "👀", "text": "Watch where it goes wrong" },
+              { "icon": "🔧", "text": "Change that one step" },
+              { "icon": "🔁", "text": "Run it again" }
+            ]
+          },
+          {
+            "goal": "Getting dressed",
+            "steps": [
+              { "icon": "🩲", "text": "Underwear first" },
+              { "icon": "🧦", "text": "Then socks" },
+              { "icon": "👕", "text": "Then shirt and shorts" },
+              { "icon": "👟", "text": "Shoes last" }
+            ]
+          },
+          {
+            "goal": "Planting a seed",
+            "steps": [
+              { "icon": "🕳️", "text": "Dig a little hole" },
+              { "icon": "🌰", "text": "Drop the seed in" },
+              { "icon": "🪣", "text": "Cover it with dirt" },
+              { "icon": "💧", "text": "Water it" }
+            ]
+          },
+          {
+            "goal": "Turning on the tablet",
+            "steps": [
+              { "icon": "🔘", "text": "Press the button" },
+              { "icon": "🖥️", "text": "Wait for the screen" },
+              { "icon": "👆", "text": "Tap the app" }
+            ]
+          },
+          {
+            "goal": "Drawing a square",
+            "steps": [
+              { "icon": "➡️", "text": "A line going right" },
+              { "icon": "⬇️", "text": "A line going down" },
+              { "icon": "⬅️", "text": "A line going left" },
+              { "icon": "⬆️", "text": "A line going up, back to the start" }
+            ]
+          },
+          {
+            "goal": "Making a sandwich",
+            "steps": [
+              { "icon": "🍞", "text": "Bread on the plate" },
+              { "icon": "🥜", "text": "Spread the peanut butter" },
+              { "icon": "🍓", "text": "Jelly on top of the peanut butter" },
+              { "icon": "🥪", "text": "Other slice on top" },
+              { "icon": "🔪", "text": "A grown-up cuts it in half" }
+            ]
+          },
+          {
+            "goal": "Saying grace at dinner",
+            "steps": [
+              { "icon": "🪑", "text": "Sit down at the table" },
+              { "icon": "🤝", "text": "Hold hands" },
+              { "icon": "🙏", "text": "Bow your head" },
+              { "icon": "🗣️", "text": "Thank God for the food" },
+              { "icon": "🍽️", "text": "Eat" }
+            ]
+          },
+          {
+            "goal": "Running the bee's program",
+            "steps": [
+              { "icon": "👀", "text": "Find the flower on the board" },
+              { "icon": "➡️", "text": "Tap the first arrow" },
+              { "icon": "🔢", "text": "Tap the rest of the arrows in order" },
+              { "icon": "🔍", "text": "Check every arrow" },
+              { "icon": "▶️", "text": "Press run" },
+              { "icon": "🌻", "text": "Watch the bee land on the flower" }
+            ]
+          }
+        ]
+      }
+    ],
+    "pattern": {
+      "title": "Loop the Loop",
+      "sub": "It repeats — what's next?",
+      "items": [
+        { "id": "circle", "label": "Circle", "icon": "🔴" },
+        { "id": "square", "label": "Square", "icon": "🟦" },
+        { "id": "triangle", "label": "Triangle", "icon": "🔺" },
+        { "id": "star", "label": "Star", "icon": "⭐" },
+        { "id": "heart", "label": "Heart", "icon": "💛" }
+      ]
+    }
+  }
+}

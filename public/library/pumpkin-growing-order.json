@@ -1,0 +1,127 @@
+{
+  "id": "pumpkin-growing-order",
+  "title": "Pumpkin Step by Step",
+  "sets": [
+    {
+      "goal": "Looking inside a pumpkin",
+      "steps": [
+        {
+          "icon": "🧑",
+          "text": "Ask your grown-up to cut the pumpkin open"
+        },
+        {
+          "icon": "👀",
+          "text": "Look at the seeds inside"
+        },
+        {
+          "icon": "🥄",
+          "text": "Scoop out seeds with your grown-up"
+        },
+        {
+          "icon": "🧼",
+          "text": "Wash your hands"
+        }
+      ]
+    },
+    {
+      "goal": "Planting a pumpkin seed",
+      "steps": [
+        {
+          "icon": "🪴",
+          "text": "Fill a pot with soil"
+        },
+        {
+          "icon": "☝️",
+          "text": "Make a small hole"
+        },
+        {
+          "icon": "🌰",
+          "text": "Put the seed in and cover it"
+        },
+        {
+          "icon": "💧",
+          "text": "Water the soil gently"
+        }
+      ]
+    },
+    {
+      "goal": "A pumpkin plant starts growing",
+      "steps": [
+        {
+          "icon": "🌰",
+          "text": "A seed rests in damp soil"
+        },
+        {
+          "icon": "⬇️",
+          "text": "A root grows down"
+        },
+        {
+          "icon": "🌱",
+          "text": "A shoot comes up"
+        },
+        {
+          "icon": "🍃",
+          "text": "The first leaves open"
+        },
+        {
+          "icon": "🌿",
+          "text": "The vine grows longer"
+        }
+      ]
+    },
+    {
+      "goal": "Picking a ripe pumpkin",
+      "steps": [
+        {
+          "icon": "🚶",
+          "text": "Walk to the patch with your grown-up"
+        },
+        {
+          "icon": "👀",
+          "text": "Find a ripe pumpkin together"
+        },
+        {
+          "icon": "✂️",
+          "text": "Watch your grown-up cut its stem from the vine"
+        },
+        {
+          "icon": "👐",
+          "text": "Lift the pumpkin from underneath"
+        },
+        {
+          "icon": "🧺",
+          "text": "Set it gently in the basket"
+        }
+      ]
+    },
+    {
+      "goal": "From seed to pumpkin",
+      "steps": [
+        {
+          "icon": "🌰",
+          "text": "A seed takes in water in the soil"
+        },
+        {
+          "icon": "🌱",
+          "text": "A root and shoot grow"
+        },
+        {
+          "icon": "🌿",
+          "text": "Leaves open and a vine spreads"
+        },
+        {
+          "icon": "🌼",
+          "text": "Flowers open on the vine"
+        },
+        {
+          "icon": "🐝",
+          "text": "A bee carries pollen to a female flower"
+        },
+        {
+          "icon": "🎃",
+          "text": "A small pumpkin grows behind the flower"
+        }
+      ]
+    }
+  ]
+}

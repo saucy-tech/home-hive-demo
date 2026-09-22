@@ -1,0 +1,112 @@
+{
+  "id": "plant-or-animal",
+  "title": "Where Does This Food Come From?",
+  "yes": {
+    "label": "Plant",
+    "emoji": "✅"
+  },
+  "no": {
+    "label": "Animal",
+    "emoji": "🟠"
+  },
+  "yesSay": "Plant.",
+  "noSay": "Animal.",
+  "retry": "Listen once more and choose a pile.",
+  "items": [
+    {
+      "text": "An apple.",
+      "yes": true,
+      "note": "An apple grows on a tree."
+    },
+    {
+      "text": "A carrot.",
+      "yes": true,
+      "note": "A carrot is the root of a plant."
+    },
+    {
+      "text": "A potato.",
+      "yes": true,
+      "note": "A potato grows underground on a plant."
+    },
+    {
+      "text": "An ear of corn.",
+      "yes": true,
+      "note": "Corn grows on a tall plant."
+    },
+    {
+      "text": "A bunch of grapes.",
+      "yes": true,
+      "note": "Grapes grow on a vine."
+    },
+    {
+      "text": "A tomato.",
+      "yes": true,
+      "note": "A tomato grows on a plant."
+    },
+    {
+      "text": "A bowl of beans.",
+      "yes": true,
+      "note": "Beans grow inside pods on plants."
+    },
+    {
+      "text": "A glass of cow’s milk.",
+      "yes": false,
+      "note": "A mother cow makes milk."
+    },
+    {
+      "text": "A chicken egg.",
+      "yes": false,
+      "note": "A hen lays an egg."
+    },
+    {
+      "text": "A piece of chicken.",
+      "yes": false,
+      "note": "Chicken meat comes from a chicken."
+    },
+    {
+      "text": "A piece of fish.",
+      "yes": false,
+      "note": "Fish is meat from an animal that lives in water."
+    },
+    {
+      "text": "A piece of beef.",
+      "yes": false,
+      "note": "Beef comes from cattle."
+    },
+    {
+      "text": "A pork chop.",
+      "yes": false,
+      "note": "Pork comes from a pig."
+    },
+    {
+      "text": "A piece of cheese made from cow’s milk.",
+      "yes": false,
+      "note": "People make this cheese from cow’s milk.",
+      "hard": true
+    },
+    {
+      "text": "A spoonful of yogurt made from cow’s milk.",
+      "yes": false,
+      "note": "This yogurt starts as cow’s milk.",
+      "hard": true
+    },
+    {
+      "text": "A spoonful of peanut butter.",
+      "yes": true,
+      "note": "People grind peanuts from a plant to make peanut butter.",
+      "hard": true
+    },
+    {
+      "text": "A bowl of oatmeal cooked in water.",
+      "yes": true,
+      "note": "Oats are seeds from an oat plant.",
+      "hard": true
+    },
+    {
+      "text": "A spoonful of honey.",
+      "yes": false,
+      "note": "Bees make honey from flower nectar.",
+      "hard": true
+    }
+  ]
+}

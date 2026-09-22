@@ -1,0 +1,108 @@
+{
+  "id": "leaves-trees",
+  "title": "Leaves and Trees",
+  "noun": "tree parts",
+  "matchName": "Leaves and Trees",
+  "basic": [
+    {
+      "id": "tree",
+      "label": "Tree",
+      "icon": "🌳",
+      "say": "the tree",
+      "note": "A tree has roots, a trunk and branches."
+    },
+    {
+      "id": "leaf",
+      "label": "Leaf",
+      "icon": "🍃",
+      "say": "the leaf",
+      "note": "A leaf uses sunlight to help the plant make food."
+    },
+    {
+      "id": "trunk",
+      "label": "Trunk",
+      "icon": "🪵",
+      "say": "the trunk",
+      "note": "The trunk holds the branches up."
+    },
+    {
+      "id": "root",
+      "label": "Root",
+      "icon": "🌱⬇️",
+      "say": "the root",
+      "note": "Roots take up water from the soil."
+    },
+    {
+      "id": "flower",
+      "label": "Flower",
+      "icon": "🌸",
+      "say": "the flower",
+      "note": "Some flowers grow into fruit after pollination."
+    },
+    {
+      "id": "apple",
+      "label": "Apple",
+      "icon": "🍎",
+      "say": "the apple",
+      "note": "An apple holds seeds inside its core."
+    }
+  ],
+  "advanced": [
+    {
+      "id": "acorn",
+      "label": "Acorn",
+      "icon": "🌰",
+      "say": "the acorn",
+      "note": "An acorn is the seed of an oak tree."
+    },
+    {
+      "id": "pine-tree",
+      "label": "Pine tree",
+      "icon": "🌲",
+      "say": "the pine tree",
+      "note": "A pine tree has needles instead of broad leaves."
+    },
+    {
+      "id": "fallen-leaf",
+      "label": "Fallen leaf",
+      "icon": "🍂",
+      "say": "the fallen leaf",
+      "note": "A fallen leaf breaks down on the ground."
+    },
+    {
+      "id": "maple-leaf",
+      "label": "Maple leaf",
+      "icon": "🍁",
+      "say": "the maple leaf",
+      "note": "A maple leaf has several pointed lobes."
+    },
+    {
+      "id": "bark",
+      "label": "Bark",
+      "icon": "🔍🪵",
+      "say": "the bark",
+      "note": "Bark covers the outside of the trunk."
+    },
+    {
+      "id": "branch",
+      "label": "Branch",
+      "icon": "🌿",
+      "say": "the branch",
+      "note": "A branch grows out from the trunk."
+    },
+    {
+      "id": "bud",
+      "label": "Bud",
+      "icon": "🌷",
+      "say": "the bud",
+      "note": "A bud can open into a leaf or flower."
+    },
+    {
+      "id": "seedling",
+      "label": "Seedling",
+      "icon": "🌱☀️",
+      "say": "the seedling",
+      "note": "A seedling is a young plant that has sprouted."
+    }
+  ]
+}

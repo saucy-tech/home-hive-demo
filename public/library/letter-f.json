@@ -1,0 +1,110 @@
+{
+  "letter": "F",
+  "sound": "fff",
+  "example": "fish",
+  "yes": [
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "fan",
+      "emoji": "🪭"
+    },
+    {
+      "word": "fox",
+      "emoji": "🦊"
+    },
+    {
+      "word": "frog",
+      "emoji": "🐸"
+    },
+    {
+      "word": "flag",
+      "emoji": "🚩"
+    },
+    {
+      "word": "fist",
+      "emoji": "✊"
+    },
+    {
+      "word": "foot",
+      "emoji": "🦶"
+    },
+    {
+      "word": "feather",
+      "emoji": "🪶"
+    },
+    {
+      "word": "fork",
+      "emoji": "🍴"
+    },
+    {
+      "word": "fire",
+      "emoji": "🔥"
+    },
+    {
+      "word": "fence",
+      "emoji": "🏡"
+    },
+    {
+      "word": "fig",
+      "emoji": "🟣"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "hat",
+      "emoji": "🎩"
+    },
+    {
+      "word": "muffin",
+      "emoji": "🧁",
+      "hard": true
+    },
+    {
+      "word": "waffle",
+      "emoji": "🧇",
+      "hard": true
+    },
+    {
+      "word": "dolphin",
+      "emoji": "🐬",
+      "hard": true
+    },
+    {
+      "word": "elephant",
+      "emoji": "🐘",
+      "hard": true
+    },
+    {
+      "word": "coffee",
+      "emoji": "☕",
+      "hard": true
+    }
+  ]
+}

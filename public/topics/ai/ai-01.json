@@ -1,0 +1,289 @@
+{
+  "id": "ai-01",
+  "start": "2026-08-10",
+  "label": "Unit 1",
+  "theme": "It Guesses, It Doesn't Know",
+  "themeSub": "How a machine learns, and what it can't do",
+  "focusLabel": "What this unit is training",
+  "intro": "He is going to grow up with these things answering him, so the useful thing to install now isn't how to use one — it's that it guesses. A smart machine learns from examples, gets better with practice, is wrong sometimes, and is not alive no matter how much it sounds like it is. Two of the games here are about who to ask: some questions belong to a computer, and some belong to a person who loves you.",
+
+  "gelds": [
+    { "text": "Says a computer guesses rather than knows" },
+    { "text": "Knows a thing that talks or moves is not therefore alive" },
+    { "text": "Says out loud that a machine can be wrong, and checks" },
+    { "text": "Knows which questions go to a grown-up instead of a screen" },
+    { "text": "Can describe learning as: examples, guess, correction, better" }
+  ],
+
+  "tryTitle": "Try these any evening",
+  "tryNote": "The guessing game is the one that does the work — he plays the machine, which is the fastest way to feel why examples matter.",
+
+  "daily": [
+    {
+      "id": "guess",
+      "slot": "play",
+      "when": "Anytime · 5 min",
+      "title": "You be the guessing machine",
+      "do": "You think of an animal. He gets to ask questions and then guess. When he's wrong you say \"no, guess again\" — never the answer. Point out what he did: he used what he'd already seen to make a better guess.",
+      "stretch": "Swap. He picks, you guess out loud badly on purpose, and he has to say why your guess was wrong. Explaining somebody else's mistake is harder than making your own.",
+      "skill": "Guessing from examples, and saying why"
+    },
+    {
+      "id": "check",
+      "slot": "dinner",
+      "when": "Anytime · 2 min",
+      "title": "Ask it, then check it",
+      "do": "When a speaker or a phone answers something in front of him, say out loud: \"Let's check.\" Then check it, in the real world if you can. He should see grown-ups not taking a machine's word for it.",
+      "stretch": "Get him to say what he'd do if it was wrong. Ask a person, look in a book, go and see. Having somewhere else to go is the whole point.",
+      "skill": "A machine's answer is a start, not the end"
+    },
+    {
+      "id": "alive",
+      "slot": "bath",
+      "when": "Anytime · 2 min",
+      "title": "Alive, or just moves?",
+      "do": "Name things around the house and ask alive or not alive. The vacuum that drives itself, the cat, the talking speaker, the plant on the sill.",
+      "stretch": "Ask what makes the difference. Not the answer you'd write down — his. Grows, eats, gets hungry, can be hurt. Then tell him the speaker can't be any of those, however friendly it sounds.",
+      "skill": "Alive is not the same as acts alive"
+    }
+  ],
+
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Says a computer guesses, and can be wrong",
+      "Sorts alive from not alive, including things that move on their own",
+      "Knows the four steps: show it examples, it guesses, we correct it, it gets better",
+      "Comes to a person for the questions that need one",
+      "Isn't frightened of any of it — this is a tool, and he's the one holding it"
+    ]
+  },
+
+  "weekend": "Show him an image generator making something silly he asked for, once, with you sitting there. Then ask him what it got wrong. That question is the whole unit and it's the habit worth having.",
+
+  "songs": [
+    {
+      "id": "ai-song",
+      "title": "The Guessing Machine",
+      "emoji": "🎤",
+      "style": "A gentle, curious preschool sing-along with soft toy-synth bleeps, ukulele and marimba. Slow, steady tempo a four-year-old can sing with, one warm friendly voice, a simple repeated melody, every word clear. Singing starts within the first two seconds, and it ends cleanly with no long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "The smart machine is guessing,",
+        "it guesses all day long.",
+        "It learned from what we showed it,",
+        "but sometimes it is wrong.",
+        "It's not alive, it's not alive,",
+        "it's clever, but it's not.",
+        "It doesn't feel, it doesn't sleep,",
+        "it does what it was taught.",
+        "When I have a big question",
+        "and the answer must be true,",
+        "I go and ask a person —",
+        "a real live person, like you!"
+      ]
+    }
+  ],
+
+  "games": {
+    "naming": [
+      {
+        "id": "ai-words",
+        "title": "Machine Words",
+        "matchName": "Machine",
+        "noun": "machine words",
+        "emoji": "🧠",
+        "sub": "What they mean",
+        "basic": [
+          { "id": "computer", "label": "Computer", "icon": "💻", "say": "the computer" },
+          { "id": "robot", "label": "Robot", "icon": "🤖", "say": "the robot" },
+          { "id": "camera", "label": "Camera", "icon": "📷", "say": "the camera" },
+          { "id": "phone", "label": "Phone", "icon": "📱", "say": "the phone" },
+          { "id": "speaker", "label": "Speaker", "icon": "🔊", "say": "the speaker" },
+          { "id": "question", "label": "Question", "icon": "❓", "say": "a question" }
+        ],
+        "advanced": [
+          { "id": "example", "label": "Example", "icon": "🖼️", "say": "an example",
+            "note": "An example is one thing you show it. Show it a hundred cats and it learns cat." },
+          { "id": "guess", "label": "Guess", "icon": "🤔", "say": "a guess",
+            "note": "A computer doesn't know. It makes its best guess." },
+          { "id": "mistake", "label": "Mistake", "icon": "❌", "say": "a mistake",
+            "note": "Computers make mistakes too. That is why we check." },
+          { "id": "practice", "label": "Practice", "icon": "🔁", "say": "practice",
+            "note": "The more examples it sees, the better its guesses get. Same as you." },
+          { "id": "prompt", "label": "Prompt", "icon": "💬", "say": "a prompt",
+            "note": "A prompt is what you ask it to do. Say it clearly and you get more back." },
+          { "id": "sensor", "label": "Sensor", "icon": "📡", "say": "a sensor",
+            "note": "A sensor is how a machine sees or hears. It's the machine's eyes." },
+          { "id": "answer", "label": "Answer", "icon": "💡", "say": "an answer",
+            "note": "An answer is what it gives back. It's a guess that sounds sure of itself." },
+          { "id": "check", "label": "Check", "icon": "✅", "say": "a check",
+            "note": "A check is finding out for real. Ask a person, open a book, go and look." }
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "ai-alive",
+        "title": "Alive or Not Alive?",
+        "emoji": "🌱",
+        "sub": "Moving isn't living",
+        "yes": { "label": "Alive", "emoji": "🌱" },
+        "no": { "label": "Not alive", "emoji": "⚙️" },
+        "yesSay": "Yes. That one is alive.",
+        "noSay": "Right. That one is not alive.",
+        "retry": "Does it grow? Does it get hungry? Have another go.",
+        "items": [
+          { "text": "A puppy.", "yes": true, "note": "It eats, it grows, it gets tired. Alive." },
+          { "text": "A toaster.", "yes": false, "note": "It gets hot when we tell it to and that's all." },
+          { "text": "A tree in the yard.", "yes": true, "note": "It grows and it drinks. Slowly, but it does." },
+          { "text": "A teddy bear.", "yes": false, "note": "You can love it and it is still not alive." },
+          { "text": "A worm in the dirt.", "yes": true, "note": "Small, and just as alive as the dog." },
+          { "text": "A car.", "yes": false, "note": "It goes because a person makes it go." },
+          { "text": "You.", "yes": true, "note": "You grow every single day, even when you can't tell." },
+          { "text": "A vacuum that drives around the room by itself.", "yes": false, "hard": true,
+            "note": "It moves on its own and it's still a machine. Moving isn't living." },
+          { "text": "A speaker that talks back when you ask it something.", "yes": false, "hard": true,
+            "note": "It sounds like a person. It doesn't feel anything at all." },
+          { "text": "A seed in a cup of dirt.", "yes": true, "hard": true,
+            "note": "It looks like nothing. It's alive and waiting." },
+          { "text": "A robot dog that wags its tail.", "yes": false, "hard": true,
+            "note": "It was built to look happy. It can't be happy." },
+          { "text": "A ladybug on the window.", "yes": true, "note": "Alive, and it would rather be outside." },
+          { "text": "A wind-up toy that walks.", "yes": false, "note": "It walks until it runs down. Nothing in there wants anything." },
+          { "text": "A fish in a tank.", "yes": true, "note": "It breathes the water. Alive." },
+          { "text": "A bird at the feeder.", "yes": true, "note": "It eats, and it flies off when it wants to." },
+          { "text": "A phone that says your name.", "yes": false, "hard": true,
+            "note": "It says your name because somebody typed it in. It doesn't know you." },
+          { "text": "A pumpkin growing on a vine.", "yes": true, "note": "Still growing. Cut it off and it stops." },
+          { "text": "A picture of a dog.", "yes": false, "note": "The dog was alive. The paper never was." }
+        ]
+      },
+      {
+        "id": "ai-ask",
+        "title": "Who Should You Ask?",
+        "emoji": "🙋",
+        "sub": "A computer, or a person",
+        "yes": { "label": "A computer can help", "emoji": "💻" },
+        "no": { "label": "Ask a grown-up", "emoji": "🙋" },
+        "yesSay": "Yes. A computer can help with that one.",
+        "noSay": "Right. That one is for a grown-up.",
+        "retry": "Think about who really knows the answer to that.",
+        "items": [
+          { "text": "How do you spell dinosaur?", "yes": true,
+            "note": "Facts like that are what a computer is good for." },
+          { "text": "Am I allowed to have a cookie?", "yes": false,
+            "note": "Only the people who live with you can decide that." },
+          { "text": "What is the biggest animal in the ocean?", "yes": true,
+            "note": "A computer has read more about whales than anybody in this house." },
+          { "text": "Is my friend sad?", "yes": false,
+            "note": "You'd have to look at your friend's face. A computer can't." },
+          { "text": "Is this safe to touch?", "yes": false,
+            "note": "Never a screen for that one. Come and find a person." },
+          { "text": "How many legs does a spider have?", "yes": true,
+            "note": "Eight, and a computer will say eight." },
+          { "text": "What should I do when I feel scared?", "yes": false, "hard": true,
+            "note": "It can list ideas. It can't sit with you, and that's the part that helps." },
+          { "text": "What noise does a whale make?", "yes": true,
+            "note": "It can even play it for you." },
+          { "text": "Should I be friends with that kid?", "yes": false, "hard": true,
+            "note": "It doesn't know either of you. Ask somebody who does." },
+          { "text": "How do you say hello in Spanish?", "yes": true,
+            "note": "Hola. Languages are a good job for a computer." },
+          { "text": "Is it okay to keep this a secret from Mom and Dad?", "yes": false, "hard": true,
+            "note": "That question always comes to us. Always." },
+          { "text": "How tall is the tallest mountain?", "yes": true,
+            "note": "A number nobody has to remember any more." },
+          { "text": "Why does my tummy hurt?", "yes": false, "hard": true,
+            "note": "A body question goes to a person who can look at you." },
+          { "text": "What's a baby kangaroo called?", "yes": true,
+            "note": "A joey. Ask it, then tell me — I want to know if it's right." },
+          { "text": "What does a giraffe eat?", "yes": true,
+            "note": "Leaves off the tops of trees. Ask it, then we'll find a giraffe in a book and check." },
+          { "text": "Does God love me?", "yes": false, "hard": true,
+            "note": "That one comes to us, and the answer is yes. Always." },
+          { "text": "What day is it today?", "yes": true,
+            "note": "It reads the day off its clock. Ask it, then say it back to us so we can check." },
+          { "text": "Can I go to Grandma's house?", "yes": false,
+            "note": "Only a grown-up in this house can say yes to that." }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "ai-order",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "How it learns",
+        "sets": [
+          {
+            "goal": "Teaching a computer what a cat is",
+            "steps": [
+              { "icon": "🖼️", "text": "Show it lots of pictures of cats" },
+              { "icon": "🤔", "text": "It makes a guess" },
+              { "icon": "✅", "text": "We tell it if it was right" },
+              { "icon": "⭐", "text": "It gets better at guessing" }
+            ]
+          },
+          {
+            "goal": "Asking a computer for help",
+            "steps": [
+              { "icon": "💬", "text": "Say exactly what you want" },
+              { "icon": "⏳", "text": "Wait for its answer" },
+              { "icon": "👀", "text": "Check if the answer looks right" },
+              { "icon": "🙋", "text": "Ask a grown-up if you're not sure" }
+            ]
+          },
+          {
+            "goal": "When it gets something wrong",
+            "steps": [
+              { "icon": "❌", "text": "Notice the answer is wrong" },
+              { "icon": "🗣️", "text": "Say so out loud" },
+              { "icon": "🔍", "text": "Find out the real answer" }
+            ]
+          },
+          {
+            "goal": "Learning to ride a bike",
+            "steps": [
+              { "icon": "🚲", "text": "Try it" },
+              { "icon": "😖", "text": "Wobble and get it wrong" },
+              { "icon": "🔁", "text": "Try again the next day" },
+              { "icon": "⭐", "text": "Get better at it" }
+            ]
+          },
+          {
+            "goal": "Checking a machine's answer",
+            "steps": [
+              { "icon": "💬", "text": "Ask it the question" },
+              { "icon": "👂", "text": "Listen to the answer" },
+              { "icon": "🤔", "text": "Say whether it sounds right" },
+              { "icon": "📖", "text": "Look it up in a book" },
+              { "icon": "🙋", "text": "Tell a grown-up what you found" }
+            ]
+          },
+          {
+            "goal": "Teaching the dog to sit",
+            "steps": [
+              { "icon": "🗣️", "text": "Say sit" },
+              { "icon": "✋", "text": "Hold the treat up over its nose" },
+              { "icon": "🦴", "text": "Give it the treat when it sits" },
+              { "icon": "🔁", "text": "Do it again tomorrow" },
+              { "icon": "🐕", "text": "It sits when you say sit" }
+            ]
+          },
+          {
+            "goal": "Learning to write your name",
+            "steps": [
+              { "icon": "👀", "text": "Watch Dad write it" },
+              { "icon": "🔤", "text": "Look at the letters" },
+              { "icon": "✏️", "text": "Try it yourself" },
+              { "icon": "❌", "text": "See which letter is wrong" },
+              { "icon": "🔁", "text": "Fix that one letter" },
+              { "icon": "⭐", "text": "Write it all by yourself" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

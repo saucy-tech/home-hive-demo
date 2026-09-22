@@ -1,0 +1,488 @@
+{
+  "id": "build-01",
+  "start": "2026-08-10",
+  "label": "Unit 1",
+  "theme": "Every Tool Has a Job",
+  "themeSub": "Naming them by the job they do, and measuring before you cut",
+  "focusLabel": "What this unit is training",
+  "intro": "Every other track here happens on a screen. This one doesn't work at all unless something real ends up in his hands — the games are the backup, the tool drawer is the lesson. Four is old enough for a tape measure, a screwdriver and safety glasses; what he can't do yet is choose which one, so naming tools by their job comes before using them. Measuring is the same idea from the other end: a number is how big a thing actually is, not a word you say while you count. And these are the jobs a machine isn't taking. Writing the code turns out to be the easy part — getting under the sink is not.",
+
+  "gelds": [
+    { "text": "Names six tools and says the job each one does" },
+    { "text": "Chooses a tool before starting, and says why that one" },
+    { "text": "Turns a screw the tightening way without being told which" },
+    { "text": "Guesses how big something is, then measures it and reads the number" },
+    { "text": "Knows which tools are his and which he has to ask for" }
+  ],
+
+  "tryTitle": "Try these any evening",
+  "tryNote": "Ten minutes with a real screwdriver and a loose cabinet handle beats every game on this page. Let him pick the wrong tool first — the wrong one teaches what the right one is for.",
+
+  "daily": [
+    {
+      "id": "pick",
+      "slot": "play",
+      "when": "Anytime · 10 min",
+      "title": "He picks the tool",
+      "do": "Find a real job that takes five minutes — a loose handle, a battery cover, a picture to hang. Put four tools on the table, all of them ones he's allowed to hold, and let him choose before you start. Then do the job with whatever he picked.",
+      "stretch": "Ask why that one, before he picks it up. A wrong pick that gets tried and doesn't work teaches the job of the tool better than being handed the right one.",
+      "skill": "Matching a tool to the job"
+    },
+    {
+      "id": "measure",
+      "slot": "dinner",
+      "when": "Anytime · 3 min",
+      "title": "Guess, then measure",
+      "do": "Tape measure out. Pick something — the table, his foot, the dog if it'll hold still. He guesses how long it is, then you measure it together and say the number out loud.",
+      "stretch": "Guess first every time, then say whether the guess was over or under. The guess is what turns the number into information instead of a noise.",
+      "skill": "A number is how big a thing is"
+    },
+    {
+      "id": "turn",
+      "slot": "bath",
+      "when": "Bath · 2 min",
+      "title": "Which way tightens",
+      "do": "Shampoo caps, the tap, a jar lid off the side. Righty-tighty, lefty-loosey — say it every time, and let him do the turning.",
+      "stretch": "He calls which way BEFORE he turns it. Calling it first is the difference between knowing it and finding out.",
+      "skill": "Righty-tighty, and saying it first"
+    }
+  ],
+
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Names hammer, screwdriver, saw, tape measure, wrench and clamp",
+      "Hands you the right tool when you say what the job is",
+      "Reads a number off a tape measure and says it out loud",
+      "Says righty-tighty and turns the correct way",
+      "Asks before touching the saw, the drill or the tall ladder",
+      "Checks in an order when something won't work — on, plugged in, broken"
+    ]
+  },
+
+  "weekend": "Find one broken thing in the house and fix it with him, start to finish — measure, pick the tool, do the job, put the tools away. He's the one who says when it's done.",
+
+  "songs": [
+    {
+      "id": "build-song",
+      "title": "Every Tool Has a Job",
+      "emoji": "🎤",
+      "style": "A cheerful preschool workshop sing-along with woodblock taps, acoustic guitar and hand claps. Slow, steady tempo a four-year-old can sing with, one warm friendly voice, a simple repeated melody, every word clear. Singing starts within the first two seconds, and it ends cleanly with no long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "Every tool has a job,",
+        "every job has a tool.",
+        "The hammer taps the nails in —",
+        "tap, tap, tap — so cool!",
+        "Righty-tighty turns the screw,",
+        "lefty-loosey too.",
+        "The tape measure tells the number",
+        "so I know just what to do.",
+        "I measure twice, I ask first,",
+        "before the saw or drill.",
+        "Every tool has a job —",
+        "and I can name them all. I will!"
+      ]
+    }
+  ],
+
+  "games": {
+    "naming": [
+      {
+        "id": "build-tools",
+        "title": "Tools",
+        "matchName": "Tools",
+        "noun": "tools",
+        "emoji": "🔧",
+        "sub": "What each one is for",
+        "basic": [
+          { "id": "hammer", "label": "Hammer", "icon": "🔨", "say": "a hammer" },
+          { "id": "screwdriver", "label": "Screwdriver", "icon": "🪛", "say": "a screwdriver" },
+          { "id": "saw", "label": "Saw", "icon": "🪚", "say": "a saw" },
+          { "id": "broom", "label": "Broom", "icon": "🧹", "say": "a broom" },
+          { "id": "ladder", "label": "Ladder", "icon": "🪜", "say": "a ladder" },
+          { "id": "paintbrush", "label": "Paintbrush", "icon": "🖌️", "say": "a paintbrush" }
+        ],
+        "advanced": [
+          {
+            "id": "tape",
+            "label": "Tape measure",
+            "icon": "📏",
+            "say": "a tape measure",
+            "note": "A tape measure tells you how big something is before you cut it."
+          },
+          {
+            "id": "wrench",
+            "label": "Wrench",
+            "icon": "🔧",
+            "say": "a wrench",
+            "note": "A wrench grips a nut and turns it, because your fingers aren't strong enough."
+          },
+          {
+            "id": "clamp",
+            "label": "Clamp",
+            "icon": "🗜️",
+            "say": "a clamp",
+            "note": "A clamp is a second pair of hands. It holds the thing still while you work on it."
+          },
+          {
+            "id": "bolt",
+            "label": "Bolt",
+            "icon": "🔩",
+            "say": "a bolt",
+            "note": "A bolt goes through the hole, and a nut spins onto the end to hold it there."
+          },
+          {
+            "id": "glasses",
+            "label": "Safety glasses",
+            "icon": "🥽",
+            "say": "safety glasses",
+            "note": "Glasses go on before anything starts flying about."
+          },
+          {
+            "id": "toolbox",
+            "label": "Toolbox",
+            "icon": "🧰",
+            "say": "a toolbox",
+            "note": "A toolbox is why you can find the right tool instead of hunting for it."
+          },
+          {
+            "id": "pencil",
+            "label": "Pencil",
+            "icon": "✏️",
+            "say": "a pencil",
+            "note": "The pencil marks where to cut. Measure, mark, then cut."
+          },
+          {
+            "id": "flashlight",
+            "label": "Flashlight",
+            "icon": "🔦",
+            "say": "a flashlight",
+            "note": "A flashlight lights up the dark spot under the sink, so you can see what you're fixing."
+          }
+        ]
+      }
+    ],
+
+    "sort": [
+      {
+        "id": "build-mine",
+        "title": "Mine or a Grown-Up's?",
+        "emoji": "🧰",
+        "sub": "Which ones can he pick up",
+        "yes": { "label": "I can use it", "emoji": "🙋" },
+        "no": { "label": "Ask a grown-up", "emoji": "🧑‍🔧" },
+        "yesSay": "Yes. That one is yours.",
+        "noSay": "Right. That one you ask for.",
+        "retry": "Could it cut you, burn you, or drop you? Have another go.",
+        "items": [
+          {
+            "text": "A tape measure.",
+            "yes": true,
+            "note": "Yours to pull out and read. Walk it back in with your hand — a blade let go snaps back and catches fingers."
+          },
+          {
+            "text": "A saw.",
+            "yes": false,
+            "note": "Teeth that cut through wood cut through a hand exactly as well."
+          },
+          {
+            "text": "A broom.",
+            "yes": true,
+            "note": "Sweeping up is part of the job, not the punishment after it."
+          },
+          {
+            "text": "The drill.",
+            "yes": false,
+            "note": "A grown-up's, every time. It spins faster than you can let go."
+          },
+          {
+            "text": "Safety glasses.",
+            "yes": true,
+            "note": "Always yours. They go on before anybody starts."
+          },
+          {
+            "text": "A little hammer.",
+            "yes": true,
+            "hard": true,
+            "note": "Yours, with somebody standing next to you. Eyes on the nail, and the other hand well out of the way."
+          },
+          {
+            "text": "The tall ladder.",
+            "yes": false,
+            "note": "Anything that puts your head higher than a grown-up's is theirs."
+          },
+          {
+            "text": "The step stool.",
+            "yes": true,
+            "hard": true,
+            "note": "One step up is yours. The tall ladder still isn't."
+          },
+          {
+            "text": "A screwdriver.",
+            "yes": true,
+            "note": "Slow, and all it does is turn. The safest real tool in the drawer."
+          },
+          {
+            "text": "The hot glue gun.",
+            "yes": false,
+            "hard": true,
+            "note": "It says glue, and glue is yours — but this one burns you before you feel it."
+          },
+          {
+            "text": "The nail gun.",
+            "yes": false,
+            "note": "It fires nails into wood with a bang. Not even a big kid's."
+          },
+          {
+            "text": "A paintbrush.",
+            "yes": true,
+            "note": "Yours. The mess is the grown-up's problem."
+          },
+          {
+            "text": "The grey box on the wall with all the switches.",
+            "yes": false,
+            "note": "Nobody opens that but Dad. Every bit of electricity in the house comes through there."
+          },
+          {
+            "text": "A wrench.",
+            "yes": true,
+            "hard": true,
+            "note": "Heavy, but it can't cut you or spin on its own. Yours if you can lift it."
+          },
+          {
+            "text": "A pencil.",
+            "yes": true,
+            "note": "Yours. Marking the line is your job on every cut."
+          },
+          {
+            "text": "The lawn mower.",
+            "yes": false,
+            "note": "Spinning blades under a lid. Not yours until you're much bigger."
+          },
+          {
+            "text": "Sandpaper.",
+            "yes": true,
+            "hard": true,
+            "note": "Rough on purpose, and it only rubs. Yours, with your glasses on and somebody next to you, and you'll know it's working when you see the dust."
+          },
+          {
+            "text": "The box cutter.",
+            "yes": false,
+            "note": "A blade that slides out when you push. A grown-up's, always."
+          }
+        ]
+      },
+      {
+        "id": "build-measure",
+        "title": "Measure It or Just Look?",
+        "emoji": "📏",
+        "sub": "Does this one need a number?",
+        "yes": { "label": "Measure it", "emoji": "📏" },
+        "no": { "label": "Just look", "emoji": "👀" },
+        "yesSay": "Yes. That one needs a number.",
+        "noSay": "Right. You can just look at that one.",
+        "retry": "Would it matter if you got it a bit wrong? Have another go.",
+        "items": [
+          {
+            "text": "A shelf that has to fit inside a cupboard.",
+            "yes": true,
+            "note": "A little bit too long and it doesn't go in at all."
+          },
+          {
+            "text": "Whether it's raining outside.",
+            "yes": false,
+            "note": "Look out the window. Done."
+          },
+          {
+            "text": "Cutting a piece of wood for a box.",
+            "yes": true,
+            "note": "Measure twice, cut once, because nobody has ever uncut anything."
+          },
+          {
+            "text": "Which of two apples is bigger.",
+            "yes": false,
+            "hard": true,
+            "note": "You could measure it. You don't need to, and nothing goes wrong if you're off."
+          },
+          {
+            "text": "How tall he is.",
+            "yes": true,
+            "note": "The number is the whole point, so he can beat it next year."
+          },
+          {
+            "text": "Whether the light is on.",
+            "yes": false,
+            "note": "On or off. There's no number in it."
+          },
+          {
+            "text": "A rug to go under the table.",
+            "yes": true,
+            "note": "Rugs come in sizes, and a wrong one is a long drive back to the shop."
+          },
+          {
+            "text": "Medicine for a little kid.",
+            "yes": true,
+            "hard": true,
+            "note": "The one on this list where guessing is actually dangerous."
+          },
+          {
+            "text": "Flour for a cake.",
+            "yes": true,
+            "note": "Baking is measuring. That's most of what baking is."
+          },
+          {
+            "text": "Whether the dog wants to go out.",
+            "yes": false,
+            "note": "He'll tell you."
+          },
+          {
+            "text": "A curtain for the window.",
+            "yes": true,
+            "note": "Too short is a curtain you can see under all winter."
+          },
+          {
+            "text": "How full the bath is.",
+            "yes": false,
+            "hard": true,
+            "note": "You look. Nobody in history has measured a bath."
+          },
+          {
+            "text": "Whether the sofa will fit through the door.",
+            "yes": true,
+            "hard": true,
+            "note": "Everybody thinks they can eyeball this one. Everybody is wrong."
+          },
+          {
+            "text": "Which shoes are his.",
+            "yes": false,
+            "note": "You know your own shoes by looking at them."
+          },
+          {
+            "text": "A new pair of shoes.",
+            "yes": true,
+            "note": "Feet have a number. Guess it and you limp all week."
+          },
+          {
+            "text": "Whether the cup is empty.",
+            "yes": false,
+            "note": "Look in it. Done."
+          },
+          {
+            "text": "How long to cook the egg.",
+            "yes": true,
+            "hard": true,
+            "note": "Time is a measurement too. A minute off and it's a different egg."
+          },
+          {
+            "text": "Whether it's dark outside.",
+            "yes": false,
+            "note": "Look out the window. There's no number in it."
+          }
+        ]
+      }
+    ],
+
+    "order": [
+      {
+        "id": "build-order",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "What comes first?",
+        "sets": [
+          {
+            "goal": "Hanging a picture",
+            "steps": [
+              { "icon": "📏", "text": "Measure where it goes" },
+              { "icon": "✏️", "text": "Mark the spot with a pencil" },
+              { "icon": "🔨", "text": "Tap the nail in" },
+              { "icon": "🖼️", "text": "Hang the picture on it" },
+              { "icon": "👀", "text": "Step back and check it's straight" }
+            ]
+          },
+          {
+            "goal": "Tightening a loose handle",
+            "steps": [
+              { "icon": "🔍", "text": "Find the one that wiggles" },
+              { "icon": "🪛", "text": "Get the screwdriver that fits it" },
+              { "icon": "🔁", "text": "Turn it to the right until it stops" },
+              { "icon": "✋", "text": "Wiggle it again to check" }
+            ]
+          },
+          {
+            "goal": "When the lamp won't turn on",
+            "steps": [
+              { "icon": "🎚️", "text": "Check the switch is on" },
+              { "icon": "🔌", "text": "Check it's plugged in" },
+              { "icon": "⛔", "text": "Switch it off and pull the plug out" },
+              { "icon": "💡", "text": "Now it's safe to try another bulb" },
+              { "icon": "🧑", "text": "Tell a grown-up what you already checked" }
+            ]
+          },
+          {
+            "goal": "Cutting a piece of wood",
+            "steps": [
+              { "icon": "📏", "text": "Measure how long it needs to be" },
+              { "icon": "✏️", "text": "Draw the line to cut on" },
+              { "icon": "🗜️", "text": "Clamp the wood down tight" },
+              { "icon": "🥽", "text": "Glasses on" },
+              { "icon": "🪚", "text": "A grown-up saws along the line" }
+            ]
+          },
+          {
+            "goal": "Fixing a wobbly chair",
+            "steps": [
+              { "icon": "🪑", "text": "Push down on each corner and find the wobble" },
+              { "icon": "🔄", "text": "Turn it upside down" },
+              { "icon": "🔍", "text": "Look for the loose screw" },
+              { "icon": "🪛", "text": "Tighten it up" },
+              { "icon": "✋", "text": "Set it back on its feet" },
+              { "icon": "👍", "text": "Push on it again — no wobble" }
+            ]
+          },
+          {
+            "goal": "Putting a new battery in the torch",
+            "steps": [
+              { "icon": "🪛", "text": "Undo the little screw" },
+              { "icon": "🫳", "text": "Lift the cover off" },
+              { "icon": "🔋", "text": "New battery in, the right way round" },
+              { "icon": "🔁", "text": "Screw the cover back on" }
+            ]
+          },
+          {
+            "goal": "Washing the paintbrush out",
+            "steps": [
+              { "icon": "🖌️", "text": "Wipe it on the edge of the tin" },
+              { "icon": "🚰", "text": "Rinse it under the tap" },
+              { "icon": "🤏", "text": "Squeeze the water out" },
+              { "icon": "🪣", "text": "Stand it up to dry" }
+            ]
+          },
+          {
+            "goal": "Putting the tools away",
+            "steps": [
+              { "icon": "🧹", "text": "Sweep the bits off the floor" },
+              { "icon": "🧽", "text": "Wipe the tools off" },
+              { "icon": "🧰", "text": "Every tool back in the box" },
+              { "icon": "🚪", "text": "Box back where it lives" }
+            ]
+          }
+        ]
+      }
+    ],
+
+    "pattern": {
+      "title": "Tool Line-Up",
+      "sub": "It repeats — what's next?",
+      "use": "build-tools"
+    },
+
+    "compare": {
+      "title": "Which Pile is More?",
+      "sub": "Count them both",
+      "icon": "🔩",
+      "noun": "bolts",
+      "max": 12
+    }
+  }
+}

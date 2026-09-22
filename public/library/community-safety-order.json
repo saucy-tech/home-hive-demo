@@ -1,0 +1,127 @@
+{
+  "id": "community-safety-order",
+  "title": "Safety Step by Step",
+  "sets": [
+    {
+      "goal": "Crossing with your grown-up",
+      "steps": [
+        {
+          "icon": "✋",
+          "text": "Hold your grown-up’s hand at the curb"
+        },
+        {
+          "icon": "👀",
+          "text": "Look with your grown-up for traffic in every direction"
+        },
+        {
+          "icon": "🚶",
+          "text": "Cross together when your grown-up says it is safe"
+        },
+        {
+          "icon": "🏁",
+          "text": "Step onto the sidewalk together"
+        }
+      ]
+    },
+    {
+      "goal": "Practising your name at home",
+      "steps": [
+        {
+          "icon": "🧑",
+          "text": "Sit with your grown-up"
+        },
+        {
+          "icon": "👂",
+          "text": "Listen to your grown-up say your full name"
+        },
+        {
+          "icon": "💬",
+          "text": "Say your full name back"
+        },
+        {
+          "icon": "👏",
+          "text": "Ask your grown-up to check it"
+        }
+      ]
+    },
+    {
+      "goal": "Practising a fire drill",
+      "steps": [
+        {
+          "icon": "🔔",
+          "text": "Hear the drill alarm"
+        },
+        {
+          "icon": "👩‍🏫",
+          "text": "Listen to your teacher"
+        },
+        {
+          "icon": "🚪",
+          "text": "Walk with your class out the safe exit"
+        },
+        {
+          "icon": "🌳",
+          "text": "Go to the outdoor meeting spot"
+        },
+        {
+          "icon": "✋",
+          "text": "Stay with your class while your teacher counts"
+        }
+      ]
+    },
+    {
+      "goal": "Telling a helper your name and address",
+      "steps": [
+        {
+          "icon": "👮",
+          "text": "Find a helper with your grown-up during practice"
+        },
+        {
+          "icon": "💬",
+          "text": "Tell the helper your full name"
+        },
+        {
+          "icon": "🏠",
+          "text": "Say your street number and street name"
+        },
+        {
+          "icon": "🏙️",
+          "text": "Say your city"
+        },
+        {
+          "icon": "👂",
+          "text": "Listen while the helper repeats it back"
+        }
+      ]
+    },
+    {
+      "goal": "Crossing at a signal with your grown-up",
+      "steps": [
+        {
+          "icon": "🤝",
+          "text": "Hold your grown-up’s hand"
+        },
+        {
+          "icon": "🛑",
+          "text": "Stop together at the curb"
+        },
+        {
+          "icon": "🚦",
+          "text": "Wait together for the walk signal"
+        },
+        {
+          "icon": "👀",
+          "text": "Check together that traffic has stopped, including turning cars"
+        },
+        {
+          "icon": "🚶",
+          "text": "Walk across together while watching traffic"
+        },
+        {
+          "icon": "🏁",
+          "text": "Step onto the far sidewalk"
+        }
+      ]
+    }
+  ]
+}

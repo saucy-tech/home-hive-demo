@@ -1,0 +1,103 @@
+{
+  "letter": "Q",
+  "sound": "kwuh",
+  "example": "quack",
+  "yes": [
+    {
+      "word": "quack",
+      "emoji": "🦆"
+    },
+    {
+      "word": "queen",
+      "emoji": "👑"
+    },
+    {
+      "word": "quilt",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "quail",
+      "emoji": "🐦"
+    },
+    {
+      "word": "question",
+      "emoji": "❓"
+    },
+    {
+      "word": "quick",
+      "emoji": "🏃"
+    },
+    {
+      "word": "quiet",
+      "emoji": "🤫"
+    },
+    {
+      "word": "quarter",
+      "emoji": "🪙"
+    },
+    {
+      "word": "quill",
+      "emoji": "🪶"
+    },
+    {
+      "word": "quiz",
+      "emoji": "❔"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "squid",
+      "emoji": "🦑",
+      "hard": true
+    },
+    {
+      "word": "squirrel",
+      "emoji": "🐿️",
+      "hard": true
+    },
+    {
+      "word": "squash",
+      "emoji": "🎃",
+      "hard": true
+    },
+    {
+      "word": "square",
+      "emoji": "🟩",
+      "hard": true
+    },
+    {
+      "word": "squeeze",
+      "emoji": "🧽",
+      "hard": true
+    }
+  ],
+  "phonicsNote": "Q teaches the /kw/ sound of qu. Ten familiar examples; hard no-words begin with /s/ before /kw/."
+}

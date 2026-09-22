@@ -1,0 +1,110 @@
+{
+  "letter": "P",
+  "sound": "puh",
+  "example": "pig",
+  "yes": [
+    {
+      "word": "pig",
+      "emoji": "🐷"
+    },
+    {
+      "word": "pen",
+      "emoji": "🖊️"
+    },
+    {
+      "word": "pan",
+      "emoji": "🍳"
+    },
+    {
+      "word": "pot",
+      "emoji": "🍲"
+    },
+    {
+      "word": "penguin",
+      "emoji": "🐧"
+    },
+    {
+      "word": "pumpkin",
+      "emoji": "🎃"
+    },
+    {
+      "word": "pencil",
+      "emoji": "✏️"
+    },
+    {
+      "word": "panda",
+      "emoji": "🐼"
+    },
+    {
+      "word": "puppy",
+      "emoji": "🐶"
+    },
+    {
+      "word": "pear",
+      "emoji": "🍐"
+    },
+    {
+      "word": "pizza",
+      "emoji": "🍕"
+    },
+    {
+      "word": "pillow",
+      "emoji": "🛏️"
+    }
+  ],
+  "no": [
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "hat",
+      "emoji": "🎩"
+    },
+    {
+      "word": "apple",
+      "emoji": "🍎",
+      "hard": true
+    },
+    {
+      "word": "hippo",
+      "emoji": "🦛",
+      "hard": true
+    },
+    {
+      "word": "cupcake",
+      "emoji": "🧁",
+      "hard": true
+    },
+    {
+      "word": "slipper",
+      "emoji": "🥿",
+      "hard": true
+    },
+    {
+      "word": "leopard",
+      "emoji": "🐆",
+      "hard": true
+    }
+  ]
+}

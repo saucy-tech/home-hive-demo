@@ -1,0 +1,556 @@
+{
+  "id": "build-02",
+  "start": "2026-09-21",
+  "label": "Unit 2",
+  "theme": "Measure, Mark, Then Cut",
+  "intro": "He knows the tools; now let him check the length before the cut. Start with paper strips. You handle the cutting, and he owns the estimate, mark and fit check.",
+  "focusLabel": "What this unit is training",
+  "gelds": [
+    {
+      "text": "Tool choice for measuring, marking and securing"
+    },
+    {
+      "text": "Estimating then measuring from zero"
+    },
+    {
+      "text": "Checking a mark before cutting"
+    },
+    {
+      "text": "The six steps from measure to fit"
+    },
+    {
+      "text": "Checking a loose connection and testing a fix"
+    }
+  ],
+  "tryTitle": "Try these any evening",
+  "tryNote": "Use whole-number marks on a tape, a pencil and paper strips. A grown-up handles cutting and any real repair.",
+  "daily": [
+    {
+      "id": "measure",
+      "slot": "play",
+      "when": "Table time · 4 min",
+      "title": "Guess, then line up zero",
+      "do": "Hold the tape at zero against a paper strip and read its end together. Let him place a pencil mark at a requested whole number. The start matters as much as the end.",
+      "stretch": "He estimates first, measures from zero, says whether his estimate was longer or shorter, then checks the mark a second time before you cut.",
+      "skill": "Estimating and measuring from a fixed start"
+    },
+    {
+      "id": "fit",
+      "slot": "play",
+      "when": "Table time · 4 min",
+      "title": "Make it fit the plan",
+      "do": "Draw a line the paper strip must fit. He measures and marks; you cut; he lays it against the line. Keep the original line visible.",
+      "stretch": "He says measure, mark, secure, protect eyes, grown-up cut, check fit; then explains why the length check had to happen before the cut.",
+      "skill": "Planning an irreversible step"
+    },
+    {
+      "id": "repair",
+      "slot": "play",
+      "when": "With a grown-up · 4 min",
+      "title": "Look at the loose bit",
+      "do": "Use a loose screw on a practice board. He points out the loose connection before you choose the fitting screwdriver together. Looking comes before turning.",
+      "stretch": "He predicts the tightening direction, turns with your help, and checks whether the connection still moves; he explains why a saw is a grown-up tool.",
+      "skill": "Diagnosing and testing a simple repair"
+    }
+  ],
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Chooses and names the tape measure, pencil, and clamp for their jobs and explains why the saw stays with the grown-up.",
+      "Estimates a length, measures from zero with help holding the tape, and says whether the estimate was longer or shorter.",
+      "Marks a requested whole-number length and checks it again before the grown-up cuts.",
+      "Orders measure, mark, secure, protect eyes, grown-up cut, and check fit, explaining why measuring comes before cutting.",
+      "Checks a loose connection before changing anything, chooses the fitting screwdriver with a grown-up, predicts the tightening direction, and tests whether the fix worked."
+    ]
+  },
+  "weekend": "Make a paper garage opening for a toy car. He estimates, measures from zero, marks and rechecks; you cut, then he tests the fit against the original plan.",
+  "songs": [
+    {
+      "id": "build-02-song",
+      "title": "Measure Twice",
+      "emoji": "🎤",
+      "style": "Start singing immediately, with no instrumental intro. Acoustic guitar and gentle tapping percussion, an easy workshop rhythm without loud tool sounds. One clear warm voice, short repeated melody, steady preschool pace, clean ending without a long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "Measure twice and mark the line.",
+        "Check the length one more time.",
+        "Grown-up cuts; I wait a bit.",
+        "Now we check: does it fit?",
+        "Zero at the start we chose,",
+        "Read the mark where the end goes.",
+        "Clamp it steady, eyes protected.",
+        "Grown-up cuts where we inspected.",
+        "Loose screw wiggles; look, then turn.",
+        "Test the fix; that's how we learn.",
+        "Measure twice and mark the line.",
+        "Check the length one more time."
+      ]
+    }
+  ],
+  "games": {
+    "compare": {
+      "title": "Which Has More Bolts?",
+      "icon": "🔩",
+      "noun": "bolts",
+      "max": 12
+    },
+    "naming": [
+      {
+        "id": "build-02-workbench",
+        "title": "At the Workbench",
+        "emoji": "🔎",
+        "sub": "Find the picture",
+        "matchName": "At the Workbench",
+        "noun": "pictures",
+        "basic": [
+          {
+            "id": "pencil",
+            "label": "Pencil",
+            "icon": "✏️",
+            "say": "pencil",
+            "note": "A pencil leaves the mark for the cut."
+          },
+          {
+            "id": "ruler",
+            "label": "Ruler",
+            "icon": "📏",
+            "say": "ruler",
+            "note": "A ruler measures a short straight length."
+          },
+          {
+            "id": "screwdriver",
+            "label": "Screwdriver",
+            "icon": "🪛",
+            "say": "screwdriver",
+            "note": "A fitting screwdriver turns the screw."
+          },
+          {
+            "id": "hammer",
+            "label": "Hammer",
+            "icon": "🔨",
+            "say": "hammer",
+            "note": "A grown-up can use a hammer to drive a nail."
+          },
+          {
+            "id": "bolt",
+            "label": "Bolt",
+            "icon": "🔩",
+            "say": "bolt",
+            "note": "A bolt can hold parts together with a nut."
+          },
+          {
+            "id": "paper",
+            "label": "Paper",
+            "icon": "📄",
+            "say": "paper",
+            "note": "A paper strip lets you practise measuring and marking."
+          }
+        ],
+        "advanced": [
+          {
+            "id": "tape-measure",
+            "label": "Tape measure",
+            "icon": "📏🧵",
+            "say": "tape measure",
+            "note": "A tape measure measures lengths beyond a short ruler."
+          },
+          {
+            "id": "clamp",
+            "label": "Clamp",
+            "icon": "🗜️",
+            "say": "clamp",
+            "note": "A clamp holds the piece still."
+          },
+          {
+            "id": "safety-glasses",
+            "label": "Safety glasses",
+            "icon": "🥽",
+            "say": "safety glasses",
+            "note": "Safety glasses help protect eyes during tool work."
+          },
+          {
+            "id": "saw",
+            "label": "Saw",
+            "icon": "🪚",
+            "say": "saw",
+            "note": "The saw stays with the grown-up who makes the cut."
+          },
+          {
+            "id": "square",
+            "label": "Square",
+            "icon": "📐",
+            "say": "square",
+            "note": "A square helps check a right-angle corner."
+          },
+          {
+            "id": "level",
+            "label": "Level",
+            "icon": "🫧📏",
+            "say": "level",
+            "note": "A level helps check whether a surface is level."
+          },
+          {
+            "id": "work-gloves",
+            "label": "Work gloves",
+            "icon": "🧤",
+            "say": "work gloves",
+            "note": "A grown-up chooses gloves that suit the handling job."
+          },
+          {
+            "id": "toolbox",
+            "label": "Toolbox",
+            "icon": "🧰",
+            "say": "toolbox",
+            "note": "Put the tools away in the toolbox after the job."
+          }
+        ]
+      }
+    ],
+    "pattern": {
+      "title": "Repeat the Tools",
+      "use": "build-02-workbench"
+    },
+    "sort": [
+      {
+        "id": "build-02-ready",
+        "title": "Ready for the Grown-up Cut?",
+        "emoji": "🧺",
+        "sub": "Ready or Prepare first",
+        "yes": {
+          "label": "Ready",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Prepare first",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Ready.",
+        "noSay": "Right. Prepare first.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "Dad has checked the mark, secured the wood and protected eyes; you wait clear of the saw.",
+            "yes": true,
+            "note": "The piece and people are ready before Dad cuts."
+          },
+          {
+            "text": "Dad has checked the mark and glasses, but the wood slides loose under the saw.",
+            "yes": false,
+            "note": "The moving wood needs securing before the cut."
+          },
+          {
+            "text": "The marked wood is clamped, eyes are protected, and you stand clear while Mom holds the saw.",
+            "yes": true,
+            "note": "Mom can cut with the piece secured and you clear."
+          },
+          {
+            "text": "The wood is secured and marked, but you reach across the saw to point.",
+            "yes": false,
+            "note": "Your hand needs to stay clear of the cutting area."
+          },
+          {
+            "text": "Dad checks the secured marked piece and protected eyes while you wait behind him.",
+            "yes": true,
+            "note": "Dad has made the checks with you away from the cut."
+          },
+          {
+            "text": "Mom has secured the marked piece, but the safety glasses are still in the toolbox.",
+            "yes": false,
+            "note": "Protect eyes before the cutting starts."
+          },
+          {
+            "text": "The adult has checked the mark, clamp and eye protection, and your hands stay away.",
+            "yes": true,
+            "note": "The checks happen before the cut."
+          },
+          {
+            "text": "You pick up the saw to cut while Dad answers the phone.",
+            "yes": false,
+            "note": "The saw stays with the grown-up."
+          },
+          {
+            "text": "Mom checks the secured mark and eye protection while you watch from the agreed spot.",
+            "yes": true,
+            "note": "You are watching from outside the cutting area."
+          },
+          {
+            "text": "The clamp is tight and eyes protected, but the mark has not been checked.",
+            "yes": false,
+            "note": "A tight clamp does not prove the length is right.",
+            "hard": true
+          },
+          {
+            "text": "Everything is checked and Dad holds the saw, but your fingers hold the wood near the line.",
+            "yes": false,
+            "note": "The clamp holds the wood; your fingers stay clear.",
+            "hard": true
+          },
+          {
+            "text": "Dad pauses the cut when the clamp loosens, then secures it and checks again before restarting.",
+            "yes": true,
+            "note": "He restores the setup before the saw moves again.",
+            "hard": true
+          },
+          {
+            "text": "You wear safety glasses and pick up the saw without the grown-up.",
+            "yes": false,
+            "note": "Glasses do not turn the saw into a child tool.",
+            "hard": true
+          },
+          {
+            "text": "Mom notices the line moved, stops, remeasures, secures the piece and rechecks eyes and your clear spot.",
+            "yes": true,
+            "note": "She fixes the setup before making the cut.",
+            "hard": true
+          }
+        ]
+      },
+      {
+        "id": "build-02-measure-check",
+        "title": "Can We Trust This Measure?",
+        "emoji": "🧺",
+        "sub": "Measured from zero or Check the setup",
+        "yes": {
+          "label": "Measured from zero",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Check the setup",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Measured from zero.",
+        "noSay": "Right. Check the setup.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "The tape zero lines up with the strip start and the tape lies straight.",
+            "yes": true,
+            "note": "The length starts at zero and follows the strip."
+          },
+          {
+            "text": "The tape starts at three and you call the end number the strip length.",
+            "yes": false,
+            "note": "The end number is not the length when you start at three."
+          },
+          {
+            "text": "You hold zero at the edge and read the other end without moving the tape.",
+            "yes": true,
+            "note": "Both the start and end stayed in place."
+          },
+          {
+            "text": "The tape curls around a cup while you measure a straight strip.",
+            "yes": false,
+            "note": "The tape needs to follow the straight strip."
+          },
+          {
+            "text": "Zero is at the start and Dad holds the tape straight while you mark.",
+            "yes": true,
+            "note": "Dad helps keep the measurement in place."
+          },
+          {
+            "text": "You leave a gap between zero and the strip start.",
+            "yes": false,
+            "note": "The gap adds distance that is not part of the strip."
+          },
+          {
+            "text": "You recheck zero and the end before the grown-up cuts.",
+            "yes": true,
+            "note": "Rechecking can catch a moved tape."
+          },
+          {
+            "text": "You move the tape after marking and read the new end number as the old length.",
+            "yes": false,
+            "note": "The shifted tape no longer measures the same start."
+          },
+          {
+            "text": "The ruler zero meets the strip start and you read the numbered mark at its end.",
+            "yes": true,
+            "note": "The numbered marks measure from that zero."
+          },
+          {
+            "text": "The ruler has a blank edge before zero; you line up the blank edge with the strip.",
+            "yes": false,
+            "note": "Use the zero mark, not the unnumbered edge.",
+            "hard": true
+          },
+          {
+            "text": "You guessed six, then measure from zero and find five.",
+            "yes": true,
+            "note": "The estimate can be wrong while the measurement is sound.",
+            "hard": true
+          },
+          {
+            "text": "The tape looks straight, but its zero slid past the strip start.",
+            "yes": false,
+            "note": "A straight tape still needs the correct starting point.",
+            "hard": true
+          },
+          {
+            "text": "You mark five from zero, then check the same mark from zero again.",
+            "yes": true,
+            "note": "Both checks use the same starting point.",
+            "hard": true
+          },
+          {
+            "text": "Your guess matches the end number, so you skip checking that the tape starts at zero.",
+            "yes": false,
+            "note": "A matching guess does not check where the tape began.",
+            "hard": true
+          }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "build-02-projects",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "First, then, last",
+        "sets": [
+          {
+            "goal": "Mark a paper strip",
+            "steps": [
+              {
+                "icon": "📄",
+                "text": "Choose the strip"
+              },
+              {
+                "icon": "📏",
+                "text": "Line up zero with its start"
+              },
+              {
+                "icon": "👀",
+                "text": "Find the requested length"
+              },
+              {
+                "icon": "✏️",
+                "text": "Mark that length"
+              }
+            ]
+          },
+          {
+            "goal": "Check a finished strip",
+            "steps": [
+              {
+                "icon": "📐",
+                "text": "Lay down the original plan"
+              },
+              {
+                "icon": "📄",
+                "text": "Place the cut strip beside it"
+              },
+              {
+                "icon": "👀",
+                "text": "Compare the ends"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say whether the strip fits"
+              }
+            ]
+          },
+          {
+            "goal": "Put tools away after the job",
+            "steps": [
+              {
+                "icon": "🏁",
+                "text": "Finish the fit check"
+              },
+              {
+                "icon": "🙋",
+                "text": "Tell Dad you are done"
+              },
+              {
+                "icon": "🧰",
+                "text": "Put the safe hand tools away together"
+              },
+              {
+                "icon": "🧹",
+                "text": "Clear the paper scraps"
+              }
+            ]
+          },
+          {
+            "goal": "Estimate and measure",
+            "steps": [
+              {
+                "icon": "📄",
+                "text": "Choose a paper strip"
+              },
+              {
+                "icon": "🤔",
+                "text": "Guess its length"
+              },
+              {
+                "icon": "📏",
+                "text": "Line up the tape at zero"
+              },
+              {
+                "icon": "👀",
+                "text": "Read where the strip ends"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say whether your guess was longer or shorter"
+              }
+            ]
+          },
+          {
+            "goal": "Check the loose connection",
+            "steps": [
+              {
+                "icon": "👀",
+                "text": "Find the loose connection"
+              },
+              {
+                "icon": "🪛",
+                "text": "Choose the fitting screwdriver with Dad"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Predict the tightening direction"
+              },
+              {
+                "icon": "🔄",
+                "text": "Turn with Dad helping"
+              },
+              {
+                "icon": "🧪",
+                "text": "Test whether the connection still moves"
+              }
+            ]
+          },
+          {
+            "goal": "Prepare and check a grown-up cut",
+            "steps": [
+              {
+                "icon": "📏",
+                "text": "Measure from zero"
+              },
+              {
+                "icon": "✏️",
+                "text": "Mark and recheck the length"
+              },
+              {
+                "icon": "🗜️",
+                "text": "The grown-up secures the piece"
+              },
+              {
+                "icon": "🥽",
+                "text": "Protect eyes and wait clear"
+              },
+              {
+                "icon": "🪚",
+                "text": "The grown-up makes the cut"
+              },
+              {
+                "icon": "🧩",
+                "text": "Check the finished piece against the plan"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

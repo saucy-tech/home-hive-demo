@@ -1,0 +1,140 @@
+{
+  "banks": [
+    {
+      "id": "letter-f",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-g",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-h",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-i",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-j",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-k",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-l",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-m",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-n",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-o",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-p",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-q",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-r",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-s",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-t",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-u",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-v",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-w",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-x",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-y",
+      "kind": "letter"
+    },
+    {
+      "id": "letter-z",
+      "kind": "letter"
+    },
+    {
+      "id": "trace-f",
+      "kind": "trace"
+    },
+    {
+      "id": "fall-pattern",
+      "kind": "pattern"
+    },
+    {
+      "id": "community-helpers",
+      "kind": "naming"
+    },
+    {
+      "id": "neighborhood-places",
+      "kind": "naming"
+    },
+    {
+      "id": "leaves-trees",
+      "kind": "naming"
+    },
+    {
+      "id": "farm-families",
+      "kind": "naming"
+    },
+    {
+      "id": "safe-or-not",
+      "kind": "sort"
+    },
+    {
+      "id": "woodland-alive",
+      "kind": "sort"
+    },
+    {
+      "id": "plant-or-animal",
+      "kind": "sort"
+    },
+    {
+      "id": "everyday-sometimes",
+      "kind": "sort"
+    },
+    {
+      "id": "thankful-grumbling",
+      "kind": "sort"
+    },
+    {
+      "id": "community-safety-order",
+      "kind": "order"
+    },
+    {
+      "id": "pumpkin-growing-order",
+      "kind": "order"
+    }
+  ]
+}

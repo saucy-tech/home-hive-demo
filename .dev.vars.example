@@ -1,0 +1,22 @@
+# Copy to .dev.vars for local development. .dev.vars is gitignored.
+#
+# The API requires a verified Cloudflare Access assertion. Nothing is in front
+# of `wrangler dev`, so local runs need this to opt out of that requirement —
+# which is why it lives here and never in wrangler.jsonc: a var that is not in
+# committed config cannot be enabled by a deploy.
+#
+# Note that `wrangler dev` serves requests under the route configured in
+# wrangler.jsonc, not as localhost, so there is no hostname the Worker could key
+# this off instead.
+DEV_TRUST_LOCAL_IDENTITY="true"
+
+# Both are REQUIRED alongside the flag, and both must be empty. The flag is
+# deliberately inert whenever Access is configured, so that a copy of it leaking
+# onto the deployed Worker cannot take effect; `wrangler dev` reads the vars out
+# of wrangler.jsonc, where ACCESS_AUD is filled in for production, and would
+# make it inert here too. .dev.vars wins over wrangler.jsonc during `wrangler
+# dev` and is read by nothing else, so blanking them here turns the flag back on
+# for local runs only. Without these two lines every local /api/ call answers
+# 401: the vars say to verify an assertion, and no Access is there to issue one.
+ACCESS_TEAM_DOMAIN=""
+ACCESS_AUD=""

@@ -1,0 +1,111 @@
+{
+  "letter": "U",
+  "sound": "short u",
+  "example": "umbrella",
+  "yes": [
+    {
+      "word": "umbrella",
+      "emoji": "☂️"
+    },
+    {
+      "word": "up",
+      "emoji": "⬆️"
+    },
+    {
+      "word": "under",
+      "emoji": "⬇️"
+    },
+    {
+      "word": "upset",
+      "emoji": "😞"
+    },
+    {
+      "word": "uncle",
+      "emoji": "👨"
+    },
+    {
+      "word": "udder",
+      "emoji": "🐄"
+    },
+    {
+      "word": "umpire",
+      "emoji": "⚾"
+    },
+    {
+      "word": "upstairs",
+      "emoji": "🪜"
+    },
+    {
+      "word": "undershirt",
+      "emoji": "👕"
+    },
+    {
+      "word": "unhappy",
+      "emoji": "😢"
+    },
+    {
+      "word": "unzip",
+      "emoji": "🤐"
+    },
+    {
+      "word": "unwrap",
+      "emoji": "🎁"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "sun",
+      "emoji": "☀️",
+      "hard": true
+    },
+    {
+      "word": "cup",
+      "emoji": "☕",
+      "hard": true
+    },
+    {
+      "word": "bus",
+      "emoji": "🚌",
+      "hard": true
+    },
+    {
+      "word": "pumpkin",
+      "emoji": "🎃",
+      "hard": true
+    },
+    {
+      "word": "puppy",
+      "emoji": "🐶",
+      "hard": true
+    }
+  ],
+  "phonicsNote": "Short u only. Say the example before the board; do not substitute long-vowel words."
+}

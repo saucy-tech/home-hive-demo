@@ -1,0 +1,296 @@
+{
+  "id": "body-01",
+  "start": "2026-08-10",
+  "label": "Unit 1",
+  "theme": "Real Names for Real Parts",
+  "themeSub": "What's inside, and what it does",
+  "focusLabel": "What this unit is training",
+  "intro": "Kids get taught tummy and boo-boo and then spend a year unlearning both. This unit gives him the real word the first time — stomach, lungs, heart, bones — and one true sentence about what each one does, because a name with no job attached is just a longer word. It also gives him the two things a doctor's visit actually asks of him: point at where it hurts, and say what happened.",
+
+  "gelds": [
+    { "text": "Names the part instead of pointing at it" },
+    { "text": "Says what a part DOES, not only what it's called" },
+    { "text": "Knows inside from outside, and that inside still belongs to him" },
+    { "text": "Can say where it hurts and what happened, to somebody who isn't us" },
+    { "text": "Sequences a hygiene routine without being walked through it" }
+  ],
+
+  "tryTitle": "Try these any evening",
+  "tryNote": "Three or four minutes each. The bath and the bandage are the two best moments for this — he's already looking at the part in question.",
+
+  "daily": [
+    {
+      "id": "point",
+      "slot": "bath",
+      "when": "Bath · 2 min",
+      "title": "Name it, don't point at it",
+      "do": "Wash an arm and name it. Wash the knee, the elbow, the shoulder. He says the word back before you move on — pointing doesn't count.",
+      "stretch": "Ask what's UNDER what you're washing. Under the knee is a bone. Under the arm is muscle. Inside the chest is the heart, and it's going right now.",
+      "skill": "Real names, outside then inside"
+    },
+    {
+      "id": "listen",
+      "slot": "play",
+      "when": "Anytime · 2 min",
+      "title": "Find your own heartbeat",
+      "do": "Hand on his chest, sitting still. Then twenty jumping jacks and hand on the chest again. \"What's different?\" Let him say fast — don't say it for him.",
+      "stretch": "Ask WHY it went fast. He doesn't need the right answer; he needs to guess out loud that his body needed something. Then tell him: the heart pushes blood, and running needs more of it.",
+      "skill": "Cause and effect inside his own body"
+    },
+    {
+      "id": "hurt",
+      "slot": "dinner",
+      "when": "Dinner · 1 min",
+      "title": "Where and what happened",
+      "do": "Any bump from the day, ask two questions in this order: where does it hurt, and what happened. Both answers out loud, in words.",
+      "stretch": "Make him tell it to somebody else at the table, start to finish, without you filling in the middle. That's the version a doctor gets.",
+      "skill": "Reporting his own body to a stranger"
+    }
+  ],
+
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Says stomach, lungs, heart, bones, muscles — and one thing each of them does",
+      "Points to where his heart is without checking your face first",
+      "Knows which parts are inside him and that he can't see them",
+      "Tells somebody else where it hurts and what happened, unprompted",
+      "Washes his hands in the right order, all five steps, on his own"
+    ]
+  },
+
+  "weekend": "Next time anybody in the house takes medicine or puts on a bandage, narrate it: what it's for, what it does, why we're doing it now. He's watching that anyway — he might as well get the words.",
+
+  "songs": [
+    {
+      "id": "body-song",
+      "title": "My Body Works",
+      "emoji": "🎤",
+      "style": "A bouncy, happy preschool sing-along with marimba, ukulele and hand claps. Slow, steady tempo a four-year-old can sing with, one warm friendly voice, a simple repeated melody, every word clear. Singing starts within the first two seconds, and it ends cleanly with no long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "My heart goes pump, pump, pump,",
+        "pushing blood around.",
+        "My lungs fill up with air —",
+        "breathe in and let it out.",
+        "My bones hold me up tall,",
+        "my muscles help me play.",
+        "My stomach takes my food",
+        "and works on it all day.",
+        "Heart and lungs and bones,",
+        "stomach, muscles too —",
+        "they all have real names,",
+        "and they work all day for me!"
+      ]
+    }
+  ],
+
+  "games": {
+    "naming": [
+      {
+        "id": "body-parts",
+        "title": "Body Parts",
+        "matchName": "Body",
+        "noun": "body parts",
+        "emoji": "🫀",
+        "sub": "Real names",
+        "basic": [
+          { "id": "hand", "label": "Hand", "icon": "✋", "say": "the hand" },
+          { "id": "foot", "label": "Foot", "icon": "🦶", "say": "the foot" },
+          { "id": "eye", "label": "Eye", "icon": "👁️", "say": "the eye" },
+          { "id": "ear", "label": "Ear", "icon": "👂", "say": "the ear" },
+          { "id": "nose", "label": "Nose", "icon": "👃", "say": "the nose" },
+          { "id": "mouth", "label": "Mouth", "icon": "👄", "say": "the mouth" },
+          { "id": "leg", "label": "Leg", "icon": "🦵", "say": "the leg" },
+          { "id": "arm", "label": "Arm", "icon": "💪", "say": "the arm" }
+        ],
+        "advanced": [
+          { "id": "heart", "label": "Heart", "icon": "🫀", "say": "the heart",
+            "note": "Your heart pushes blood all the way around you, even while you sleep." },
+          { "id": "lungs", "label": "Lungs", "icon": "🫁", "say": "the lungs",
+            "note": "You have two lungs, and they fill up with air every time you breathe in." },
+          { "id": "brain", "label": "Brain", "icon": "🧠", "say": "the brain",
+            "note": "Your brain tells the rest of you what to do." },
+          { "id": "stomach", "label": "Stomach", "icon": "🫙", "say": "the stomach",
+            "note": "Your tummy's real name is your stomach. Your food goes there first." },
+          { "id": "bones", "label": "Bones", "icon": "🦴", "say": "the bones",
+            "note": "Your bones hold you up. You have more than two hundred of them." },
+          { "id": "muscles", "label": "Muscles", "icon": "🏋️", "say": "the muscles",
+            "note": "Muscles pull on your bones. That is how you move." },
+          { "id": "blood", "label": "Blood", "icon": "🩸", "say": "the blood",
+            "note": "Blood carries food and air to every part of you." },
+          { "id": "tongue", "label": "Tongue", "icon": "👅", "say": "the tongue",
+            "note": "Your tongue tastes your food and helps you make words." }
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "body-inside",
+        "title": "Inside or Outside?",
+        "emoji": "🫁",
+        "sub": "Can you see it?",
+        "yes": { "label": "Inside me", "emoji": "🫀" },
+        "no": { "label": "Outside me", "emoji": "✋" },
+        "yesSay": "Yes. That one is inside you.",
+        "noSay": "Right. That one is on the outside.",
+        "retry": "Have another think. Could you see it in the mirror?",
+        "items": [
+          { "text": "Your heart.", "yes": true, "note": "You can't see it, but you can feel it going." },
+          { "text": "Your knee.", "yes": false, "note": "Outside, which is why it's the one that gets scraped." },
+          { "text": "Your lungs.", "yes": true, "note": "Two of them, right behind your ribs." },
+          { "text": "Your hair.", "yes": false, "note": "Outside. It's the only part you can cut without it hurting." },
+          { "text": "Your bones.", "yes": true, "note": "Inside, holding you up the whole time." },
+          { "text": "Your eyelashes.", "yes": false, "note": "Outside, and they keep dust out of your eye." },
+          { "text": "Your brain.", "yes": true, "note": "Inside your head, behind the hardest bone you have." },
+          { "text": "Your fingernails.", "yes": false, "note": "Outside. They grow the whole time and you never feel it." },
+          { "text": "Your blood.", "yes": true, "note": "Inside — and when you see it, that means something opened up." },
+          { "text": "Your belly button.", "yes": false, "hard": true,
+            "note": "Outside, but it's the mark of a tube that fed you from the inside." },
+          { "text": "Your teeth.", "yes": false, "hard": true,
+            "note": "Outside. Smile in the mirror and there they are." },
+          { "text": "Your stomach.", "yes": true, "note": "Inside, and it's a bag, not the front of you." },
+          { "text": "Your tongue.", "yes": false, "hard": true,
+            "note": "Outside. Stick it out and you can see it in the mirror." },
+          { "text": "Your muscles.", "yes": true, "hard": true,
+            "note": "Inside, under your skin — but you can watch them move from outside." },
+          { "text": "Your skin.", "yes": false, "note": "Outside. It's the wrapper that keeps everything else in." },
+          { "text": "Your ribs.", "yes": true, "note": "Inside. Press on your chest and you can feel them under there." },
+          { "text": "Your elbow.", "yes": false, "note": "Outside. Bend your arm and there it is." },
+          { "text": "Your throat.", "yes": true, "hard": true,
+            "note": "Inside. You feel your food go down it, but you never see it." }
+        ]
+      },
+      {
+        "id": "body-healthy",
+        "title": "Good for My Body?",
+        "emoji": "💚",
+        "sub": "Or not so good",
+        "yes": { "label": "Good for me", "emoji": "💚" },
+        "no": { "label": "Not good for me", "emoji": "🚫" },
+        "yesSay": "Yes. That is good for your body.",
+        "noSay": "Right. That one is not good for your body.",
+        "retry": "Think about how your body would feel after.",
+        "items": [
+          { "text": "You drank water when you were thirsty.", "yes": true,
+            "note": "Thirsty is your body asking. Water is the answer." },
+          { "text": "You washed your hands before dinner.", "yes": true,
+            "note": "Germs are too small to see. That's the whole reason we wash." },
+          { "text": "You stayed up so late you were tired all day.", "yes": false,
+            "note": "Sleep is when your body does the fixing." },
+          { "text": "You ate something green at dinner.", "yes": true,
+            "note": "You don't have to love it. Your body still uses it." },
+          { "text": "You ran around outside for a long time.", "yes": true,
+            "note": "Your heart gets stronger every time you make it work." },
+          { "text": "You rubbed your eyes with dirty hands.", "yes": false,
+            "note": "That's the shortest trip germs can take to get inside you." },
+          { "text": "You brushed your teeth before bed.", "yes": true,
+            "note": "The sugar that stays on all night is what makes holes." },
+          { "text": "You had candy instead of dinner.", "yes": false,
+            "note": "Candy has no job to do. Dinner does." },
+          { "text": "You told a grown-up your tummy hurt.", "yes": true,
+            "note": "Nobody can help with something they don't know about." },
+          { "text": "You kept playing on a hurt foot and didn't tell anybody.", "yes": false,
+            "hard": true,
+            "note": "Being tough about it makes it take longer to get better." },
+          { "text": "You wore your helmet on your bike.", "yes": true,
+            "note": "Your skull is hard. The helmet is for the day that isn't enough." },
+          { "text": "You shared a drink with a kid who was coughing.", "yes": false,
+            "hard": true,
+            "note": "Sharing is kind. Sharing germs is the one exception." },
+          { "text": "You sat still for the doctor even though you didn't want to.", "yes": true,
+            "hard": true,
+            "note": "Hard, and still the right call. Being still is how they find things out." },
+          { "text": "You took medicine somebody handed you at school.", "yes": false,
+            "hard": true,
+            "note": "Only a grown-up in our family gives you medicine. Nobody else, ever." },
+          { "text": "You ate breakfast before school.", "yes": true,
+            "note": "Your body runs on food. Breakfast is the first fill-up of the day." },
+          { "text": "You coughed into your elbow.", "yes": true,
+            "note": "Your elbow catches the germs so nobody else has to." },
+          { "text": "You picked at a scab until it bled.", "yes": false,
+            "note": "Under a scab, your skin is busy fixing. Picking makes it start over." },
+          { "text": "You said no to dessert because your tummy was already full.", "yes": true,
+            "hard": true,
+            "note": "Full is your body saying stop. Listening to it is the hard part." }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "body-order",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "First, then, last",
+        "sets": [
+          {
+            "goal": "Washing your hands",
+            "steps": [
+              { "icon": "🚰", "text": "Turn the water on" },
+              { "icon": "🧼", "text": "Get soap on both hands" },
+              { "icon": "🫧", "text": "Scrub while you sing the song" },
+              { "icon": "💦", "text": "Rinse the soap off" },
+              { "icon": "🧻", "text": "Dry them" }
+            ]
+          },
+          {
+            "goal": "Brushing your teeth",
+            "steps": [
+              { "icon": "🪥", "text": "Put toothpaste on the brush" },
+              { "icon": "😬", "text": "Brush the top and the bottom" },
+              { "icon": "💧", "text": "Rinse and spit" },
+              { "icon": "🚿", "text": "Rinse the brush and stand it up" }
+            ]
+          },
+          {
+            "goal": "Taking care of a scrape",
+            "steps": [
+              { "icon": "🙋", "text": "Tell a grown-up" },
+              { "icon": "💦", "text": "Wash it with water" },
+              { "icon": "🧻", "text": "Pat it dry" },
+              { "icon": "🩹", "text": "Put the bandage on" }
+            ]
+          },
+          {
+            "goal": "Getting ready for sleep",
+            "steps": [
+              { "icon": "🛁", "text": "Have a bath" },
+              { "icon": "🪥", "text": "Brush your teeth" },
+              { "icon": "📖", "text": "Read a book" },
+              { "icon": "🙏", "text": "Say your prayers" },
+              { "icon": "😴", "text": "Lights out" }
+            ]
+          },
+          {
+            "goal": "Taking your vitamin",
+            "steps": [
+              { "icon": "🥛", "text": "Get a cup of water" },
+              { "icon": "💊", "text": "Take the vitamin a grown-up gave you" },
+              { "icon": "💧", "text": "Drink the water" }
+            ]
+          },
+          {
+            "goal": "Blowing your nose",
+            "steps": [
+              { "icon": "🧻", "text": "Get a tissue" },
+              { "icon": "👃", "text": "Blow into the tissue" },
+              { "icon": "🗑️", "text": "Put it in the bin" },
+              { "icon": "🧼", "text": "Wash your hands" }
+            ]
+          },
+          {
+            "goal": "Going to the doctor",
+            "steps": [
+              { "icon": "🚗", "text": "Ride to the doctor's office" },
+              { "icon": "⚖️", "text": "Stand on the scale" },
+              { "icon": "🩺", "text": "The doctor listens to your heart" },
+              { "icon": "👉", "text": "Point to where it hurts" },
+              { "icon": "🗣️", "text": "Say what happened" },
+              { "icon": "🌟", "text": "Get your sticker" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

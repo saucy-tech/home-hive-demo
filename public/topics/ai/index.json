@@ -1,0 +1,17 @@
+{
+  "label": "Smart Machines",
+  "weeks": [
+    {
+      "id": "ai-01",
+      "start": "2026-08-10",
+      "label": "Unit 1",
+      "theme": "It Guesses, It Doesn't Know"
+    },
+    {
+      "id": "ai-02",
+      "start": "2026-09-21",
+      "label": "Unit 2",
+      "theme": "What Did We Show It?"
+    }
+  ]
+}

@@ -1,0 +1,865 @@
+:root{
+  --ink:#2E1B06;
+  --ink-soft:#6B5230;
+  --wax:#FFF6E2;
+  --wax-2:#FBE9C4;
+  --honey:#FFC22E;
+  --honey-deep:#E08600;
+  --clover:#3F8F5E;
+  --berry:#C7375F;
+  --sky:#3B7EA1;
+  --plum:#7A4FA3;
+  --line:rgba(46,27,6,.14);
+  --shadow:0 2px 0 rgba(46,27,6,.12);
+  --pad: max(16px, env(safe-area-inset-left));
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:
+    radial-gradient(circle at 12% 4%, #FFE9B0 0%, transparent 42%),
+    radial-gradient(circle at 88% 0%, #FFD9E4 0%, transparent 38%),
+    var(--wax);
+  color:var(--ink);
+  font-family:Nunito,"Segoe UI",system-ui,sans-serif;
+  font-size:17px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:calc(48px + env(safe-area-inset-bottom));
+  overscroll-behavior-y:none;
+}
+h1,h2,h3{font-family:Fredoka,sans-serif;font-weight:600}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* A class that sets `display` outranks the UA's [hidden] rule, which silently
+ * un-hides anything toggled by the hidden attribute. Settle it once. */
+[hidden]{display:none!important}
+/* iOS Safari answers a fast second tap with double-tap zoom, and a four-year-old
+ * taps everything fast twice. maximum-scale doesn't stop it — this does. */
+button,[role="button"],select{touch-action:manipulation}
+
+/* ───────── top bar ───────── */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  background:rgba(255,246,226,.92);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-bottom:2px solid var(--ink);
+  padding-top:env(safe-area-inset-top);
+}
+.topbar-in{
+  max-width:1240px;margin:0 auto;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  padding:10px var(--pad);
+}
+.brand{
+  display:flex;align-items:center;gap:8px;
+  font-family:Fredoka,sans-serif;font-weight:700;font-size:20px;
+  /* A 1.5s press on a logo otherwise selects the words or raises iOS's callout
+     menu, both of which land on top of the bar the press is trying to open. */
+  user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;
+  -webkit-tap-highlight-color:transparent;
+}
+.brand-hex{font-size:22px;transition:transform .12s ease-out}
+.drip{color:var(--honey-deep)}
+/* The bee swells for the length of the hold, so a grown-up can see the press
+   is counting rather than ignored. */
+.brand.holding .brand-hex{transform:scale(1.45);transition:transform 1.5s cubic-bezier(.4,0,.9,.5)}
+.brand-lock{display:none;font-size:13px;opacity:.35}
+.topbar-right{margin-left:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+/* The topic outranks the week — it's the standing choice — so it reads as the
+   heavier of the two pickers rather than a second one of the same thing. */
+.topic-pick select{background:var(--honey);font-weight:600}
+
+.wk-pick select{
+  font-family:Nunito,sans-serif;font-weight:700;font-size:14px;color:var(--ink);
+  background:#fff;border:2px solid var(--ink);border-radius:999px;
+  padding:7px 12px;cursor:pointer;
+}
+.modes{display:flex;border:2px solid var(--ink);border-radius:999px;overflow:hidden;background:#fff}
+.mode{
+  border:0;background:transparent;cursor:pointer;
+  font-family:Fredoka,sans-serif;font-weight:600;font-size:15px;color:var(--ink-soft);
+  padding:8px 18px;-webkit-tap-highlight-color:transparent;
+}
+.mode[aria-selected="true"]{background:var(--honey);color:var(--ink)}
+.icon-btn{
+  border:2px solid var(--ink);background:#fff;border-radius:999px;
+  width:40px;height:40px;font-size:18px;cursor:pointer;line-height:1;
+  -webkit-tap-highlight-color:transparent;
+}
+.icon-btn[aria-pressed="false"]{opacity:.4}
+.sync{font-size:12px;color:var(--ink-soft);min-width:74px}
+.sync.warn{color:var(--berry);font-weight:700}
+
+/* ───────── the parent gate ─────────
+   Play is the mode he holds on his own, and every control below is a way out
+   of the game — the tabs, the two pickers, and the mute that leaves a
+   pre-reader with a silent game he can't read. In Play they are off the bar
+   until app.js opens the gate; Learn and Map are grown-up screens and never
+   get this class. */
+/* touch-action:none so a wobbling thumb can't become a page scroll mid-hold —
+   the scroll cancels the pointer, and the hold with it. */
+body.kidlock .brand{cursor:pointer;touch-action:none}
+body.kidlock .brand-lock{display:inline}
+body.kidlock .topbar-right .wk-pick,
+body.kidlock .topbar-right .modes,
+body.kidlock .topbar-right .icon-btn{display:none}
+/* On a phone this bar wraps to three rows, and kept sticky that's half the
+ * screen spent on chrome before a game draws a card. It scrolls away instead —
+ * Back lives in the page — and the two pickers shrink onto one row. */
+@media (max-width:600px){
+  .topbar{position:static}
+  .topbar-in{gap:8px;padding:8px var(--pad)}
+  .brand{font-size:17px}
+  .brand-hex{font-size:18px}
+  .wk-pick select{max-width:44vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:6px 10px}
+  .mode{padding:7px 14px;font-size:14px}
+  .icon-btn{width:36px;height:36px;font-size:16px}
+  .sync{min-width:0}
+}
+
+/* ───────── layout ───────── */
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--pad)}
+.credit{max-width:1240px;margin:24px auto 0;padding:0 var(--pad);text-align:center;font-size:13px;color:var(--ink-soft)}
+.credit a{color:inherit}
+body.kidlock .credit{display:none}
+.cols{display:grid;grid-template-columns:1fr;gap:0 22px}
+@media (min-width:900px){
+  .cols{grid-template-columns:minmax(0,1.35fr) minmax(320px,1fr);align-items:start}
+  .col-side{position:sticky;top:86px}
+}
+
+/* ───────── hero ───────── */
+.hero{padding:22px 0 4px;text-align:center}
+.eyebrow{
+  font-family:Fredoka,sans-serif;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;font-size:12px;color:var(--honey-deep);margin:0;
+}
+.hero h1{font-size:clamp(30px,5vw,44px);line-height:1;margin:6px 0 8px;font-weight:700}
+.sub{font-size:15.5px;color:var(--ink-soft);margin:0 auto;max-width:62ch}
+.gelds{margin:12px auto 0;max-width:62ch;text-align:left}
+.gelds summary{
+  cursor:pointer;font-size:13px;color:var(--ink-soft);
+  font-family:Fredoka,sans-serif;font-weight:500;text-align:center;
+}
+.gelds ul{list-style:none;padding:0;margin:10px 0 0;display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.gelds li{
+  font-size:12.5px;background:var(--wax-2);border-radius:999px;padding:4px 11px;color:var(--ink-soft);
+}
+.gelds li b{color:var(--ink);font-family:Fredoka,sans-serif}
+
+/* ───────── comb nav ───────── */
+.comb{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:20px 0 6px}
+.cell{
+  position:relative;width:74px;height:82px;border:0;padding:0;cursor:pointer;
+  background:transparent;font-family:Fredoka,sans-serif;-webkit-tap-highlight-color:transparent;
+}
+.cell .hex{
+  position:absolute;inset:0;
+  clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  background:var(--wax-2);overflow:hidden;transition:transform .18s ease;
+}
+.cell .fill{
+  position:absolute;left:0;right:0;bottom:0;height:0%;
+  background:linear-gradient(180deg,var(--honey) 0%,var(--honey-deep) 100%);
+  transition:height .45s cubic-bezier(.3,.9,.3,1);
+}
+.cell .lbl{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:1px;font-weight:600;font-size:17px;color:var(--ink);
+}
+.cell .lbl small{font-family:Nunito,sans-serif;font-size:10px;font-weight:700;opacity:.55}
+.cell[aria-selected="true"] .hex{transform:scale(1.08)}
+.cell[aria-selected="true"]::after{
+  content:"";position:absolute;left:50%;bottom:-9px;transform:translateX(-50%);
+  width:8px;height:8px;border-radius:50%;background:var(--ink);
+}
+.cell:focus-visible .hex{outline:3px solid var(--sky);outline-offset:3px}
+.cell.done .lbl::before{content:"🍯";font-size:12px}
+/* The in-class comb is the odd one out, and reads that way: a sky hex, and no date. */
+.cell.visit .hex{background:#DCEBFF}
+.cell.visit .lbl{font-size:22px}
+/* A ring won't work here — clip-path eats the box-shadow — so today is marked
+ * on the date label instead. */
+.cell.today .lbl small{color:var(--honey-deep);opacity:1}
+
+/* ───────── the week bar (Learn's scoreboard) ───────── */
+.weekbar-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.weekbar-head h2{margin:0}
+.weekbar-status{font-family:Fredoka,sans-serif;font-weight:600;font-size:16px;color:var(--ink-soft)}
+.weekbar-status.ok{color:var(--clover)}
+.weekbar-meters{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.wm{display:flex;align-items:center;gap:10px}
+.wm-lab{font-family:Fredoka,sans-serif;font-weight:600;width:52px}
+.wm-bar{flex:1;height:14px;border-radius:999px;background:var(--wax-2);border:2px solid var(--line);overflow:hidden}
+.wm-fill{display:block;height:100%;background:linear-gradient(90deg,var(--honey) 0%,var(--honey-deep) 100%);transition:width .45s cubic-bezier(.3,.9,.3,1)}
+.wm-num{font-size:13px;font-weight:700;color:var(--ink-soft);min-width:92px;text-align:right}
+.weekbar-how{margin:0 0 14px}
+.weekbar-how summary{
+  cursor:pointer;font-size:13px;color:var(--ink-soft);
+  font-family:Fredoka,sans-serif;font-weight:500;
+}
+.weekbar-how .school{margin:10px 0 0}
+.weekbar .btn{font-size:15px;padding:9px 20px;margin:0}
+.weekbar .reset{margin:0}
+
+/* ───────── cards ───────── */
+.card{
+  background:#fff;border:2px solid var(--ink);border-radius:20px;
+  padding:18px 18px 16px;margin:16px 0;box-shadow:var(--shadow);
+}
+.card.quiet{background:transparent;border-style:dashed;box-shadow:none}
+.card h2{font-size:22px;margin:0 0 2px}
+.school{
+  font-size:14px;color:var(--ink-soft);margin:0 0 14px;
+  padding-left:12px;border-left:3px solid var(--honey);
+}
+.school b{color:var(--ink)}
+.weekend{margin:14px 0 0;border-color:var(--clover)}
+
+/* ───────── a move (class level + his level) ───────── */
+.move{padding:14px 0;border-top:1px dashed var(--line)}
+.move:first-child{border-top:0;padding-top:4px}
+.move-top{display:flex;gap:12px;align-items:flex-start}
+/* 44px because that is the smallest thing a thumb reliably hits on a phone, and
+ * these get used one-handed with a child on the other arm. Rows are two or
+ * three lines of wrapped text, so the taller box mostly fits inside the row it
+ * is in: measured at 390px it costs the day's activities about 5% of their
+ * height, against the quarter-screen the week bar gave back by moving below
+ * them. Grow it further and that trade stops being worth it. */
+.tick{
+  flex:0 0 auto;width:44px;height:44px;margin-top:2px;border-radius:13px;
+  border:2px solid var(--ink);background:#fff;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;font-size:20px;line-height:1;
+  transition:background .15s ease,transform .1s ease;-webkit-tap-highlight-color:transparent;
+}
+.tick[aria-pressed="true"]{background:var(--honey)}
+.tick:active{transform:scale(.9)}
+.tick:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.move .body{flex:1;min-width:0}
+.when{
+  font-family:Fredoka,sans-serif;font-size:11px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;display:inline-block;padding:2px 8px;border-radius:999px;
+  background:var(--wax-2);color:var(--ink-soft);margin-bottom:4px;
+}
+.when.slot-play{background:#FFE0A8;color:#8A5200}
+.when.slot-dinner{background:#D8ECD9;color:#28603D}
+.when.slot-bath{background:#CFE7F2;color:#22607E}
+.when.slot-book{background:#E2DCF5;color:#5B3E8C}
+.when.slot-daily{background:#FFD9E4;color:#8C2B4A}
+.when.slot-class{background:#DCEBFF;color:#1F4E8C}
+.move .sing{margin:8px 0 0;font-size:14px;padding:6px 14px}
+.move h3{font-size:19px;margin:0 0 3px}
+.move p{margin:0;font-size:15.5px;color:var(--ink-soft)}
+.move.done h3{text-decoration:line-through;text-decoration-color:var(--honey-deep);opacity:.62}
+
+.level{
+  margin:10px 0 0 56px;padding:10px 12px;border-radius:14px;
+  background:linear-gradient(180deg,#FFFDF6,#FFF6E2);
+  border:2px dashed var(--honey-deep);
+  display:flex;gap:10px;align-items:flex-start;
+}
+.level .tick{font-size:18px;margin-top:0}
+.level-b{flex:1;min-width:0}
+.level-h{
+  font-family:Fredoka,sans-serif;font-weight:600;font-size:12px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--honey-deep);margin:0 0 3px;
+}
+.level p{font-size:15px;color:var(--ink);margin:0}
+.skill{
+  display:inline-block;margin-top:6px;font-size:12px;color:var(--ink-soft);
+  background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 9px;
+}
+.level.done{opacity:.6}
+@media (max-width:520px){ .level{margin-left:0} }
+
+/* ───────── the every-day strip ───────── */
+/* Sits above the day's own activities and reads as a band rather than a card,
+ * so it's obviously the same list on all five days. */
+.daily{
+  background:linear-gradient(180deg,#FFF9EA,#FFF2D6);
+  border:2px dashed var(--honey-deep);border-radius:16px;
+  padding:6px 14px 12px;margin:2px 0 6px;
+}
+.daily-h{
+  font-family:Fredoka,sans-serif;font-weight:600;font-size:12px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--honey-deep);margin:10px 0 2px;
+}
+.daily .move{border-top-color:rgba(224,134,0,.28)}
+
+/* ───────── from the teacher ───────── */
+.notices ul{list-style:none;padding:0;margin:0}
+.notice{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-top:1px dashed var(--line)}
+.notice:first-child{border-top:0;padding-top:0}
+.notice .tick{margin-top:0}
+.notice-b{flex:1;min-width:0}
+.notice h3{font-size:16px;margin:0 0 2px}
+.notice p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+.notice.done h3{text-decoration:line-through;text-decoration-color:var(--honey-deep)}
+.notice.done{opacity:.62}
+
+/* ───────── what's coming ───────── */
+.term-next{list-style:none;padding:0;margin:0}
+.term-w{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-top:1px dashed var(--line)}
+.term-w:first-child{border-top:0;padding-top:0}
+.term-when{
+  flex:0 0 auto;font-family:Fredoka,sans-serif;font-weight:600;font-size:12.5px;
+  background:var(--wax-2);border-radius:999px;padding:4px 11px;color:var(--ink-soft);
+}
+.term-w.now .term-when{background:var(--honey);color:var(--ink)}
+.term-b{flex:1;min-width:0}
+.term-b h3{font-size:16px;margin:0 0 2px}
+.term-b p{margin:0;font-size:14px;color:var(--ink-soft)}
+.term-note{color:var(--berry);font-weight:700}
+.term-all{margin-top:12px}
+.term-all summary{
+  cursor:pointer;font-size:13px;color:var(--ink-soft);
+  font-family:Fredoka,sans-serif;font-weight:500;
+}
+.term-m{margin-top:12px}
+.term-m h3{font-size:14px;margin:0 0 4px;color:var(--honey-deep);font-family:Fredoka,sans-serif}
+.term-m ul{list-style:none;padding:0;margin:0}
+.term-m li{font-size:13.5px;color:var(--ink-soft);padding:2px 0}
+.term-m li b{color:var(--ink);font-family:Fredoka,sans-serif;font-weight:500}
+.term-m li i{font-style:normal;color:var(--berry)}
+.term-m li.now{background:var(--wax-2);border-radius:8px;padding:2px 8px;margin-left:-8px}
+
+/* ───────── books ───────── */
+.book{display:flex;gap:12px;padding:14px 0;border-top:1px dashed var(--line)}
+.book:first-child{border-top:0;padding-top:2px}
+.spine{flex:0 0 8px;border-radius:4px}
+.book h3{font-size:17px;margin:0}
+.book .by{font-size:13px;color:var(--ink-soft);margin:0 0 6px}
+.book p{margin:0 0 4px;font-size:15px}
+.book p em{font-style:normal;font-weight:700}
+.book .up{color:var(--honey-deep)}
+.watch{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.watch button{
+  display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+  font-family:Fredoka,sans-serif;font-weight:500;font-size:14px;
+  color:var(--ink);background:var(--wax-2);border:2px solid var(--ink);
+  border-radius:999px;padding:6px 13px;transition:background .15s ease;
+}
+.watch button:hover{background:var(--honey)}
+.watch button.alt{background:transparent;border-color:var(--line);color:var(--ink-soft);font-size:13px}
+
+/* ───────── goals ───────── */
+.goal-split{display:grid;gap:14px}
+@media (min-width:520px){.goal-split{grid-template-columns:1fr 1fr}}
+.goal-h{font-size:12px;letter-spacing:.09em;text-transform:uppercase;margin:0 0 6px}
+.goal-h.class{color:var(--sky)}
+.goal-h.his{color:var(--honey-deep)}
+.goals{list-style:none;padding:0;margin:0}
+.goals li{padding:5px 0 5px 24px;position:relative;font-size:15px}
+.goals li::before{content:"🐝";position:absolute;left:0;top:5px;font-size:13px}
+.goals.his li::before{content:"⭐"}
+
+/* ───────── notes ───────── */
+textarea{
+  width:100%;font-family:Nunito,sans-serif;font-size:15.5px;color:var(--ink);
+  border:2px solid var(--ink);border-radius:14px;padding:11px 12px;resize:vertical;background:#fff;
+}
+textarea:focus{outline:3px solid var(--sky);outline-offset:2px}
+.note-meta{font-size:12px;color:var(--ink-soft);margin:6px 0 0;min-height:16px}
+/* Undo, not damage: this is what "Reopen the week" wears on the week bar. */
+.reset{
+  border:2px solid var(--line);background:transparent;color:var(--ink-soft);
+  font-family:Nunito,sans-serif;font-weight:700;font-size:13px;
+  padding:9px 17px;border-radius:999px;cursor:pointer;
+}
+.reset:hover{border-color:var(--berry);color:var(--berry)}
+
+/* Damage. Filled, square-shouldered and the only red button in the app, so it
+   can never be mistaken for the quiet pill above at the end of a long day. */
+.reset-box{padding:14px 18px}
+.reset-box summary{
+  cursor:pointer;font-size:13px;color:var(--ink-soft);
+  font-family:Fredoka,sans-serif;font-weight:500;
+}
+.reset-box .school{margin:12px 0 14px}
+.danger{
+  border:2px solid var(--ink);background:var(--berry);color:#fff;
+  font-family:Fredoka,sans-serif;font-weight:600;font-size:15px;
+  padding:10px 20px;border-radius:12px;cursor:pointer;
+}
+.danger:hover{background:#A82C4F}
+
+/* ═════════ PLAY MODE ═════════ */
+.play{padding-top:8px}
+
+/* No object-fit and no height cap: the banner is already cut to a wide shape by
+ * scripts/photos, framed on the faces the library found. Cropping it again here
+ * was the first attempt and it cut somebody's chin at every viewport — the
+ * generator knows where the faces are and a stylesheet does not. */
+.play-photo{
+  margin:14px 0 0;border:3px solid var(--ink);border-radius:24px;overflow:hidden;
+  box-shadow:0 4px 0 rgba(46,27,6,.16);line-height:0;
+}
+.play-photo img{width:100%;height:auto;display:block}
+
+.play-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:14px 0 6px}
+.play-head h1{font-size:clamp(28px,4.4vw,42px);margin:0}
+.play-head .streak{margin:4px 0 0;font-weight:800;color:var(--ink-soft)}
+.jar{
+  position:relative;width:64px;height:74px;border:3px solid var(--ink);border-radius:14px 14px 22px 22px;
+  background:#fff;overflow:hidden;flex:0 0 auto;
+}
+.jar-fill{position:absolute;left:0;right:0;bottom:0;height:0%;background:linear-gradient(180deg,var(--honey),var(--honey-deep));transition:height .6s cubic-bezier(.3,.9,.3,1)}
+.jar-count{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:Fredoka,sans-serif;font-weight:700;font-size:22px}
+/* the week's first full jar: it jumps, once, under its own burst */
+.jar.full{animation:jarpop 1.1s cubic-bezier(.3,1.6,.4,1)}
+@keyframes jarpop{30%{transform:scale(1.35) rotate(-8deg)}60%{transform:scale(1.2) rotate(6deg)}}
+
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:10px 0 30px}
+/* Spans the grid, so "Today" reads as a label over a block of tiles rather than
+   as a tile-sized word in the corner of one. Small on purpose: it is there for
+   the grown-up standing behind him, and the tiles are the thing he reads. */
+.tiles-head{grid-column:1/-1;margin:0;font-family:Fredoka,sans-serif;font-size:15px;font-weight:600;color:var(--ink-soft)}
+.tile{
+  border:3px solid var(--ink);border-radius:24px;background:#fff;cursor:pointer;
+  padding:20px 16px 16px;text-align:center;box-shadow:0 4px 0 rgba(46,27,6,.16);
+  font-family:Fredoka,sans-serif;transition:transform .12s ease;
+  -webkit-tap-highlight-color:transparent;min-height:170px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+}
+.tile:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(46,27,6,.16)}
+.tile-emoji{font-size:52px;line-height:1}
+.tile-name{font-size:20px;font-weight:600}
+.tile-sub{font-family:Nunito,sans-serif;font-size:13px;color:var(--ink-soft);font-weight:600}
+.tile-stars{font-size:14px;letter-spacing:2px;min-height:20px}
+/* Two across on a phone: fourteen single-column tiles is a longer scroll than
+ * the game list deserves, and the tile names are read aloud on tap anyway. */
+@media (max-width:600px){
+  .tiles{grid-template-columns:repeat(2,1fr);gap:10px}
+  .tile{min-height:128px;padding:14px 8px 12px}
+  .tile-emoji{font-size:40px}
+  .tile-name{font-size:16px}
+}
+
+.back{
+  border:3px solid var(--ink);background:#fff;border-radius:999px;
+  font-family:Fredoka,sans-serif;font-weight:600;font-size:18px;
+  padding:9px 22px;cursor:pointer;margin:10px 0;-webkit-tap-highlight-color:transparent;
+}
+
+/* game stage */
+/* On a 12.9" screen a top-aligned game leaves him tapping in the top third and
+ * staring at empty space. Centre it in what's left under the bars. */
+.stage{
+  text-align:center;padding:6px 0 40px;
+  min-height:calc(100vh - 190px);
+  /* iOS's vh pretends the toolbar isn't there; dvh doesn't. */
+  min-height:calc(100dvh - 190px);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+}
+.stage > *{width:100%}
+.stage h2{font-size:clamp(24px,3.4vw,34px);margin:0 0 4px}
+.prompt{
+  font-family:Fredoka,sans-serif;font-size:clamp(24px,4vw,40px);font-weight:600;
+  margin:12px 0 18px;min-height:1.4em;
+}
+/* Old Honey: which week the round in front of him came from. */
+.from{font-family:Nunito,sans-serif;font-size:14px;font-weight:700;color:var(--ink-soft);margin:4px 0 -6px}
+.prompt .say{
+  border:0;background:transparent;font-size:.7em;cursor:pointer;vertical-align:middle;padding:0 0 0 8px;
+}
+.opts{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.opt{
+  border:3px solid var(--ink);border-radius:24px;background:#fff;cursor:pointer;
+  min-width:130px;min-height:130px;padding:14px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  font-family:Fredoka,sans-serif;font-size:19px;font-weight:600;
+  box-shadow:0 4px 0 rgba(46,27,6,.16);transition:transform .12s ease,background .2s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.opt em{font-style:normal;font-size:56px;line-height:1}
+.opt:active{transform:translateY(3px)}
+.opt.right{background:#CDEBD6;border-color:var(--clover)}
+.opt.wrong{background:#F6D5D2;border-color:var(--berry);animation:shake .3s}
+.opt.dim{opacity:.35;pointer-events:none}
+@keyframes shake{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+
+.fb{font-family:Fredoka,sans-serif;font-size:22px;min-height:34px;margin:16px 0 0;font-weight:600}
+.fb.good{color:var(--clover)}
+.fb.soft{color:var(--ink-soft)}
+.scorebar{display:flex;justify-content:center;gap:6px;margin:2px 0 6px;font-size:18px;min-height:24px;letter-spacing:2px}
+
+/* number hive */
+.hive{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:820px;margin:0 auto}
+.num{
+  width:84px;height:94px;border:0;background:transparent;padding:0;cursor:pointer;position:relative;
+  font-family:Fredoka,sans-serif;-webkit-tap-highlight-color:transparent;
+}
+.num i{
+  position:absolute;inset:0;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  background:var(--wax-2);transition:background .2s ease,transform .15s ease;
+}
+.num b{position:relative;font-size:32px;font-weight:600}
+.num.lit i{background:var(--honey);transform:scale(1.06)}
+.num.miss i{background:#F6D5D2}
+.num:focus-visible i{outline:3px solid var(--sky);outline-offset:3px}
+.bees{
+  font-size:clamp(28px,5vw,44px);line-height:1.1;
+  display:grid;grid-template-columns:repeat(5,1fr);gap:6px;
+  justify-items:center;max-width:340px;margin:0 auto 14px;
+}
+/* "Give me 5" — the numeral stays up while he counts each bunch, because
+ * pairing the digit with the quantity is the whole exercise. */
+.numbig{
+  font-family:Fredoka,sans-serif;font-weight:700;line-height:1;
+  font-size:clamp(64px,11vw,110px);color:var(--honey-deep);margin:0 0 10px;
+}
+.opt.bunch{padding:12px}
+.clump{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:2px;
+  font-size:clamp(20px,3vw,26px);line-height:1.05;max-width:120px;
+}
+/* Wraps because these rows grew: Match carries a deck picker above its pair
+   picker, and three pills plus an emoji each is wider than a phone. */
+.levelpick{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 14px}
+.levelpick button{
+  border:2px solid var(--ink);background:#fff;border-radius:999px;cursor:pointer;
+  font-family:Fredoka,sans-serif;font-weight:600;font-size:15px;padding:7px 16px;
+}
+.levelpick button[aria-pressed="true"]{background:var(--honey)}
+.levelpick button:disabled{border-color:var(--line);color:var(--ink-soft);cursor:default}
+/* The record: one dot per finished board, oldest first. Full is a clean board,
+   hollow a held one, grey a rough one — the same reading the level nudge makes. */
+.hist{display:inline-flex;flex-wrap:wrap;align-items:center;margin-left:6px;vertical-align:middle}
+.levelpick .hist button,.hist button{display:inline-flex;gap:4px;align-items:center;border:0;background:none;padding:11px 8px;border-radius:8px;cursor:pointer;font:inherit}
+.hist button:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.hist i{width:10px;height:10px;border-radius:50%;border:2px solid var(--honey-deep);background:var(--honey);flex:0 0 auto}
+.hist i.held{background:#fff}
+.hist i.rough{background:#fff;border-color:var(--line)}
+.hist-detail{flex-basis:100%;font-size:12px;font-weight:600;color:var(--ink-soft);text-align:left;padding:0 4px 4px}
+/* The 1-2-3 row rides the parent gate with the top bar; the Class / his level
+   bands do not carry `levelset` and stay where they are. */
+body.kidlock .levelset{display:none}
+/* On a phone a row of five decks wraps into three rows of pills. One swipeable
+ * row instead. The auto margins centre a short row the way justify-content did,
+ * without clipping the left edge of a long one the way centred overflow does. */
+@media (max-width:600px){
+  .levelpick{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding-bottom:4px}
+  .levelpick button{flex:0 0 auto}
+  .levelpick > :first-child{margin-left:auto}
+  .levelpick > :last-child{margin-right:auto}
+}
+
+/* day by day */
+/* Wider than a square: a day name is a long word and it must not wrap to two
+ * lines, because the shape of the word is most of what he has to go on. */
+.opt.day{min-width:190px;min-height:110px;font-size:22px}
+.opt.day em{
+  font-size:28px;width:44px;height:44px;border-radius:50%;
+  background:var(--wax-2);display:flex;align-items:center;justify-content:center;
+}
+.recap{margin:18px 0 0;min-height:38px}
+.recap button{
+  border:2px solid var(--line);background:#fff;border-radius:999px;cursor:pointer;
+  font-family:Nunito,sans-serif;font-weight:700;font-size:14px;color:var(--ink-soft);
+  padding:8px 16px;-webkit-tap-highlight-color:transparent;
+}
+
+/* memory match */
+/* Column counts are picked per board so neither one ends on a short row — a
+   row that isn't full is a card he can find without remembering where it is.
+   On a phone that's three across for eighteen cards and four for twenty-four,
+   which is six rows either way and does mean scrolling the nine-pair board. */
+.grid-match{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:640px;margin:0 auto}
+.grid-match.wide{grid-template-columns:repeat(4,minmax(0,1fr))}
+/* On a phone, full-width cards made the six-row boards ~730px tall — most of the
+ * board off-screen, and every flip a fight with the scroll. Smaller cards that
+ * put the whole board on one screen beat big cards he has to scroll to see. */
+@media (max-width:600px){
+  .grid-match{gap:8px;max-width:248px}
+  .grid-match.wide{gap:8px;max-width:326px}
+}
+@media (min-width:900px){
+  .grid-match, .grid-match.wide{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .grid-match{max-width:900px}
+  /* The twelve-pair board is a fourth row, and four rows only fit an iPad
+     without scrolling if the cards give up some size — a memory game you have
+     to scroll is a memory game you can't see. */
+  .grid-match.wide{max-width:660px}
+}
+.mcard{
+  aspect-ratio:1/1;border:3px solid var(--ink);border-radius:18px;background:var(--honey);
+  cursor:pointer;font-size:clamp(30px,5vw,46px);display:flex;align-items:center;justify-content:center;
+  -webkit-tap-highlight-color:transparent;transition:background .2s ease,transform .15s ease;
+}
+.mcard .face{opacity:0;transition:opacity .15s ease}
+/* Drawn cards rather than emoji: fill the card, since a car is wide and a robot
+   is tall and both have to be told apart across the table. */
+.mcard .face.art{width:86%;height:86%;display:flex;align-items:center;justify-content:center}
+.mcard .face.art svg{width:100%;height:100%;display:block}
+/* Square photo, corners rounded just inside the card's own. */
+.mcard .face.photo{width:86%;height:86%;border-radius:14px;overflow:hidden}
+.mcard .face.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.mcard.up{background:#fff}
+.mcard.up .face{opacity:1}
+.mcard.got{background:#CDEBD6;border-color:var(--clover);pointer-events:none}
+.mcard.got .face{opacity:1}
+
+/* two big choices (kind / not kind) */
+.big2{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.big2 button{
+  border:3px solid var(--ink);border-radius:26px;background:#fff;cursor:pointer;
+  min-width:220px;min-height:150px;font-family:Fredoka,sans-serif;font-size:24px;font-weight:600;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  box-shadow:0 4px 0 rgba(46,27,6,.16);-webkit-tap-highlight-color:transparent;
+}
+.big2 button em{font-style:normal;font-size:54px}
+.big2 button:active{transform:translateY(3px)}
+.scene{
+  font-family:Fredoka,sans-serif;font-size:clamp(21px,3.2vw,32px);font-weight:500;
+  max-width:22ch;margin:16px auto 22px;line-height:1.35;
+}
+
+/* which is more */
+/* Bigger than the "give me 5" bunches these borrow from: the whole task is
+   counting both piles, so the things being counted have to be countable at a
+   glance from across the table. */
+.opt.pile{min-width:170px;min-height:170px;padding:16px}
+.opt.pile .clump{max-width:190px;gap:6px;font-size:clamp(26px,4.4vw,38px)}
+
+/* put it in order */
+/* A step is a sentence, not a word, so these tiles are wide and the type is
+   smaller — "Turn on the water" in a 130px square is four lines of nothing. */
+.opt.step{min-width:210px;max-width:260px;min-height:120px;font-size:17px;line-height:1.2}
+.opt.step em{font-size:40px}
+.orderstrip{
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:center;
+  min-height:74px;margin:0 auto 16px;max-width:840px;
+}
+.ostep{
+  display:flex;align-items:center;gap:8px;padding:8px 14px 8px 8px;
+  border:3px solid var(--clover);border-radius:999px;background:#CDEBD6;
+  font-family:Fredoka,sans-serif;font-size:15px;font-weight:600;max-width:100%;
+}
+.ostep b{
+  flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:14px;
+}
+.ostep em{font-style:normal;font-size:22px}
+
+/* code the bee */
+/* One square grid, sized off the viewport so five columns still fit a phone
+   with the arrow pad under it. --n is set per puzzle by the game. */
+.codeboard{
+  display:grid;grid-template-columns:repeat(var(--n,4),1fr);gap:6px;
+  width:min(92vw,360px);margin:0 auto 14px;
+}
+.ccell{
+  aspect-ratio:1/1;border:2px dashed var(--line);border-radius:12px;background:var(--wax-2);
+  display:flex;align-items:center;justify-content:center;position:relative;
+  font-size:clamp(22px,6vw,32px);
+}
+.cgoal{position:absolute}
+/* The actor sits over the goal on the winning move, so it is drawn on top. */
+.cactor{position:relative;z-index:1;transition:transform .18s ease}
+.progstrip{
+  display:flex;flex-wrap:wrap;gap:6px;justify-content:center;align-items:center;
+  min-height:46px;border:2px dashed var(--line);border-radius:14px;
+  width:min(92vw,420px);margin:0 auto 12px;padding:6px;
+}
+.parrow{font-size:26px;line-height:1}
+.phint{font-family:Nunito,sans-serif;font-size:13px;color:var(--ink-soft);font-weight:700}
+.arrows{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.arrow{
+  border:3px solid var(--ink);background:#fff;border-radius:18px;cursor:pointer;
+  width:64px;height:64px;font-size:28px;box-shadow:0 4px 0 rgba(46,27,6,.16);
+  -webkit-tap-highlight-color:transparent;
+}
+.arrow:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(46,27,6,.16)}
+.arrow.ghost{border-color:var(--line);color:var(--ink-soft);font-size:22px}
+.arrow.go{background:var(--clover);color:#fff;border-color:var(--ink)}
+
+/* what comes next */
+.patrow{
+  display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;margin:0 auto 20px;
+}
+.pcell{
+  width:clamp(44px,9vw,66px);height:clamp(44px,9vw,66px);border-radius:14px;background:var(--wax-2);
+  display:flex;align-items:center;justify-content:center;font-size:clamp(24px,5vw,34px);
+  cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .15s,box-shadow .15s;
+}
+.pcell.lit{transform:scale(1.14);box-shadow:0 0 0 3px var(--honey-deep)}
+.pcell.hole{
+  background:#fff;border:3px dashed var(--honey-deep);color:var(--honey-deep);
+  font-family:Fredoka,sans-serif;font-weight:700;cursor:default;
+}
+
+/* sing along */
+.singplay{
+  display:block;width:88px;height:88px;margin:4px auto 14px;
+  border:3px solid var(--ink);border-radius:50%;background:var(--honey);cursor:pointer;
+  font-size:34px;line-height:1;box-shadow:0 4px 0 rgba(46,27,6,.16);
+  -webkit-tap-highlight-color:transparent;
+}
+.singplay:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(46,27,6,.16)}
+/* Its own scroll box, so following the song never drags the whole page — the
+   play button has to stay under his thumb for the length of the song. */
+.lyrics{
+  max-height:46vh;overflow-y:auto;max-width:560px;margin:0 auto 12px;
+  padding:16px 12px;border:2px dashed var(--line);border-radius:18px;background:var(--wax-2);
+}
+.lyric{
+  font-family:Fredoka,sans-serif;font-size:clamp(18px,3vw,24px);font-weight:500;
+  color:var(--ink-soft);line-height:1.5;padding:3px 10px;border-radius:12px;
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+.lyric.now{background:var(--honey);color:var(--ink);font-weight:600;transform:scale(1.03)}
+
+/* the burst — a finish that earned more than a line */
+.burst{position:fixed;inset:0;z-index:60;pointer-events:none;overflow:hidden}
+.burst span{position:absolute;top:-48px;animation:burst-fall 2.4s ease-in forwards}
+@keyframes burst-fall{
+  to{transform:translateY(108vh) rotate(320deg);opacity:.85}
+}
+
+.btn{
+  border:3px solid var(--ink);background:var(--honey);border-radius:999px;cursor:pointer;
+  font-family:Fredoka,sans-serif;font-weight:600;font-size:18px;padding:11px 26px;margin:6px;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn.ghost{background:#fff}
+
+/* done panel */
+.done-panel{padding:30px 10px}
+.done-panel .big{font-size:64px;line-height:1}
+.done-panel h2{margin:10px 0 4px}
+.done-panel .levelup{
+  font-family:Fredoka,sans-serif;font-size:22px;font-weight:600;color:var(--clover);margin:2px 0 10px;
+}
+
+/* ───────── video overlay ───────── */
+.veil{
+  position:fixed;inset:0;z-index:80;background:rgba(46,27,6,.86);
+  display:flex;align-items:center;justify-content:center;padding:16px;
+}
+.veil-box{width:min(1000px,100%);position:relative}
+.veil-x{
+  position:absolute;top:-6px;right:0;transform:translateY(-100%);
+  border:2px solid #fff;background:transparent;color:#fff;border-radius:999px;
+  width:40px;height:40px;font-size:17px;cursor:pointer;
+}
+.veil-title{color:#fff;font-family:Fredoka,sans-serif;font-size:20px;margin-bottom:8px}
+.player-wrap{position:relative;padding-top:56.25%;border-radius:16px;overflow:hidden;background:#000}
+.player-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* Sits over the frame and eats every tap. End-screen cards, the channel name,
+ * the "Watch on YouTube" button and the pause grid all still exist inside the
+ * iframe — this is what makes sure none of them can be pressed. */
+.player-shield{position:absolute;inset:0;z-index:2}
+/* Paused is the other moment YouTube paints suggestions, so pausing hides the
+ * picture rather than handing him a grid of thumbnails to choose from. */
+.player-cover{
+  position:absolute;inset:0;z-index:3;background:var(--ink);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:Fredoka,sans-serif;font-size:30px;font-weight:600;
+}
+.player-ctrls{display:flex;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.veil-done{
+  background:var(--wax);border-radius:18px;padding:26px;text-align:center;color:var(--ink);
+}
+.veil-done-h{font-family:Fredoka,sans-serif;font-size:26px;margin:0 0 6px;font-weight:600}
+.veil-done p{margin:0 0 14px}
+
+/* ───────── a round that is busy, and the hint ladder ─────────
+   Shared by every stage, and deliberately last: these have to outrank the
+   :active rules each game writes for its own buttons. */
+
+/* The round is still talking (or, in Code the Bee, a program is still walking).
+   The controls dim but stay tappable — the tap is answered with a soft tick in
+   roundGate, because a board that looks exactly as live as it did a second ago
+   is a board he keeps tapping. */
+.busy{opacity:.42}
+.busy button{cursor:default}
+.busy button:active{transform:none}
+
+/* Two wrong taps on one round rule half the wrong choices out. They keep their
+   space: a grid that reflows under his finger mid-tap is a wrong answer he did
+   not choose. */
+button.ruled-out{opacity:.1;pointer-events:none}
+/* Three put a ring on the right one. The ring is not the pulse — the
+   reduced-motion rule below turns every animation off, and the child who most
+   needs this hint is not the one who should lose it. */
+button.this-one{box-shadow:0 0 0 7px var(--honey);animation:hintpulse 1.1s ease-in-out infinite}
+@keyframes hintpulse{50%{transform:scale(1.05)}}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* trace it */
+.tracepad{
+  position:relative;width:min(320px,84vw);aspect-ratio:1;margin:6px auto 10px;
+  background:#fff;border:3px solid var(--ink);border-radius:24px;overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.tracepad canvas{position:absolute;inset:0;width:100%;height:100%}
+.tracepad .guide{transition:opacity .6s ease;pointer-events:none}
+.tracepad .guide.ghost{opacity:.08}
+.tracepad .ink{touch-action:none;cursor:crosshair}
+.tracerow{display:flex;justify-content:center;gap:6px;flex-wrap:wrap}
+
+/* ───────── map mode ───────── */
+.map-head h1{margin:10px 0 2px}
+.map-stats{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 8px}
+.map-stat{display:flex;flex-direction:column;align-items:center;background:#fff;border:2px solid var(--line);border-radius:16px;padding:6px 14px;min-width:74px}
+.map-stat b{font-family:Fredoka,sans-serif;font-size:19px}
+.map-stat small{color:var(--ink-soft);font-weight:700;font-size:11px}
+.map-bar{height:14px;border:2px solid var(--line);border-radius:9px;background:#fff;overflow:hidden;margin:0 0 10px}
+.map-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--honey),var(--honey-deep));transition:width .6s cubic-bezier(.3,.9,.3,1)}
+.map-levels{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 6px}
+.map-levels small{color:var(--ink-soft);font-weight:700}
+.lvl-chip{background:#fff;border:2px solid var(--line);border-radius:12px;padding:3px 9px;font-weight:700}
+.lvl-chip i{font-style:normal;color:var(--honey-deep);letter-spacing:2px;font-size:12px}
+.board{width:100%;height:auto;display:block;margin:6px 0 30px;font-family:Fredoka,sans-serif}
+.board .rail{fill:none;stroke:#6B5230;stroke-width:26;stroke-linejoin:round;stroke-linecap:round;opacity:.9}
+.board .rail.ties{stroke:#E9C27A;stroke-width:14;stroke-dasharray:6 18}
+.board .branch{fill:none;stroke-width:6;stroke-dasharray:10 10;stroke-linecap:round;opacity:.8}
+.board .ribbon text{font-size:14px;font-weight:700;fill:#fff}
+.board .sq{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.board .sq .inner{fill:#fff}
+.board .sq.done .inner{fill:none}
+.board .sq.going .inner{fill:#FFF6E2}
+.board .sq.soon{opacity:.45}
+.board .sq.unwritten{opacity:.3;cursor:default}
+.board .sq.unwritten rect:first-of-type{stroke:var(--ink-soft);stroke-width:2;stroke-dasharray:6 5;fill:#fff}
+.board .sq.unwritten .sq-label{font-size:14px}
+.board .branch{opacity:.55}
+.board .sq:active{transform:translateY(2px)}
+.board .sq:focus{outline:none}
+.board .sq:focus-visible rect:first-of-type{stroke:var(--ink);stroke-width:4}
+.board .sq-label{font-size:18px;font-weight:700;fill:var(--ink)}
+.board .sq.done .sq-label{fill:#fff}
+.board .sq-mark{font-size:16px}
+.board .pawn{font-size:30px;animation:bob 1.6s ease-in-out infinite}
+.board .pawn.small{font-size:20px}
+.board .rail.gone{stroke:var(--honey);stroke-width:10;opacity:.95}
+.board .sq .fill{fill:var(--honey);opacity:.85}
+.board .crown{font-size:22px}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.board .flag{font-size:34px}
+.board .link{stroke:var(--line);stroke-width:4}
+.board .land-name{font-size:17px;font-weight:700;fill:var(--ink)}
+.board .land-world{font-size:13px;font-weight:600;fill:var(--ink-soft);font-family:Nunito,sans-serif}
+.board .unit-name{font-size:14px;font-weight:700;fill:var(--ink)}
+.board .unit-meter{font-size:12px;font-weight:600;fill:var(--ink-soft);font-family:Nunito,sans-serif}
+.stop-badge{
+  position:relative;flex:0 0 auto;width:58px;height:58px;border-radius:50%;
+  background:var(--tone,var(--wax-2));display:flex;align-items:center;justify-content:center;
+  font-size:32px;line-height:1;overflow:hidden;border:2px solid var(--ink);
+}
+.stop-badge svg,.stop-badge img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stop-badge.big{width:84px;height:84px;border-radius:22px}
+.stop-detail{
+  border:3px solid var(--ink);border-radius:24px;background:#fff;padding:18px;margin:0 0 40px;
+  border-top:12px solid var(--tone,var(--honey));
+}
+.stop-head{display:flex;align-items:center;gap:14px}
+.stop-head h2{margin:0}
+.stop-head p{margin:2px 0 0}
+.stop-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:14px 0}
+.stop-list{list-style:none;padding:0;margin:6px 0 0;font-weight:600}
+.stop-list li{padding:4px 0;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.stop-list li.ok{color:var(--ink)}
+.stop-list li em{font-style:normal;font-size:13px;letter-spacing:1px}
+.stop-list .lv{font-size:13px;color:var(--ink-soft)}

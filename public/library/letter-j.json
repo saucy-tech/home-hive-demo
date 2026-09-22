@@ -1,0 +1,109 @@
+{
+  "letter": "J",
+  "sound": "juh",
+  "example": "jam",
+  "yes": [
+    {
+      "word": "jam",
+      "emoji": "🫙"
+    },
+    {
+      "word": "jet",
+      "emoji": "✈️"
+    },
+    {
+      "word": "jug",
+      "emoji": "🏺"
+    },
+    {
+      "word": "jump",
+      "emoji": "🦘"
+    },
+    {
+      "word": "jacket",
+      "emoji": "🧥"
+    },
+    {
+      "word": "jelly",
+      "emoji": "🍇"
+    },
+    {
+      "word": "jeans",
+      "emoji": "👖"
+    },
+    {
+      "word": "jewel",
+      "emoji": "💎"
+    },
+    {
+      "word": "jeep",
+      "emoji": "🚙"
+    },
+    {
+      "word": "juggle",
+      "emoji": "🤹"
+    },
+    {
+      "word": "jellyfish",
+      "emoji": "🪼"
+    },
+    {
+      "word": "joy",
+      "emoji": "😁"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "hat",
+      "emoji": "🎩"
+    },
+    {
+      "word": "badger",
+      "emoji": "🦡",
+      "hard": true
+    },
+    {
+      "word": "pigeon",
+      "emoji": "🐦",
+      "hard": true
+    },
+    {
+      "word": "ginger",
+      "emoji": "🫚",
+      "hard": true
+    },
+    {
+      "word": "vegetable",
+      "emoji": "🥕",
+      "hard": true
+    }
+  ]
+}

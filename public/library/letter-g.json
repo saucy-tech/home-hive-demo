@@ -1,0 +1,110 @@
+{
+  "letter": "G",
+  "sound": "guh",
+  "example": "goat",
+  "yes": [
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "gum",
+      "emoji": "🫧"
+    },
+    {
+      "word": "gift",
+      "emoji": "🎁"
+    },
+    {
+      "word": "girl",
+      "emoji": "👧"
+    },
+    {
+      "word": "gorilla",
+      "emoji": "🦍"
+    },
+    {
+      "word": "goose",
+      "emoji": "🪿"
+    },
+    {
+      "word": "grapes",
+      "emoji": "🍇"
+    },
+    {
+      "word": "grass",
+      "emoji": "🌱"
+    },
+    {
+      "word": "glove",
+      "emoji": "🧤"
+    },
+    {
+      "word": "guitar",
+      "emoji": "🎸"
+    },
+    {
+      "word": "ghost",
+      "emoji": "👻"
+    },
+    {
+      "word": "gate",
+      "emoji": "🚪"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "hat",
+      "emoji": "🎩"
+    },
+    {
+      "word": "jam",
+      "emoji": "🫙"
+    },
+    {
+      "word": "kite",
+      "emoji": "🪁"
+    },
+    {
+      "word": "tiger",
+      "emoji": "🐅",
+      "hard": true
+    },
+    {
+      "word": "wagon",
+      "emoji": "🛒",
+      "hard": true
+    },
+    {
+      "word": "dragon",
+      "emoji": "🐉",
+      "hard": true
+    },
+    {
+      "word": "yogurt",
+      "emoji": "🥣",
+      "hard": true
+    },
+    {
+      "word": "eagle",
+      "emoji": "🦅",
+      "hard": true
+    }
+  ]
+}

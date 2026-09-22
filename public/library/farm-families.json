@@ -1,0 +1,108 @@
+{
+  "id": "farm-families",
+  "title": "Farm Animals and Babies",
+  "noun": "farm animals",
+  "matchName": "Farm Animals and Babies",
+  "basic": [
+    {
+      "id": "cow",
+      "label": "Cow",
+      "icon": "🐄",
+      "say": "the cow",
+      "note": "A baby cow is called a calf."
+    },
+    {
+      "id": "pig",
+      "label": "Pig",
+      "icon": "🐖",
+      "say": "the pig",
+      "note": "A baby pig is called a piglet."
+    },
+    {
+      "id": "sheep",
+      "label": "Sheep",
+      "icon": "🐑",
+      "say": "the sheep",
+      "note": "A baby sheep is called a lamb."
+    },
+    {
+      "id": "horse",
+      "label": "Horse",
+      "icon": "🐎",
+      "say": "the horse",
+      "note": "A baby horse is called a foal."
+    },
+    {
+      "id": "hen",
+      "label": "Hen",
+      "icon": "🐔",
+      "say": "the hen",
+      "note": "A hen lays eggs that can hatch into chicks."
+    },
+    {
+      "id": "duck",
+      "label": "Duck",
+      "icon": "🦆",
+      "say": "the duck",
+      "note": "A baby duck is called a duckling."
+    }
+  ],
+  "advanced": [
+    {
+      "id": "calf",
+      "label": "Calf",
+      "icon": "🐄🍼",
+      "say": "the calf",
+      "note": "A calf drinks milk from its mother cow."
+    },
+    {
+      "id": "piglet",
+      "label": "Piglet",
+      "icon": "🐖🍼",
+      "say": "the piglet",
+      "note": "A piglet drinks milk from its mother pig."
+    },
+    {
+      "id": "lamb",
+      "label": "Lamb",
+      "icon": "🐑🍼",
+      "say": "the lamb",
+      "note": "A lamb drinks milk from its mother sheep."
+    },
+    {
+      "id": "foal",
+      "label": "Foal",
+      "icon": "🐎🍼",
+      "say": "the foal",
+      "note": "A foal stands on long legs soon after birth."
+    },
+    {
+      "id": "chick",
+      "label": "Chick",
+      "icon": "🐥🍼",
+      "say": "the chick",
+      "note": "A chick pecks at food with its small beak."
+    },
+    {
+      "id": "duckling",
+      "label": "Duckling",
+      "icon": "🐤🍼",
+      "say": "the duckling",
+      "note": "A duckling has soft down before its feathers grow."
+    },
+    {
+      "id": "kid",
+      "label": "Kid",
+      "icon": "🐐🍼",
+      "say": "the kid",
+      "note": "A baby goat is called a kid."
+    },
+    {
+      "id": "gosling",
+      "label": "Gosling",
+      "icon": "🪿🍼",
+      "say": "the gosling",
+      "note": "A baby goose is called a gosling."
+    }
+  ]
+}

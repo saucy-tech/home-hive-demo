@@ -1,0 +1,109 @@
+{
+  "letter": "H",
+  "sound": "huh",
+  "example": "hat",
+  "yes": [
+    {
+      "word": "hat",
+      "emoji": "🎩"
+    },
+    {
+      "word": "hen",
+      "emoji": "🐔"
+    },
+    {
+      "word": "hand",
+      "emoji": "✋"
+    },
+    {
+      "word": "hippo",
+      "emoji": "🦛"
+    },
+    {
+      "word": "horse",
+      "emoji": "🐴"
+    },
+    {
+      "word": "house",
+      "emoji": "🏠"
+    },
+    {
+      "word": "heart",
+      "emoji": "❤️"
+    },
+    {
+      "word": "hammer",
+      "emoji": "🔨"
+    },
+    {
+      "word": "hot",
+      "emoji": "🥵"
+    },
+    {
+      "word": "hug",
+      "emoji": "🫂"
+    },
+    {
+      "word": "hill",
+      "emoji": "⛰️"
+    },
+    {
+      "word": "ham",
+      "emoji": "🍖"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "igloo",
+      "emoji": "🧊"
+    },
+    {
+      "word": "jam",
+      "emoji": "🫙"
+    },
+    {
+      "word": "beehive",
+      "emoji": "🐝",
+      "hard": true
+    },
+    {
+      "word": "uphill",
+      "emoji": "⛰️",
+      "hard": true
+    },
+    {
+      "word": "unhappy",
+      "emoji": "😞",
+      "hard": true
+    },
+    {
+      "word": "behind",
+      "emoji": "🙈",
+      "hard": true
+    }
+  ]
+}

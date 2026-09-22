@@ -1,0 +1,110 @@
+{
+  "letter": "L",
+  "sound": "lll",
+  "example": "lamp",
+  "yes": [
+    {
+      "word": "lamp",
+      "emoji": "💡"
+    },
+    {
+      "word": "leg",
+      "emoji": "🦵"
+    },
+    {
+      "word": "leaf",
+      "emoji": "🍃"
+    },
+    {
+      "word": "lemon",
+      "emoji": "🍋"
+    },
+    {
+      "word": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "word": "ladder",
+      "emoji": "🪜"
+    },
+    {
+      "word": "lamb",
+      "emoji": "🐑"
+    },
+    {
+      "word": "lizard",
+      "emoji": "🦎"
+    },
+    {
+      "word": "lock",
+      "emoji": "🔒"
+    },
+    {
+      "word": "lips",
+      "emoji": "👄"
+    },
+    {
+      "word": "log",
+      "emoji": "🪵"
+    },
+    {
+      "word": "ladybug",
+      "emoji": "🐞"
+    }
+  ],
+  "no": [
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "hat",
+      "emoji": "🎩"
+    },
+    {
+      "word": "balloon",
+      "emoji": "🎈",
+      "hard": true
+    },
+    {
+      "word": "elephant",
+      "emoji": "🐘",
+      "hard": true
+    },
+    {
+      "word": "pillow",
+      "emoji": "🛏️",
+      "hard": true
+    },
+    {
+      "word": "melon",
+      "emoji": "🍈",
+      "hard": true
+    },
+    {
+      "word": "jelly",
+      "emoji": "🍇",
+      "hard": true
+    }
+  ]
+}

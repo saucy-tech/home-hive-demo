@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.dev.vars
+.DS_Store
+.env.local
+scripts/audio/.env
+/packs-preview.html
+/assets/source-photos/
+
+# Character pictures for the Map stops — licensed art, this deploy only.
+/public/roadmap/

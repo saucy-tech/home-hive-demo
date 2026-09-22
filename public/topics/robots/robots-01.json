@@ -1,0 +1,312 @@
+{
+  "id": "robots-01",
+  "start": "2026-08-10",
+  "label": "Unit 1",
+  "theme": "What a Machine Is Made Of",
+  "themeSub": "Parts, power, and telling it where to go",
+  "focusLabel": "What this unit is training",
+  "intro": "A robot is not a character, it's a box with parts in it — a battery, a motor, a sensor, and somebody's instructions. Once he can name the parts he stops treating it as magic and starts asking what's inside, which is the question that turns into taking things apart. Code the Robot is the same program-building game as the Code track, wearing a robot instead of a bee.",
+
+  "gelds": [
+    { "text": "Names four parts of a machine and what each one is for" },
+    { "text": "Knows a machine needs power, and what happens when it doesn't have any" },
+    { "text": "Says what a sensor is for in his own words" },
+    { "text": "Checks things in order when something stops working" },
+    { "text": "Says which jobs suit a machine and which need a person" }
+  ],
+
+  "tryTitle": "Try these any evening",
+  "tryNote": "Everything in this unit is better with a real object in his hands. A dead remote and a screwdriver beats every game on this page.",
+
+  "daily": [
+    {
+      "id": "insides",
+      "slot": "play",
+      "when": "Anytime · 10 min",
+      "title": "Open something up",
+      "do": "Anything broken and unplugged — a remote, a torch, an old toy. Take the back off together and name what's in there. Battery, wire, motor, switch, spring.",
+      "stretch": "Ask him what each part is FOR before you tell him. A wrong guess out loud is worth more than a right answer he heard from you.",
+      "skill": "Naming parts, then guessing their job"
+    },
+    {
+      "id": "sensor",
+      "slot": "dinner",
+      "when": "Anytime · 3 min",
+      "title": "Find the sensors in the house",
+      "do": "Go looking: the light that comes on when you walk past, the door that dings, the thing that beeps when the toast is done. Each one is a machine noticing something.",
+      "stretch": "Ask what would happen if you covered the sensor up. Then try it. Predicting first and testing second is the actual method.",
+      "skill": "A machine notices, then acts"
+    },
+    {
+      "id": "stuck",
+      "slot": "bath",
+      "when": "Anytime · 2 min",
+      "title": "When it doesn't work",
+      "do": "Something in the house doesn't work, walk him through the order out loud: is it on, does it have power, is something in the way, is anything broken.",
+      "stretch": "He runs the list next time and tells you what he checked. Checking in an order, rather than poking at it, is the whole difference.",
+      "skill": "Troubleshooting in an order"
+    }
+  ],
+
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Names battery, motor, sensor and switch, and says what each does",
+      "Says a machine needs power and a person's instructions",
+      "Builds a four-step program for the robot before pressing Run",
+      "Checks power, then switch, then what's in the way, when something's stuck",
+      "Says a machine is a machine — good at some jobs, no good at others"
+    ]
+  },
+
+  "weekend": "Point out every machine doing a job while you're out — the door that opens itself, the car wash, the checkout scanner. Ask what he thinks is inside each one. He'll be right more often than you expect.",
+
+  "songs": [
+    {
+      "id": "robots-song",
+      "title": "Robot Parts",
+      "emoji": "🎤",
+      "style": "A friendly preschool sing-along with soft toy-robot synth bloops, marimba and a steady gentle beat. Slow, steady tempo a four-year-old can sing with, one warm friendly voice, a simple repeated melody, every word clear. Singing starts within the first two seconds, and it ends cleanly with no long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "A robot is a machine",
+        "with parts that make it go:",
+        "a battery for power,",
+        "a motor, fast or slow.",
+        "A sensor helps it notice,",
+        "a switch to make it start,",
+        "and it needs my instructions —",
+        "that's the most important part.",
+        "Battery, motor, sensor, switch —",
+        "say them one by one!",
+        "A robot isn't magic —",
+        "it's parts, and parts are fun!"
+      ]
+    }
+  ],
+
+  "games": {
+    "code": {
+      "title": "Code the Robot",
+      "sub": "Write the program",
+      "actor": "🤖",
+      "goal": "🔋",
+      "lines": {
+        "start": "Tell the robot how to get to the battery.",
+        "wall": "The robot bumped into something. Fix your program and try again.",
+        "stop": "The robot stopped in the wrong place. Fix your program and try again.",
+        "win": "Your robot made it to the battery!"
+      }
+    },
+    "naming": [
+      {
+        "id": "robot-parts",
+        "title": "Robot Parts",
+        "matchName": "Robot",
+        "noun": "robot parts",
+        "emoji": "⚙️",
+        "sub": "What each one does",
+        "basic": [
+          { "id": "wheel", "label": "Wheel", "icon": "🛞", "say": "a wheel" },
+          { "id": "light", "label": "Light", "icon": "💡", "say": "a light" },
+          { "id": "button", "label": "Button", "icon": "🔘", "say": "a button" },
+          { "id": "arm", "label": "Arm", "icon": "🦾", "say": "an arm" },
+          { "id": "speaker", "label": "Speaker", "icon": "🔊", "say": "a speaker" },
+          { "id": "screen", "label": "Screen", "icon": "🖥️", "say": "a screen" }
+        ],
+        "advanced": [
+          { "id": "battery", "label": "Battery", "icon": "🔋", "say": "a battery",
+            "note": "The battery holds the power. No battery, no moving." },
+          { "id": "motor", "label": "Motor", "icon": "🔄", "say": "a motor",
+            "note": "A motor is what makes the wheels go round." },
+          { "id": "sensor", "label": "Sensor", "icon": "📡", "say": "a sensor",
+            "note": "A sensor is how a robot notices something. It's the robot's eyes and ears." },
+          { "id": "switch", "label": "Switch", "icon": "🎚️", "say": "a switch",
+            "note": "The switch lets the power through. That's all on and off means." },
+          { "id": "wire", "label": "Wire", "icon": "🔌", "say": "a wire",
+            "note": "Wires carry the power from the battery to everything else." },
+          { "id": "gear", "label": "Gear", "icon": "⚙️", "say": "a gear",
+            "note": "Gears are toothed wheels that turn each other. Big ones turn slow and strong." },
+          { "id": "claw", "label": "Claw", "icon": "🤏", "say": "a claw",
+            "note": "The claw is the robot's hand. It opens, it closes, and it never gets tired." },
+          { "id": "program", "label": "Program", "icon": "📜", "say": "a program",
+            "note": "The program is the list of instructions somebody wrote. The robot only does what's on it." }
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "robot-machine",
+        "title": "Machine or Not?",
+        "emoji": "⚙️",
+        "sub": "Does it have parts that work?",
+        "yes": { "label": "A machine", "emoji": "⚙️" },
+        "no": { "label": "Not a machine", "emoji": "🌿" },
+        "yesSay": "Yes. That one is a machine.",
+        "noSay": "Right. That one is not a machine.",
+        "retry": "Does it have parts that move and do a job? Have another go.",
+        "items": [
+          { "text": "A toaster.", "yes": true, "note": "Power in, hot wires, toast out. Machine." },
+          { "text": "A rock.", "yes": false, "note": "No parts, no job, no power." },
+          { "text": "A washing machine.", "yes": true, "note": "A motor spinning a drum. It's in the name." },
+          { "text": "A tree.", "yes": false, "note": "Alive, and growing, but nobody built it." },
+          { "text": "A car.", "yes": true, "note": "The biggest pile of parts in the driveway." },
+          { "text": "A bicycle.", "yes": true, "hard": true,
+            "note": "Tricky. No battery, but gears and a chain and wheels — that's a machine. YOU are the motor." },
+          { "text": "A spoon.", "yes": false, "hard": true,
+            "note": "A tool, not a machine. Nothing in it moves on its own." },
+          { "text": "An escalator.", "yes": true, "note": "Stairs with a motor under them." },
+          { "text": "A cat.", "yes": false, "note": "Alive. Not built, and it won't do what you say." },
+          { "text": "A blender.", "yes": true, "note": "Motor, blades, and a switch." },
+          { "text": "A pair of scissors.", "yes": true, "hard": true,
+            "note": "Two parts working against each other on a pin. A simple machine." },
+          { "text": "A cloud.", "yes": false, "note": "No parts at all. Just water up high." },
+          { "text": "A doorbell.", "yes": true, "note": "A button, a wire, and a chime." },
+          { "text": "A teddy bear.", "yes": false, "note": "Built, yes. But nothing in it works." },
+          { "text": "A flashlight.", "yes": true, "note": "A switch, a battery, a bulb. Small, but a machine." },
+          { "text": "A puddle.", "yes": false, "note": "Water on the ground. No parts." },
+          { "text": "A seesaw.", "yes": true, "hard": true,
+            "note": "Tricky. No motor, but it's a board on a pin, and it lifts you. A simple machine." },
+          { "text": "A drawing of a robot.", "yes": false, "hard": true,
+            "note": "Looks like a machine. It's crayon on paper, and nothing in it works." }
+        ]
+      },
+      {
+        "id": "robot-jobs",
+        "title": "Robot Job or People Job?",
+        "emoji": "🤖",
+        "sub": "Who's better at it?",
+        "yes": { "label": "Robot job", "emoji": "🤖" },
+        "no": { "label": "People job", "emoji": "🙋" },
+        "yesSay": "Yes. A robot is good at that one.",
+        "noSay": "Right. That one needs a person.",
+        "retry": "Think about whether it's the same thing over and over, or something new every time.",
+        "items": [
+          { "text": "Doing the same thing a thousand times without getting bored.", "yes": true,
+            "note": "Robots never get bored. That's their best trick." },
+          { "text": "Cheering up your friend.", "yes": false,
+            "note": "That needs somebody who actually cares. A robot can't." },
+          { "text": "Lifting something way too heavy for a person.", "yes": true,
+            "note": "Strong and steady, all day." },
+          { "text": "Deciding if a joke is funny.", "yes": false,
+            "note": "It can guess. It can't laugh." },
+          { "text": "Putting the same sticker on ten thousand boxes.", "yes": true,
+            "note": "Exactly the same every time, which people are bad at." },
+          { "text": "Choosing what to name the new puppy.", "yes": false,
+            "note": "That's a family job, and it takes a week." },
+          { "text": "Going somewhere too hot or too dangerous for a person.", "yes": true,
+            "note": "A robot can be replaced. A person can't." },
+          { "text": "Telling your Mom you love her.", "yes": false,
+            "note": "The words only count coming from you." },
+          { "text": "Measuring something exactly the same way every time.", "yes": true,
+            "note": "No shaky hands, no guessing." },
+          { "text": "Deciding what's fair when two kids both want the swing.", "yes": false, "hard": true,
+            "note": "Fair depends on who and when. A rule can't cover it." },
+          { "text": "Sorting a thousand screws into big and small.", "yes": true,
+            "note": "Boring for you, easy for it." },
+          { "text": "Looking after a baby.", "yes": false, "hard": true,
+            "note": "A machine can watch. It can't notice what's wrong." },
+          { "text": "Building the same car door over and over.", "yes": true,
+            "note": "That's most of what factory robots do all day." },
+          { "text": "Deciding whether something is right or wrong to do.", "yes": false, "hard": true,
+            "note": "That one is always ours. Never hand it to a machine." },
+          { "text": "Vacuuming the same floor every single night.", "yes": true,
+            "note": "Same floor, same path, never bored." },
+          { "text": "Praying with you before bed.", "yes": false, "hard": true,
+            "note": "A robot can say the words. It can't mean them. That's between you and God, and the people who love you." },
+          { "text": "Counting every can on a shelf without missing one.", "yes": true,
+            "note": "It counts the same way every time, and it doesn't get bored halfway down the shelf." },
+          { "text": "Saying sorry to somebody you hurt.", "yes": false, "hard": true,
+            "note": "A robot can say the word. Sorry only counts from the one who did it." }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "robot-order",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "Get it working",
+        "sets": [
+          {
+            "goal": "Turning the robot on",
+            "steps": [
+              { "icon": "🔋", "text": "Put the battery in" },
+              { "icon": "🎚️", "text": "Flip the switch" },
+              { "icon": "💡", "text": "The light comes on" }
+            ]
+          },
+          {
+            "goal": "When the robot won't move",
+            "steps": [
+              { "icon": "🎚️", "text": "Check the switch is on" },
+              { "icon": "🔋", "text": "Check the battery" },
+              { "icon": "🪨", "text": "Check nothing is in the way" },
+              { "icon": "▶️", "text": "Try it again" }
+            ]
+          },
+          {
+            "goal": "Making a robot arm pick something up",
+            "steps": [
+              { "icon": "📡", "text": "The sensor spots it" },
+              { "icon": "⚙️", "text": "The motor turns the arm" },
+              { "icon": "🦾", "text": "The claw closes" },
+              { "icon": "⬆️", "text": "The arm lifts it up" }
+            ]
+          },
+          {
+            "goal": "Building a machine",
+            "steps": [
+              { "icon": "✏️", "text": "Draw what you want it to do" },
+              { "icon": "🧰", "text": "Get the parts" },
+              { "icon": "🔧", "text": "Put it together" },
+              { "icon": "▶️", "text": "Test it and fix what's wrong" }
+            ]
+          },
+          {
+            "goal": "Charging the robot",
+            "steps": [
+              { "icon": "🪫", "text": "The light goes red" },
+              { "icon": "🔌", "text": "A grown-up plugs the charger into the wall" },
+              { "icon": "🤖", "text": "Plug the other end into the robot" },
+              { "icon": "⏳", "text": "Wait until the light goes green" },
+              { "icon": "🔋", "text": "Unplug the robot end, and it's ready" }
+            ]
+          },
+          {
+            "goal": "Opening a remote with a grown-up",
+            "steps": [
+              { "icon": "🙋", "text": "Ask a grown-up to open it with you" },
+              { "icon": "🚪", "text": "The grown-up slides the door off" },
+              { "icon": "🔋", "text": "The grown-up takes the batteries out" },
+              { "icon": "👀", "text": "Look at what's inside" },
+              { "icon": "🗣️", "text": "Name the parts you can see" }
+            ]
+          },
+          {
+            "goal": "Building a robot out of a box",
+            "steps": [
+              { "icon": "📦", "text": "Get a big box" },
+              { "icon": "✂️", "text": "A grown-up cuts holes for your arms" },
+              { "icon": "🎨", "text": "Draw the buttons on" },
+              { "icon": "🔘", "text": "Stick a bottle cap on for the switch" },
+              { "icon": "🧒", "text": "Climb inside" },
+              { "icon": "🤖", "text": "Walk like a robot" }
+            ]
+          }
+        ]
+      }
+    ],
+    "pattern": {
+      "title": "Nuts and Bolts",
+      "sub": "It repeats — what's next?",
+      "items": [
+        { "id": "bolt", "label": "Bolt", "icon": "🔩" },
+        { "id": "gear2", "label": "Gear", "icon": "⚙️" },
+        { "id": "wrench", "label": "Wrench", "icon": "🔧" },
+        { "id": "battery2", "label": "Battery", "icon": "🔋" },
+        { "id": "bulb", "label": "Bulb", "icon": "💡" }
+      ]
+    }
+  }
+}

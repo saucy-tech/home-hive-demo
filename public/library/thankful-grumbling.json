@@ -1,0 +1,112 @@
+{
+  "id": "thankful-grumbling",
+  "title": "Thankful or Grumbling?",
+  "yes": {
+    "label": "Thankful",
+    "emoji": "✅"
+  },
+  "no": {
+    "label": "Grumbling",
+    "emoji": "🟠"
+  },
+  "yesSay": "Thankful.",
+  "noSay": "Grumbling.",
+  "retry": "Listen once more and choose a pile.",
+  "items": [
+    {
+      "text": "You say thank you when someone pours your water.",
+      "yes": true,
+      "note": "Your words notice the person who helped you."
+    },
+    {
+      "text": "You say this cup is stupid because it is not blue.",
+      "yes": false,
+      "note": "You can ask for blue without insulting the cup you received."
+    },
+    {
+      "text": "You thank God for dinner before you eat.",
+      "yes": true,
+      "note": "We can thank God for the food in front of us."
+    },
+    {
+      "text": "You shove your gift away and call it junk.",
+      "yes": false,
+      "note": "You can treat a gift gently even when it is not your favourite."
+    },
+    {
+      "text": "You thank your teacher for reading your book.",
+      "yes": true,
+      "note": "Your teacher gave time to read with you."
+    },
+    {
+      "text": "You complain that your friend got a bigger sticker.",
+      "yes": false,
+      "note": "You can enjoy your sticker without measuring your friend’s."
+    },
+    {
+      "text": "You tell Grandma you enjoyed the time together.",
+      "yes": true,
+      "note": "Thankfulness can name time together as a gift."
+    },
+    {
+      "text": "You throw your crayons because the box is small.",
+      "yes": false,
+      "note": "A small box still gives you colours to draw with."
+    },
+    {
+      "text": "You say thank you for a warm coat.",
+      "yes": true,
+      "note": "Your coat helps keep you warm."
+    },
+    {
+      "text": "You call dinner yucky before you sit down.",
+      "yes": false,
+      "note": "You can speak kindly about the food someone prepared."
+    },
+    {
+      "text": "You thank God for the trees on your walk.",
+      "yes": true,
+      "note": "We can notice what God made and thank Him."
+    },
+    {
+      "text": "You groan at every toy because you want a new one.",
+      "yes": false,
+      "note": "You can look for something to enjoy among the toys you have."
+    },
+    {
+      "text": "You thank a friend for sharing a ball.",
+      "yes": true,
+      "note": "Your friend made room for you to play."
+    },
+    {
+      "text": "You say thank you for dinner and ask for water because your mouth feels hot.",
+      "yes": true,
+      "note": "You can be thankful and still ask for what your body needs.",
+      "hard": true
+    },
+    {
+      "text": "You say thanks for the gift and then call it the worst gift ever.",
+      "yes": false,
+      "note": "The insult takes away the kindness of your thank you.",
+      "hard": true
+    },
+    {
+      "text": "You tell God you feel sad and thank Him for listening.",
+      "yes": true,
+      "note": "You can tell God the truth about your feelings.",
+      "hard": true
+    },
+    {
+      "text": "You thank your grown-up for your shoes and say they hurt your toes.",
+      "yes": true,
+      "note": "You can thank someone and still tell them that something hurts.",
+      "hard": true
+    },
+    {
+      "text": "You thank your friend for inviting you even though the game is over.",
+      "yes": true,
+      "note": "You can be disappointed and still notice your friend’s kindness.",
+      "hard": true
+    }
+  ]
+}

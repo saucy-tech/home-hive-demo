@@ -1,0 +1,543 @@
+{
+  "id": "ai-02",
+  "start": "2026-09-21",
+  "label": "Unit 2",
+  "theme": "What Did We Show It?",
+  "intro": "The pretend guesser has only seen the cards you showed it. Give it something different and ask what changed. He can correct a guess without deciding that the next guess must be right.",
+  "focusLabel": "What this unit is training",
+  "gelds": [
+    {
+      "text": "Examples behind a guess"
+    },
+    {
+      "text": "Noticing a missing feature"
+    },
+    {
+      "text": "Correcting and trying a fresh example"
+    },
+    {
+      "text": "Checking an important answer with a person"
+    }
+  ],
+  "tryTitle": "Try these any evening",
+  "tryNote": "Draw simple cards or use pictures from a book. You play the guesser and say which examples you have seen.",
+  "daily": [
+    {
+      "id": "examples",
+      "slot": "play",
+      "when": "Book time · 4 min",
+      "title": "Show a different cat",
+      "do": "Show two pictures of orange cats. Say the pretend guesser has only seen orange cats, then let him find a cat of another color. The difference needs a name.",
+      "stretch": "Add a black cat and a kitten; he explains which new feature each shows and why the first two pictures left those out.",
+      "skill": "Explaining what an example adds"
+    },
+    {
+      "id": "correct",
+      "slot": "play",
+      "when": "Floor play · 3 min",
+      "title": "Try a fresh card",
+      "do": "Call a dog picture a cat. He corrects you and shows another dog before you guess again. Leave the wrong card visible.",
+      "stretch": "Guess wrong again on a fresh card; he explains that people supply examples and that more examples still do not promise every answer will be right.",
+      "skill": "Correction without a guarantee"
+    },
+    {
+      "id": "check",
+      "slot": "play",
+      "when": "After dinner · 2 min",
+      "title": "Ask the person",
+      "do": "Pretend a talking toy guessed which bag is his. He checks the name with you before taking it. Checking has to happen before the action.",
+      "stretch": "Use a new question about what he may eat or where he may go; he names the trusted person he would ask and explains why a machine guess is not permission.",
+      "skill": "Choosing a person for an important answer"
+    }
+  ],
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Says a machine's guess comes from examples people showed it, not from being alive.",
+      "Points out when a pretend guesser has seen only one kind of cat, car, or other familiar thing.",
+      "Chooses a different example and explains what new feature it shows.",
+      "Corrects a wrong guess, tries a fresh card, and says that more examples do not promise a right answer every time.",
+      "Checks an important answer with a trusted person and names one question he would take straight to that person."
+    ]
+  },
+  "weekend": "Give him the guesser role. Show only cars, then a bus, and let him tell you which example was missing. Finish with one question he would take straight to you.",
+  "songs": [
+    {
+      "id": "ai-02-song",
+      "title": "Show Me Something New",
+      "emoji": "🎤",
+      "style": "Start singing immediately, with no instrumental intro. Soft marimba and acoustic guitar with a playful question-and-answer melody. One clear warm voice, short repeated melody, steady preschool pace, clean ending without a long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "Show one more, a different kind.",
+        "What new clue can we find?",
+        "Make a guess; it may be wrong.",
+        "Check with someone, come along.",
+        "Orange cat, black cat too,",
+        "Little kitten, something new.",
+        "People show the cards we know.",
+        "Try a fresh one, take it slow.",
+        "More cards help; we still can miss.",
+        "Ask a person, check on this.",
+        "Show one more, a different kind.",
+        "What new clue can we find?"
+      ]
+    }
+  ],
+  "games": {
+    "naming": [
+      {
+        "id": "ai-02-examples",
+        "title": "Different Examples",
+        "emoji": "🔎",
+        "sub": "Find the picture",
+        "matchName": "Different Examples",
+        "noun": "pictures",
+        "basic": [
+          {
+            "id": "cat",
+            "label": "Cat",
+            "icon": "🐈",
+            "say": "cat",
+            "note": "This cat is one example of an animal."
+          },
+          {
+            "id": "dog",
+            "label": "Dog",
+            "icon": "🐕",
+            "say": "dog",
+            "note": "A dog is a different animal from a cat."
+          },
+          {
+            "id": "car",
+            "label": "Car",
+            "icon": "🚗",
+            "say": "car",
+            "note": "A car is one kind of vehicle."
+          },
+          {
+            "id": "bus",
+            "label": "Bus",
+            "icon": "🚌",
+            "say": "bus",
+            "note": "A bus carries more passengers than this little car."
+          },
+          {
+            "id": "apple",
+            "label": "Apple",
+            "icon": "🍎",
+            "say": "apple",
+            "note": "This apple is red."
+          },
+          {
+            "id": "banana",
+            "label": "Banana",
+            "icon": "🍌",
+            "say": "banana",
+            "note": "This banana is long and curved."
+          }
+        ],
+        "advanced": [
+          {
+            "id": "black-cat",
+            "label": "Black cat",
+            "icon": "🐈‍⬛",
+            "say": "black cat",
+            "note": "A black cat adds another coat color to the cat examples."
+          },
+          {
+            "id": "poodle",
+            "label": "Poodle",
+            "icon": "🐩",
+            "say": "poodle",
+            "note": "This poodle shows a dog with curly fur."
+          },
+          {
+            "id": "truck",
+            "label": "Truck",
+            "icon": "🚚",
+            "say": "truck",
+            "note": "A truck adds a vehicle that carries loads."
+          },
+          {
+            "id": "bicycle",
+            "label": "Bicycle",
+            "icon": "🚲",
+            "say": "bicycle",
+            "note": "A bicycle adds a vehicle with two wheels."
+          },
+          {
+            "id": "green-apple",
+            "label": "Green apple",
+            "icon": "🍏",
+            "say": "green apple",
+            "note": "An apple can be green as well as red."
+          },
+          {
+            "id": "pear",
+            "label": "Pear",
+            "icon": "🍐",
+            "say": "pear",
+            "note": "A pear has a narrower top than this apple."
+          },
+          {
+            "id": "train",
+            "label": "Train",
+            "icon": "🚂",
+            "say": "train",
+            "note": "A train travels along rails."
+          },
+          {
+            "id": "boat",
+            "label": "Boat",
+            "icon": "⛵",
+            "say": "boat",
+            "note": "A boat adds a vehicle that travels on water."
+          }
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "ai-02-new-clue",
+        "title": "Does It Add the Missing Clue?",
+        "emoji": "🧺",
+        "sub": "Adds the clue or Repeats the old clue",
+        "yes": {
+          "label": "Adds the clue",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Repeats the old clue",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Adds the clue.",
+        "noSay": "Right. Repeats the old clue.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "The guesser has seen only red apples; you show a green apple.",
+            "yes": true,
+            "note": "Green adds an apple color it has not seen."
+          },
+          {
+            "text": "The guesser has seen only red apples; you show another red apple.",
+            "yes": false,
+            "note": "Red is the color it already saw."
+          },
+          {
+            "text": "The guesser has seen only orange cats; you show a black cat.",
+            "yes": true,
+            "note": "Black adds a different cat color."
+          },
+          {
+            "text": "The guesser has seen only orange cats; you show another orange cat.",
+            "yes": false,
+            "note": "The cat color has not changed."
+          },
+          {
+            "text": "The guesser has seen only cars; you show a bus.",
+            "yes": true,
+            "note": "A bus adds another kind of road vehicle."
+          },
+          {
+            "text": "The guesser has seen only cars; you show another car.",
+            "yes": false,
+            "note": "It still has only car examples."
+          },
+          {
+            "text": "The guesser has seen only big dogs; you show a tiny dog.",
+            "yes": true,
+            "note": "Tiny adds a dog size it has not seen."
+          },
+          {
+            "text": "The guesser has seen only big dogs; you show another big dog.",
+            "yes": false,
+            "note": "The dogs are still all big."
+          },
+          {
+            "text": "The guesser has seen only road vehicles; you show a boat.",
+            "yes": true,
+            "note": "The boat adds travel on water."
+          },
+          {
+            "text": "The missing clue is a cat color other than orange; you show a tiny orange kitten.",
+            "yes": false,
+            "note": "The size changed, but the missing color did not.",
+            "hard": true
+          },
+          {
+            "text": "The missing clue is a dog size other than big; you show a small dog with the same fur color.",
+            "yes": true,
+            "note": "The size changed even though the color stayed the same.",
+            "hard": true
+          },
+          {
+            "text": "The missing clue is wheels fewer than four; you show a different-colored car with four wheels.",
+            "yes": false,
+            "note": "The paint changed but the wheel count did not.",
+            "hard": true
+          },
+          {
+            "text": "The missing clue is a vehicle on rails; you show a train carrying cars.",
+            "yes": true,
+            "note": "The train travels on rails even with cars on it.",
+            "hard": true
+          },
+          {
+            "text": "The missing clue is an apple color other than red; you turn the same red apple picture upside down.",
+            "yes": false,
+            "note": "Turning the card does not add an apple color.",
+            "hard": true
+          }
+        ]
+      },
+      {
+        "id": "ai-02-check",
+        "title": "Did We Check with a Person?",
+        "emoji": "🧺",
+        "sub": "Checked with a person or Only a guess",
+        "yes": {
+          "label": "Checked with a person",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Only a guess",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Checked with a person.",
+        "noSay": "Right. Only a guess.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "A toy guesses which bag is yours; you ask Dad to check the name.",
+            "yes": true,
+            "note": "Dad checks the name before you take the bag."
+          },
+          {
+            "text": "A toy says a bag is yours; you take it without asking.",
+            "yes": false,
+            "note": "The toy guess was the only check."
+          },
+          {
+            "text": "A screen names a plant; you ask your teacher to check it.",
+            "yes": true,
+            "note": "Your teacher can help check the plant name."
+          },
+          {
+            "text": "A screen names a plant; you repeat the name without checking.",
+            "yes": false,
+            "note": "Repeating a guess does not check it."
+          },
+          {
+            "text": "A speaker guesses pickup time; you ask Mom what the plan is.",
+            "yes": true,
+            "note": "Mom knows the pickup plan."
+          },
+          {
+            "text": "A speaker guesses pickup time; you head to the door without asking.",
+            "yes": false,
+            "note": "A guessed time is not a pickup plan."
+          },
+          {
+            "text": "A toy says a loose button is yours; Dad checks whose shirt lost it.",
+            "yes": true,
+            "note": "Dad checks where the button came from."
+          },
+          {
+            "text": "A toy says a loose button is yours; you put it in your pocket.",
+            "yes": false,
+            "note": "The toy did not check who lost the button."
+          },
+          {
+            "text": "A screen guesses which classroom to enter; you ask your teacher.",
+            "yes": true,
+            "note": "Your teacher can tell you the right room."
+          },
+          {
+            "text": "Two toys give the same answer about leaving the room; you go without asking a grown-up.",
+            "yes": false,
+            "note": "Two matching guesses still are not permission.",
+            "hard": true
+          },
+          {
+            "text": "A screen gives a snack answer; Mom checks the package before you eat.",
+            "yes": true,
+            "note": "Mom checks the actual food instead of trusting the guess.",
+            "hard": true
+          },
+          {
+            "text": "The toy was right yesterday; today you follow its new answer without asking.",
+            "yes": false,
+            "note": "Yesterday being right does not check today.",
+            "hard": true
+          },
+          {
+            "text": "The screen says to ask a grown-up; you ask Dad and wait for his answer.",
+            "yes": true,
+            "note": "You actually asked Dad and waited.",
+            "hard": true
+          },
+          {
+            "text": "The screen calls its answer certain; you use it without checking with anyone.",
+            "yes": false,
+            "note": "Certain is a word on the screen, not a person checking.",
+            "hard": true
+          }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "ai-02-teach",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "First, then, last",
+        "sets": [
+          {
+            "goal": "Add another cat color",
+            "steps": [
+              {
+                "icon": "🟠",
+                "text": "Show the orange cat card"
+              },
+              {
+                "icon": "❓",
+                "text": "Ask which other cat color is missing"
+              },
+              {
+                "icon": "🐈‍⬛",
+                "text": "Add a black cat card"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say black is the new clue"
+              }
+            ]
+          },
+          {
+            "goal": "Check the bag guess",
+            "steps": [
+              {
+                "icon": "🤖",
+                "text": "Hear the toy guess which bag is yours"
+              },
+              {
+                "icon": "🙋",
+                "text": "Ask Dad to check"
+              },
+              {
+                "icon": "🏷️",
+                "text": "Dad checks the name"
+              },
+              {
+                "icon": "🎒",
+                "text": "Take your bag after Dad confirms"
+              }
+            ]
+          },
+          {
+            "goal": "Try a new vehicle",
+            "steps": [
+              {
+                "icon": "🚗",
+                "text": "Show a car example"
+              },
+              {
+                "icon": "🚤",
+                "text": "Add a boat example"
+              },
+              {
+                "icon": "🌊",
+                "text": "Point out that the boat travels on water"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say what clue was missing"
+              }
+            ]
+          },
+          {
+            "goal": "Correct the dog guess",
+            "steps": [
+              {
+                "icon": "🐕",
+                "text": "Show the dog card"
+              },
+              {
+                "icon": "🤖",
+                "text": "Hear the guesser call it a cat"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say that it is a dog"
+              },
+              {
+                "icon": "🐩",
+                "text": "Show a different dog"
+              },
+              {
+                "icon": "❓",
+                "text": "Ask for a fresh guess"
+              }
+            ]
+          },
+          {
+            "goal": "Check a classroom answer",
+            "steps": [
+              {
+                "icon": "📱",
+                "text": "Hear a screen guess the classroom"
+              },
+              {
+                "icon": "🙋",
+                "text": "Find your teacher"
+              },
+              {
+                "icon": "❓",
+                "text": "Ask which room to enter"
+              },
+              {
+                "icon": "👂",
+                "text": "Wait for the answer"
+              },
+              {
+                "icon": "🚪",
+                "text": "Go to the room the teacher names"
+              }
+            ]
+          },
+          {
+            "goal": "Teach and try again",
+            "steps": [
+              {
+                "icon": "🃏",
+                "text": "Choose the first picture cards"
+              },
+              {
+                "icon": "👀",
+                "text": "Show them to the pretend guesser"
+              },
+              {
+                "icon": "❓",
+                "text": "Ask for a guess on a new card"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Correct the wrong guess"
+              },
+              {
+                "icon": "🆕",
+                "text": "Show a different example"
+              },
+              {
+                "icon": "🔄",
+                "text": "Try a fresh card and check the answer"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

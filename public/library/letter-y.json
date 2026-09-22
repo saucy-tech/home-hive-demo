@@ -1,0 +1,109 @@
+{
+  "letter": "Y",
+  "sound": "yuh",
+  "example": "yarn",
+  "yes": [
+    {
+      "word": "yarn",
+      "emoji": "🧶"
+    },
+    {
+      "word": "yak",
+      "emoji": "🐂"
+    },
+    {
+      "word": "yam",
+      "emoji": "🍠"
+    },
+    {
+      "word": "yawn",
+      "emoji": "🥱"
+    },
+    {
+      "word": "yell",
+      "emoji": "📣"
+    },
+    {
+      "word": "yellow",
+      "emoji": "🟡"
+    },
+    {
+      "word": "yogurt",
+      "emoji": "🥣"
+    },
+    {
+      "word": "yo-yo",
+      "emoji": "🪀"
+    },
+    {
+      "word": "yard",
+      "emoji": "🏡"
+    },
+    {
+      "word": "yolk",
+      "emoji": "🍳"
+    },
+    {
+      "word": "young",
+      "emoji": "👶"
+    },
+    {
+      "word": "yes",
+      "emoji": "👍"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "hat",
+      "emoji": "🎩"
+    },
+    {
+      "word": "onion",
+      "emoji": "🧅",
+      "hard": true
+    },
+    {
+      "word": "canyon",
+      "emoji": "🏜️",
+      "hard": true
+    },
+    {
+      "word": "backyard",
+      "emoji": "🏡",
+      "hard": true
+    },
+    {
+      "word": "barnyard",
+      "emoji": "🐓",
+      "hard": true
+    }
+  ]
+}

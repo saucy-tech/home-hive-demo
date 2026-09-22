@@ -1,0 +1,110 @@
+{
+  "letter": "Z",
+  "sound": "zzz",
+  "example": "zipper",
+  "yes": [
+    {
+      "word": "zipper",
+      "emoji": "🤐"
+    },
+    {
+      "word": "zebra",
+      "emoji": "🦓"
+    },
+    {
+      "word": "zoo",
+      "emoji": "🦁"
+    },
+    {
+      "word": "zero",
+      "emoji": "0️⃣"
+    },
+    {
+      "word": "zigzag",
+      "emoji": "〰️"
+    },
+    {
+      "word": "zucchini",
+      "emoji": "🥒"
+    },
+    {
+      "word": "zombie",
+      "emoji": "🧟"
+    },
+    {
+      "word": "zip",
+      "emoji": "🤐"
+    },
+    {
+      "word": "zoom",
+      "emoji": "🏎️"
+    },
+    {
+      "word": "zap",
+      "emoji": "⚡"
+    },
+    {
+      "word": "zinnia",
+      "emoji": "🌸"
+    },
+    {
+      "word": "zone",
+      "emoji": "📍"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "lizard",
+      "emoji": "🦎",
+      "hard": true
+    },
+    {
+      "word": "scissors",
+      "emoji": "✂️",
+      "hard": true
+    },
+    {
+      "word": "puzzle",
+      "emoji": "🧩",
+      "hard": true
+    },
+    {
+      "word": "daisy",
+      "emoji": "🌼",
+      "hard": true
+    },
+    {
+      "word": "music",
+      "emoji": "🎵",
+      "hard": true
+    }
+  ]
+}

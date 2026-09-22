@@ -1,0 +1,35 @@
+{
+  "title": "Fall Patterns",
+  "items": [
+    {
+      "id": "pumpkin",
+      "label": "Pumpkin",
+      "icon": "🎃"
+    },
+    {
+      "id": "leaf",
+      "label": "Leaf",
+      "icon": "🍁"
+    },
+    {
+      "id": "apple",
+      "label": "Apple",
+      "icon": "🍎"
+    },
+    {
+      "id": "corn",
+      "label": "Corn",
+      "icon": "🌽"
+    },
+    {
+      "id": "tree",
+      "label": "Tree",
+      "icon": "🌳"
+    },
+    {
+      "id": "sun",
+      "label": "Sun",
+      "icon": "☀️"
+    }
+  ]
+}

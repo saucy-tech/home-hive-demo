@@ -1,0 +1,110 @@
+{
+  "letter": "W",
+  "sound": "wuh",
+  "example": "web",
+  "yes": [
+    {
+      "word": "web",
+      "emoji": "🕸️"
+    },
+    {
+      "word": "wig",
+      "emoji": "💇"
+    },
+    {
+      "word": "wet",
+      "emoji": "💦"
+    },
+    {
+      "word": "worm",
+      "emoji": "🪱"
+    },
+    {
+      "word": "wolf",
+      "emoji": "🐺"
+    },
+    {
+      "word": "water",
+      "emoji": "💧"
+    },
+    {
+      "word": "wagon",
+      "emoji": "🛒"
+    },
+    {
+      "word": "window",
+      "emoji": "🪟"
+    },
+    {
+      "word": "whale",
+      "emoji": "🐋"
+    },
+    {
+      "word": "waffle",
+      "emoji": "🧇"
+    },
+    {
+      "word": "watch",
+      "emoji": "⌚"
+    },
+    {
+      "word": "walnut",
+      "emoji": "🌰"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "penguin",
+      "emoji": "🐧",
+      "hard": true
+    },
+    {
+      "word": "kiwi",
+      "emoji": "🥝",
+      "hard": true
+    },
+    {
+      "word": "seaweed",
+      "emoji": "🌿",
+      "hard": true
+    },
+    {
+      "word": "sandwich",
+      "emoji": "🥪",
+      "hard": true
+    },
+    {
+      "word": "cobweb",
+      "emoji": "🕸️",
+      "hard": true
+    }
+  ]
+}

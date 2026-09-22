@@ -1,0 +1,104 @@
+{
+  "letter": "X",
+  "sound": "ks",
+  "example": "box",
+  "yes": [
+    {
+      "word": "box",
+      "emoji": "📦"
+    },
+    {
+      "word": "fox",
+      "emoji": "🦊"
+    },
+    {
+      "word": "six",
+      "emoji": "6️⃣"
+    },
+    {
+      "word": "wax",
+      "emoji": "🕯️"
+    },
+    {
+      "word": "mix",
+      "emoji": "🥣"
+    },
+    {
+      "word": "fix",
+      "emoji": "🔧"
+    },
+    {
+      "word": "ax",
+      "emoji": "🪓"
+    },
+    {
+      "word": "taxi",
+      "emoji": "🚕"
+    },
+    {
+      "word": "axle",
+      "emoji": "⚙️"
+    },
+    {
+      "word": "extra",
+      "emoji": "➕"
+    }
+  ],
+  "no": [
+    {
+      "word": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "word": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "word": "cat",
+      "emoji": "🐱"
+    },
+    {
+      "word": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "word": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "word": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "word": "goat",
+      "emoji": "🐐"
+    },
+    {
+      "word": "sock",
+      "emoji": "🧦",
+      "hard": true
+    },
+    {
+      "word": "snake",
+      "emoji": "🐍",
+      "hard": true
+    },
+    {
+      "word": "kiss",
+      "emoji": "😘",
+      "hard": true
+    },
+    {
+      "word": "kitten",
+      "emoji": "🐱",
+      "hard": true
+    },
+    {
+      "word": "bus",
+      "emoji": "🚌",
+      "hard": true
+    }
+  ],
+  "match": "anywhere",
+  "phonicsNote": "X teaches /ks/ anywhere in a word. The hard no-words have /k/ or /s/ alone, never /ks/."
+}

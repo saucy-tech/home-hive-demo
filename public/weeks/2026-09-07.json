@@ -1,0 +1,661 @@
+{
+  "id": "2026-09-07",
+  "start": "2026-09-07",
+  "label": "Sep 7–11",
+  "theme": "Weather & Seasons",
+  "themeSub": "Sky, Rain & Wind",
+  "monthlyFocus": "Fall Is Coming",
+  "intro": "Sample week. Everything here is invented — a made-up class, a made-up kid, a made-up lesson plan — to show how a real week reads. School is doing weather; this is the same week folded into the evening you're already having.",
+  "notices": [
+    {
+      "title": "Bring in a leaf",
+      "text": "Invented, like everything else here: the class is starting a leaf collection this month, and this is where a note that came home lands.",
+      "todo": true
+    },
+    {
+      "title": "Weather words",
+      "text": "Sunny, cloudy, rainy, windy. The class is using these four all week, so let him be the one who says what the sky is doing."
+    },
+    {
+      "title": "Circles and triangles",
+      "text": "Shapes are the math corner this week. Anything round or three-cornered on a walk counts; ask him to find the next one."
+    }
+  ],
+  "gelds": [
+    {
+      "code": "CD-SC1.4a",
+      "text": "Observes and describes the natural world"
+    },
+    {
+      "code": "CD-SC2.4a",
+      "text": "Makes predictions and tests them"
+    },
+    {
+      "code": "CD-LC1.4a",
+      "text": "Uses language to express ideas"
+    },
+    {
+      "code": "CD-MA1.4a",
+      "text": "Recognizes numbers 1–10"
+    },
+    {
+      "code": "APL1.4a",
+      "text": "Shows curiosity and engagement"
+    }
+  ],
+  "books": [
+    {
+      "title": "Little Cloud",
+      "author": "Eric Carle",
+      "spine": "#3B7EA1",
+      "ask": "\"What did the little cloud turn into?\" Let him name each one before you turn the page.",
+      "askStretch": "\"Why does the cloud keep changing?\" He'll reach for a story reason. Take it — an explanation he invented beats one he repeated.",
+      "videos": [
+        {
+          "label": "Animated read-aloud",
+          "id": "s-owb_b5pEk"
+        },
+        {
+          "label": "Page-turn version",
+          "id": "JSBXIQf5b4g"
+        }
+      ]
+    },
+    {
+      "title": "The Rain Came Down",
+      "author": "David Shannon",
+      "spine": "#C7375F",
+      "ask": "\"Why is everybody so grumpy?\" Point at one character at a time.",
+      "askStretch": "\"What changed at the end?\" The weather changed and every mood changed with it — that link is the whole book, and it's a level past naming who's upset.",
+      "videos": [
+        {
+          "label": "Animated read-aloud",
+          "id": "MV8snbVhXKU"
+        },
+        {
+          "label": "Page-turn version",
+          "id": "k5OzmLHP6As"
+        }
+      ]
+    }
+  ],
+  "songs": [],
+  "daily": [
+    {
+      "id": "sky",
+      "slot": "daily",
+      "when": "Breakfast · 1 min",
+      "title": "What is the sky doing?",
+      "do": "Look out the window together and ask which weather word fits: sunny, cloudy, rainy or windy. Same question every morning; the routine does the teaching.",
+      "stretch": "Ask what it might do this afternoon, then check at dinner whether the guess held.",
+      "skill": "Naming what he observes"
+    },
+    {
+      "id": "shapes",
+      "slot": "daily",
+      "when": "Anytime · 2 min",
+      "title": "Shape hunt",
+      "do": "Point at a plate, a clock or a yield sign: \"Is that a circle or a triangle?\" Then: \"Find me another one.\"",
+      "stretch": "Count the corners out loud. A triangle has three; a circle has none, which is a fun thing to be sure of.",
+      "skill": "Sorting shapes by their parts"
+    }
+  ],
+  "days": [
+    {
+      "key": "mon",
+      "title": "What's the sky doing?",
+      "school": "At school: <b>naming today's weather</b> with picture cards, a class weather chart, and <i>Little Cloud</i>.",
+      "moves": [
+        {
+          "slot": "play",
+          "when": "After school · 5 min",
+          "title": "Weather window",
+          "do": "Stand at the window and name it together — sunny, cloudy, rainy, windy. He picks the word.",
+          "stretch": "Ask what he'd wear outside and why. Matching clothes to weather is the reasoning step; the label on its own isn't.",
+          "skill": "Weather → a decision"
+        },
+        {
+          "slot": "dinner",
+          "when": "Dinner",
+          "title": "One word for the sky",
+          "do": "Everyone gives one word for how the sky looked today.",
+          "stretch": "His word can't be one somebody already used. Running out of the easy ones is exactly where vocabulary grows.",
+          "skill": "Reaching past the first word"
+        },
+        {
+          "slot": "bath",
+          "when": "Bath",
+          "title": "Rain in the tub",
+          "do": "Pour water through a cup with holes in it and call it rain. He says the word every time.",
+          "stretch": "Ask where the rain was before it fell. Any answer counts — you're after the idea that the water was somewhere else first.",
+          "skill": "Something came before this"
+        },
+        {
+          "slot": "book",
+          "when": "Bedtime",
+          "title": "Little Cloud",
+          "do": "Stop on each shape and let him name what the cloud turned into.",
+          "stretch": "Ask what HE would turn a cloud into, then have him draw it in the air with one finger.",
+          "skill": "Inventing, not just naming"
+        }
+      ]
+    },
+    {
+      "key": "tue",
+      "title": "Clouds and rain",
+      "school": "At school: <b>where rain comes from</b>, cotton-ball cloud art, counting raindrops to 10.",
+      "moves": [
+        {
+          "slot": "play",
+          "when": "After school · 5 min",
+          "title": "Cloud hunt",
+          "do": "Go outside and find one cloud. Say what it looks like.",
+          "stretch": "Find two, then say which is bigger and which is higher. Comparing two things is harder than describing one.",
+          "skill": "Comparing, not just describing"
+        },
+        {
+          "slot": "dinner",
+          "when": "Dinner",
+          "title": "The weather report",
+          "do": "He gives the table the weather report for today.",
+          "stretch": "Now tomorrow's forecast, with one reason. Being wrong is completely fine — committing to a guess is the skill.",
+          "skill": "Predicting out loud"
+        },
+        {
+          "slot": "bath",
+          "when": "Bath",
+          "title": "Float or sink",
+          "do": "Sort the bath toys into things that float and things that don't.",
+          "stretch": "He calls it before each one goes in. One guess he has to commit to is worth ten he makes afterward.",
+          "skill": "Guess first, then test"
+        },
+        {
+          "slot": "book",
+          "when": "Bedtime",
+          "title": "Count the drops",
+          "do": "Count 10 things out loud before lights out. Point at each one.",
+          "stretch": "Count to 20, then start at 6 and keep going. Counting on from a number instead of restarting at 1 is the kindergarten version.",
+          "skill": "Counting on"
+        }
+      ]
+    },
+    {
+      "key": "wed",
+      "title": "Wind",
+      "school": "At school: <b>what wind does</b>, blowing paint through straws, ribbon streamers outside.",
+      "moves": [
+        {
+          "slot": "play",
+          "when": "After school · 5 min",
+          "title": "Blow it across",
+          "do": "A straw and a cotton ball, raced across the table. First one to the edge.",
+          "stretch": "Line up three things and have him predict which will move and which won't — then test all three. He has to say why the heavy one didn't.",
+          "skill": "Prediction with a reason"
+        },
+        {
+          "slot": "dinner",
+          "when": "Dinner",
+          "title": "What did the wind move?",
+          "do": "Name anything you saw moving outside today.",
+          "stretch": "Now something the wind can't move. Finding the edge of a rule is real thinking, and most kids his age have never been asked.",
+          "skill": "Where the rule stops"
+        },
+        {
+          "slot": "bath",
+          "when": "Bath",
+          "title": "Make waves",
+          "do": "Blow across the water and watch it move.",
+          "stretch": "A big wave, then a small one, on purpose. Then he tells you what he did differently.",
+          "skill": "Controlling it, then explaining it"
+        },
+        {
+          "slot": "book",
+          "when": "Bedtime",
+          "title": "Little Cloud again",
+          "do": "Second read. He'll start saying the shapes before you do — let him.",
+          "stretch": "Cover the words and have him tell the story from the pictures. Retelling in his own words is pre-reading.",
+          "skill": "Telling it back"
+        }
+      ]
+    },
+    {
+      "key": "thu",
+      "title": "Sun and shadows",
+      "school": "At school: <b>sun and shadows</b>, tracing shadows on the playground, warm and cool sorting.",
+      "moves": [
+        {
+          "slot": "play",
+          "when": "After school · 10 min",
+          "title": "Shadow tag",
+          "do": "Try to step on each other's shadow. Loud and short.",
+          "stretch": "Ask him to make his shadow taller, then shorter. Working out that moving changes the shadow is the whole lesson, and he has to find it himself.",
+          "skill": "Cause he can control"
+        },
+        {
+          "slot": "dinner",
+          "when": "Dinner",
+          "title": "Warm thing, cool thing",
+          "do": "One warm thing and one cool thing you each touched today.",
+          "stretch": "Ask which ones the sun made warm. Sorting by cause instead of by feel is the harder cut.",
+          "skill": "Sorting by why"
+        },
+        {
+          "slot": "bath",
+          "when": "Bath",
+          "title": "Where did the light go?",
+          "do": "Hold a hand between the light and the water and find the dark patch.",
+          "stretch": "He makes the shadow bigger without moving the light. Moving the hand closer is the answer — let him hunt for it.",
+          "skill": "Changing one thing at a time"
+        },
+        {
+          "slot": "book",
+          "when": "Bedtime",
+          "title": "Line them up",
+          "do": "Line up ten blocks and count 1 to 10, then back down to 1. Backwards is the hard part.",
+          "stretch": "He turns around, you take one away, and he says which number is missing.",
+          "skill": "Order without the objects"
+        }
+      ]
+    },
+    {
+      "key": "fri",
+      "title": "The seasons turn",
+      "school": "At school: <b>review the week</b>, four-seasons tree art, weather freeze dance.",
+      "moves": [
+        {
+          "slot": "play",
+          "when": "After school · 5 min",
+          "title": "Weather freeze dance",
+          "do": "Play a song. When you pause it, call a weather word — he freezes as sun, rain, or wind.",
+          "stretch": "He runs the music and calls the words, including the ones from Wednesday. Running the game means holding the whole list in his head.",
+          "skill": "Recall with no prompt"
+        },
+        {
+          "slot": "dinner",
+          "when": "Dinner",
+          "title": "Best weather, worst weather",
+          "do": "Everyone picks a favourite kind of weather and says why.",
+          "stretch": "He picks one somebody else would like and says why they'd pick it. Arguing for a preference that isn't his is the hard one.",
+          "skill": "Somebody else's reasons"
+        },
+        {
+          "slot": "bath",
+          "when": "Bath",
+          "title": "The whole week on the wall",
+          "do": "He draws every kind of weather from this week on the tub wall and names them. Wipe them away together — that part is half the fun.",
+          "stretch": "He writes the first letter under each one. R for rain, W for wind. Letters attached to something he cares about beat a worksheet.",
+          "skill": "Letters with a reason to exist"
+        },
+        {
+          "slot": "book",
+          "when": "Bedtime",
+          "title": "He picks the book",
+          "do": "His choice tonight. Before you open it, ask him to tell you one thing that happens in it.",
+          "stretch": "After the ending, ask what happens next — a page that isn't in the book. Making up story past the last page is pre-writing.",
+          "skill": "Inventing past the ending"
+        }
+      ]
+    }
+  ],
+  "goals": {
+    "class": [
+      "Names the weather and describes the sky",
+      "Sorts warm and cool, wet and dry",
+      "Points to the right numeral, 1–10, and matches it to that many things",
+      "Says what day was yesterday, what day it is, and what tomorrow will be",
+      "Joins group discussion about what he observed"
+    ],
+    "his": [
+      "Says what caused the weather he's describing",
+      "Makes a prediction out loud and then checks it",
+      "Counts to 20 and back down, and counts on from a number",
+      "Says what comes before and after any day, without running up from Monday",
+      "Explains a preference that isn't his own"
+    ]
+  },
+  "weekend": "At the park, ask him to find one thing the wind is moving and one thing it isn't. That's the whole assignment.",
+  "games": {
+    "numbers": {
+      "classMax": 10,
+      "stretchMax": 20
+    },
+    "letter": {
+      "letter": "C",
+      "sound": "k",
+      "example": "cloud",
+      "yes": [
+        {
+          "emoji": "☁️",
+          "word": "cloud"
+        },
+        {
+          "emoji": "🐈",
+          "word": "cat"
+        },
+        {
+          "emoji": "🥤",
+          "word": "cup"
+        },
+        {
+          "emoji": "🚗",
+          "word": "car"
+        },
+        {
+          "emoji": "🌽",
+          "word": "corn"
+        },
+        {
+          "emoji": "🎂",
+          "word": "cake"
+        },
+        {
+          "emoji": "👑",
+          "word": "crown"
+        },
+        {
+          "emoji": "🐄",
+          "word": "cow"
+        },
+        {
+          "emoji": "🦀",
+          "word": "crab"
+        },
+        {
+          "emoji": "🥕",
+          "word": "carrot"
+        },
+        {
+          "emoji": "🕯️",
+          "word": "candle"
+        },
+        {
+          "emoji": "📷",
+          "word": "camera"
+        }
+      ],
+      "no": [
+        {
+          "emoji": "⚽",
+          "word": "ball"
+        },
+        {
+          "emoji": "🐕",
+          "word": "dog"
+        },
+        {
+          "emoji": "☀️",
+          "word": "sun"
+        },
+        {
+          "emoji": "🐟",
+          "word": "fish"
+        },
+        {
+          "emoji": "🌳",
+          "word": "tree"
+        },
+        {
+          "emoji": "🚲",
+          "word": "bike"
+        },
+        {
+          "emoji": "🍎",
+          "word": "apple"
+        },
+        {
+          "emoji": "🌙",
+          "word": "moon"
+        },
+        {
+          "emoji": "⛵",
+          "word": "boat"
+        },
+        {
+          "emoji": "🦆",
+          "word": "duck"
+        },
+        {
+          "emoji": "🧦",
+          "word": "sock",
+          "hard": true
+        },
+        {
+          "emoji": "🚚",
+          "word": "truck",
+          "hard": true
+        },
+        {
+          "emoji": "🥛",
+          "word": "milk",
+          "hard": true
+        },
+        {
+          "emoji": "📖",
+          "word": "book",
+          "hard": true
+        },
+        {
+          "emoji": "🐍",
+          "word": "snake",
+          "hard": true
+        }
+      ]
+    },
+    "feelings": {
+      "core": [
+        {
+          "id": "happy",
+          "label": "Happy",
+          "icon": "😀",
+          "tone": "#FFE07A"
+        },
+        {
+          "id": "sad",
+          "label": "Sad",
+          "icon": "😢",
+          "tone": "#AFD3E8"
+        },
+        {
+          "id": "mad",
+          "label": "Mad",
+          "icon": "😠",
+          "tone": "#F5AFA9"
+        },
+        {
+          "id": "scared",
+          "label": "Scared",
+          "icon": "😨",
+          "tone": "#D6C7EE"
+        },
+        {
+          "id": "silly",
+          "label": "Silly",
+          "icon": "🤪",
+          "tone": "#FFCBE3"
+        },
+        {
+          "id": "calm",
+          "label": "Calm",
+          "icon": "😌",
+          "tone": "#BEE3C8"
+        }
+      ],
+      "big": [
+        {
+          "id": "proud",
+          "label": "Proud",
+          "icon": "💪",
+          "tone": "#FFD9A8"
+        },
+        {
+          "id": "frustrated",
+          "label": "Frustrated",
+          "icon": "😤",
+          "tone": "#F7BFA0"
+        },
+        {
+          "id": "excited",
+          "label": "Excited",
+          "icon": "🤩",
+          "tone": "#FFE9A0"
+        },
+        {
+          "id": "nervous",
+          "label": "Nervous",
+          "icon": "😬",
+          "tone": "#CFE3D6"
+        },
+        {
+          "id": "disappointed",
+          "label": "Disappointed",
+          "icon": "😞",
+          "tone": "#C9D6E8"
+        },
+        {
+          "id": "lonely",
+          "label": "Lonely",
+          "icon": "🥺",
+          "tone": "#DDD3EC"
+        }
+      ],
+      "helps": [
+        {
+          "id": "breathe",
+          "label": "Take 5 big breaths",
+          "icon": "🌬️"
+        },
+        {
+          "id": "hug",
+          "label": "Ask for a hug",
+          "icon": "🤗"
+        },
+        {
+          "id": "break",
+          "label": "Take a break",
+          "icon": "🛋️"
+        },
+        {
+          "id": "words",
+          "label": "Use my words",
+          "friend": "Use their words",
+          "icon": "💬"
+        },
+        {
+          "id": "water",
+          "label": "Get some water",
+          "icon": "💧"
+        },
+        {
+          "id": "move",
+          "label": "Move my body",
+          "friend": "Move their body",
+          "icon": "🏃"
+        },
+        {
+          "id": "help",
+          "label": "Ask for help",
+          "icon": "🙋"
+        },
+        {
+          "id": "count",
+          "label": "Count to 10",
+          "icon": "🔟"
+        }
+      ]
+    },
+    "sort": [
+      {
+        "id": "kind",
+        "title": "Kind or Not Kind?",
+        "emoji": "💛",
+        "sub": "You be the judge",
+        "yes": {
+          "label": "Kind",
+          "emoji": "💛"
+        },
+        "no": {
+          "label": "Not kind",
+          "emoji": "🚫"
+        },
+        "yesSay": "That's kind.",
+        "noSay": "Right. That's not kind.",
+        "retry": "Hmm. Think about how the other kid feels.",
+        "items": [
+          {
+            "text": "You held the door open for somebody carrying a lot.",
+            "yes": true,
+            "note": "You saw what they needed before they asked."
+          },
+          {
+            "text": "You shared your umbrella when it started raining.",
+            "yes": true,
+            "note": "You got a bit wet so somebody else didn't."
+          },
+          {
+            "text": "You splashed a puddle on purpose to get somebody wet.",
+            "yes": false,
+            "note": "Funny for one of you is not funny."
+          },
+          {
+            "text": "Your friend lost a mitten, so you helped look for it.",
+            "yes": true,
+            "note": "Looking together makes a lost thing much less scary."
+          },
+          {
+            "text": "You said, \"That drawing is ugly.\"",
+            "yes": false,
+            "note": "They were proud of it right up until you said that."
+          },
+          {
+            "text": "You let somebody else pick the game first.",
+            "yes": true,
+            "note": "Going second when you had first pick is a real gift."
+          },
+          {
+            "text": "You knocked the leaf pile over while they were raking it.",
+            "yes": false,
+            "note": "Now they have to do the whole job twice."
+          },
+          {
+            "text": "You said \"good morning\" to somebody standing alone.",
+            "yes": true,
+            "note": "Standing alone is the moment a hello counts most."
+          },
+          {
+            "text": "You grabbed the last cookie without asking.",
+            "yes": false,
+            "note": "Asking first would have cost you nothing."
+          },
+          {
+            "text": "You helped put the boots away without being asked.",
+            "yes": true,
+            "note": "Nobody told you to. That's what makes it kind."
+          },
+          {
+            "text": "You laughed when somebody slipped in the mud.",
+            "yes": false,
+            "note": "Falling already hurts. Being laughed at hurts more."
+          },
+          {
+            "text": "You waited your turn on the swing.",
+            "yes": true,
+            "note": "Waiting is the hardest kind of kind."
+          },
+          {
+            "text": "You said sorry with a mean face.",
+            "yes": false,
+            "hard": true,
+            "note": "Sorry has to sound like sorry, or it's just the word."
+          },
+          {
+            "text": "You told the teacher a kid was stuck up the climber.",
+            "yes": true,
+            "hard": true,
+            "note": "Telling to get somebody help isn't tattling. It's helping."
+          }
+        ]
+      }
+    ],
+    "days": true
+  }
+}

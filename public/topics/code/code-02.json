@@ -1,0 +1,461 @@
+{
+  "id": "code-02",
+  "start": "2026-09-21",
+  "label": "Unit 2",
+  "theme": "If This, Then That—Do It Again",
+  "intro": "Keep the floor robot and give it one rule. He has to notice the cue before he moves. Repeats belong in the room with you; the bee grid still runs direction arrows.",
+  "focusLabel": "What this unit is training",
+  "gelds": [
+    {
+      "text": "Choosing an action from a visible cue"
+    },
+    {
+      "text": "Repeating a short unit without changing its order"
+    },
+    {
+      "text": "Planning before Run"
+    },
+    {
+      "text": "Finding and replacing one wrong step"
+    }
+  ],
+  "tryTitle": "Try these any evening",
+  "tryNote": "Use two colored cards and enough clear floor for five steps. One rule at a time.",
+  "daily": [
+    {
+      "id": "cue",
+      "slot": "play",
+      "when": "Floor play · 3 min",
+      "title": "Show the other card",
+      "do": "Say, \"If I show green, clap.\" Show green and let him clap. The card has to do the prompting.",
+      "stretch": "Add, \"If I show red, hands in lap.\" Switch cards and ask which cue made him choose that action.",
+      "skill": "Two-choice if/then rules"
+    },
+    {
+      "id": "repeat",
+      "slot": "play",
+      "when": "Before bath · 2 min",
+      "title": "Clap, then tap",
+      "do": "Clap, then tap your knees. He copies the pair once. Keep the two actions separate.",
+      "stretch": "He names the repeating pair and does it three times in the same order, counting each pair on his fingers afterward.",
+      "skill": "Repeating a two-action unit"
+    },
+    {
+      "id": "route",
+      "slot": "play",
+      "when": "Floor play · 4 min",
+      "title": "Fix just the bug",
+      "do": "Plan a three-step route to a cushion and say the directions before walking it. Put one wrong arrow down for him to find.",
+      "stretch": "Make a four- or five-move route, then replace only the wrong arrow and run it again. Starting over hides which step failed.",
+      "skill": "Planning and local debugging"
+    }
+  ],
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Plans and says a four- or five-move route using up, down, left, and right before pressing Run.",
+      "Follows a spoken if/then rule and explains which visible cue made him act.",
+      "Chooses the other action when the cue changes in a two-choice rule.",
+      "Spots a two-action repeating unit and performs it three times without changing its order.",
+      "Calls a wrong step a bug, identifies it, and corrects that step in a spoken routine without rebuilding the whole routine."
+    ]
+  },
+  "weekend": "Let him write the family robot rule with two picture cards. You follow it literally, including the mistake, and let him change the instruction.",
+  "songs": [
+    {
+      "id": "code-02-song",
+      "title": "If I See It",
+      "emoji": "🎤",
+      "style": "Start singing immediately, with no instrumental intro. Light woodblocks and hand claps with clear gaps for copying each action. One clear warm voice, short repeated melody, steady preschool pace, clean ending without a long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "If it's green, then clap, clap, clap.",
+        "If it's red, put hands in lap.",
+        "Clap, then tap; clap, then tap.",
+        "Do that little part again.",
+        "Up, then right,",
+        "Plan it in sight.",
+        "Say each move,",
+        "Then try the route.",
+        "Find the bug,",
+        "Change that step.",
+        "Clap, then tap; clap, then tap.",
+        "Do that little part again."
+      ]
+    }
+  ],
+  "games": {
+    "naming": [
+      {
+        "id": "code-02-cues",
+        "title": "Find the Cue",
+        "emoji": "🔎",
+        "sub": "Find the picture",
+        "matchName": "Find the Cue",
+        "noun": "pictures",
+        "basic": [
+          {
+            "id": "up",
+            "label": "Up",
+            "icon": "⬆️",
+            "say": "up",
+            "note": "This arrow points up."
+          },
+          {
+            "id": "down",
+            "label": "Down",
+            "icon": "⬇️",
+            "say": "down",
+            "note": "This arrow points down."
+          },
+          {
+            "id": "left",
+            "label": "Left",
+            "icon": "⬅️",
+            "say": "left",
+            "note": "This arrow points left."
+          },
+          {
+            "id": "right",
+            "label": "Right",
+            "icon": "➡️",
+            "say": "right",
+            "note": "This arrow points right."
+          },
+          {
+            "id": "red-circle",
+            "label": "Red circle",
+            "icon": "🔴",
+            "say": "red circle",
+            "note": "A red circle can be the cue for hands in your lap."
+          },
+          {
+            "id": "green-circle",
+            "label": "Green circle",
+            "icon": "🟢",
+            "say": "green circle",
+            "note": "A green circle can be the cue for a clap."
+          }
+        ],
+        "advanced": [
+          {
+            "id": "blue-square",
+            "label": "Blue square",
+            "icon": "🟦",
+            "say": "blue square",
+            "note": "A square has four straight sides."
+          },
+          {
+            "id": "yellow-circle",
+            "label": "Yellow circle",
+            "icon": "🟡",
+            "say": "yellow circle",
+            "note": "A circle has no corners."
+          },
+          {
+            "id": "purple-square",
+            "label": "Purple square",
+            "icon": "🟪",
+            "say": "purple square",
+            "note": "Look for both purple and square."
+          },
+          {
+            "id": "orange-diamond",
+            "label": "Orange diamond",
+            "icon": "🔶",
+            "say": "orange diamond",
+            "note": "This orange diamond has four corners."
+          },
+          {
+            "id": "star",
+            "label": "Star",
+            "icon": "⭐",
+            "say": "star",
+            "note": "A star can be a cue when a person gives it a rule."
+          },
+          {
+            "id": "heart",
+            "label": "Heart",
+            "icon": "❤️",
+            "say": "heart",
+            "note": "The heart picture can be a cue to tap your chest."
+          },
+          {
+            "id": "triangle",
+            "label": "Triangle",
+            "icon": "🔺",
+            "say": "triangle",
+            "note": "A triangle has three sides."
+          },
+          {
+            "id": "repeat-arrow",
+            "label": "Repeat arrow",
+            "icon": "🔁",
+            "say": "repeat arrow",
+            "note": "The repeat arrow says to do the same part again."
+          }
+        ]
+      }
+    ],
+    "code": {
+      "title": "Code the Bee",
+      "sub": "Write the program",
+      "actor": "🐝",
+      "goal": "🌻",
+      "lines": {
+        "start": "Tell the bee how to get to the flower.",
+        "wall": "The bee bumped into something. Fix your program and try again.",
+        "stop": "The bee stopped in the wrong place. Fix your program and try again.",
+        "win": "Your bee found the flower!"
+      }
+    },
+    "pattern": {
+      "title": "Repeat the Cues",
+      "use": "code-02-cues"
+    },
+    "sort": [
+      {
+        "id": "code-02-rule",
+        "title": "Did It Follow the Rule?",
+        "emoji": "🧺",
+        "sub": "Follows the rule or Different action",
+        "yes": {
+          "label": "Follows the rule",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Different action",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Follows the rule.",
+        "noSay": "Right. Different action.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "The rule is green means clap; you see green and clap.",
+            "yes": true,
+            "note": "The green cue called for a clap."
+          },
+          {
+            "text": "The rule is red means sit; you see red and jump.",
+            "yes": false,
+            "note": "Red called for sitting."
+          },
+          {
+            "text": "The rule is up arrow means hands up; you see up and raise your hands.",
+            "yes": true,
+            "note": "Your hands followed the arrow."
+          },
+          {
+            "text": "The rule is down arrow means crouch; you see down and stand tall.",
+            "yes": false,
+            "note": "The down arrow called for crouching."
+          },
+          {
+            "text": "The rule is star means tap; you see a star and tap.",
+            "yes": true,
+            "note": "The star cue called for a tap."
+          },
+          {
+            "text": "The rule is heart means wave; you see a heart and clap.",
+            "yes": false,
+            "note": "A wave was the heart rule."
+          },
+          {
+            "text": "The rule is blue means step left; you see blue and step left.",
+            "yes": true,
+            "note": "You chose the step named in the rule."
+          },
+          {
+            "text": "The rule is yellow means stop; you see yellow and keep walking.",
+            "yes": false,
+            "note": "Stop means leave your feet still."
+          },
+          {
+            "text": "The rule is triangle means turn; you see a triangle and turn.",
+            "yes": true,
+            "note": "The cue and the action match the rule."
+          },
+          {
+            "text": "Green means clap and red means sit; the card changes to red and you clap.",
+            "yes": false,
+            "note": "The new red cue calls for the other action.",
+            "hard": true
+          },
+          {
+            "text": "Blue means left and yellow means right; the card changes to yellow and you step right.",
+            "yes": true,
+            "note": "You changed your action when the cue changed.",
+            "hard": true
+          },
+          {
+            "text": "The rule is clap then tap, twice; you clap, tap, clap, tap.",
+            "yes": true,
+            "note": "The same two-action part happened twice.",
+            "hard": true
+          },
+          {
+            "text": "The rule is clap then tap, twice; you clap, clap, tap, tap.",
+            "yes": false,
+            "note": "The actions are there, but the repeated part changed order.",
+            "hard": true
+          },
+          {
+            "text": "Up means hands high and down means hands low; you see down but copy Dad raising his hands.",
+            "yes": false,
+            "note": "The arrow was the cue, even when Dad did something else.",
+            "hard": true
+          }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "code-02-routines",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "First, then, last",
+        "sets": [
+          {
+            "goal": "Follow this green-card routine",
+            "steps": [
+              {
+                "icon": "📣",
+                "text": "Say green means clap"
+              },
+              {
+                "icon": "🟢",
+                "text": "Show the green card"
+              },
+              {
+                "icon": "👏",
+                "text": "Clap at the green cue"
+              }
+            ]
+          },
+          {
+            "goal": "Plan a tiny route",
+            "steps": [
+              {
+                "icon": "🌻",
+                "text": "Pick the flower as the goal"
+              },
+              {
+                "icon": "⬆️",
+                "text": "Place up as the first move"
+              },
+              {
+                "icon": "➡️",
+                "text": "Place right after up"
+              },
+              {
+                "icon": "▶️",
+                "text": "Run the two moves"
+              }
+            ]
+          },
+          {
+            "goal": "Follow this red-card routine",
+            "steps": [
+              {
+                "icon": "📣",
+                "text": "Say red means hands in lap"
+              },
+              {
+                "icon": "🔴",
+                "text": "Show the red card"
+              },
+              {
+                "icon": "👐",
+                "text": "Put hands in lap"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say red was the cue"
+              }
+            ]
+          },
+          {
+            "goal": "Find one wrong arrow",
+            "steps": [
+              {
+                "icon": "🗺️",
+                "text": "Lay out the route"
+              },
+              {
+                "icon": "▶️",
+                "text": "Try the moves"
+              },
+              {
+                "icon": "🐛",
+                "text": "Point to the wrong step"
+              },
+              {
+                "icon": "🔧",
+                "text": "Replace that arrow"
+              },
+              {
+                "icon": "🔄",
+                "text": "Try the corrected route"
+              }
+            ]
+          },
+          {
+            "goal": "Make a repeating strip",
+            "steps": [
+              {
+                "icon": "👏",
+                "text": "Choose clap as the first action"
+              },
+              {
+                "icon": "🦵",
+                "text": "Choose knee tap as the second"
+              },
+              {
+                "icon": "🃏",
+                "text": "Put the two action cards in that order"
+              },
+              {
+                "icon": "🔁",
+                "text": "Do the pair three times"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say which pair repeated"
+              }
+            ]
+          },
+          {
+            "goal": "Try a two-choice rule",
+            "steps": [
+              {
+                "icon": "📣",
+                "text": "Say green means clap and red means sit"
+              },
+              {
+                "icon": "🟢",
+                "text": "Show green first"
+              },
+              {
+                "icon": "👏",
+                "text": "Clap for green"
+              },
+              {
+                "icon": "🔴",
+                "text": "Change the card to red"
+              },
+              {
+                "icon": "🪑",
+                "text": "Sit for red"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Say why your action changed"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "everyday-sometimes",
+  "title": "Everyday or Sometimes Foods?",
+  "yes": {
+    "label": "Everyday",
+    "emoji": "✅"
+  },
+  "no": {
+    "label": "Sometimes",
+    "emoji": "🟠"
+  },
+  "yesSay": "Everyday.",
+  "noSay": "Sometimes.",
+  "retry": "Listen once more and choose a pile.",
+  "items": [
+    {
+      "text": "An apple at snack time.",
+      "yes": true,
+      "note": "Fruit gives your body fibre and nutrients."
+    },
+    {
+      "text": "Carrots with lunch.",
+      "yes": true,
+      "note": "Carrots help make a varied meal."
+    },
+    {
+      "text": "Oatmeal at breakfast.",
+      "yes": true,
+      "note": "Oats give your body energy and fibre."
+    },
+    {
+      "text": "Beans with dinner.",
+      "yes": true,
+      "note": "Beans give your body protein and fibre."
+    },
+    {
+      "text": "An egg at breakfast.",
+      "yes": true,
+      "note": "Eggs give your body protein."
+    },
+    {
+      "text": "Water with your meal.",
+      "yes": true,
+      "note": "Water helps your body stay hydrated."
+    },
+    {
+      "text": "Chicken with rice and vegetables.",
+      "yes": true,
+      "note": "This meal brings several kinds of food together."
+    },
+    {
+      "text": "Plain yogurt with berries.",
+      "yes": true,
+      "note": "Yogurt and berries add protein and fruit to your snack."
+    },
+    {
+      "text": "A lollipop.",
+      "yes": false,
+      "note": "Candy is a food we can enjoy sometimes alongside our usual meals."
+    },
+    {
+      "text": "A slice of birthday cake.",
+      "yes": false,
+      "note": "Cake is one way to enjoy a celebration."
+    },
+    {
+      "text": "A cup of soda.",
+      "yes": false,
+      "note": "We usually drink water and have soda sometimes."
+    },
+    {
+      "text": "A bag of candy.",
+      "yes": false,
+      "note": "Candy can fit sometimes without taking the place of a meal."
+    },
+    {
+      "text": "A frosted doughnut.",
+      "yes": false,
+      "note": "A doughnut can be a sometimes breakfast treat."
+    },
+    {
+      "text": "A frozen banana with no added sugar.",
+      "yes": true,
+      "note": "Freezing a banana does not stop it being fruit.",
+      "hard": true
+    },
+    {
+      "text": "A fruit-flavoured gummy candy.",
+      "yes": false,
+      "note": "A fruit flavour does not make candy a piece of fruit.",
+      "hard": true
+    },
+    {
+      "text": "Plain raisins with your snack.",
+      "yes": true,
+      "note": "Raisins are grapes with much of their water dried out.",
+      "hard": true
+    },
+    {
+      "text": "An ice cream cone after dinner.",
+      "yes": false,
+      "note": "You can enjoy ice cream sometimes and still eat varied meals.",
+      "hard": true
+    },
+    {
+      "text": "A sweet cereal bar covered in frosting.",
+      "yes": false,
+      "note": "The frosting makes this more like a sometimes sweet than plain oats.",
+      "hard": true
+    }
+  ]
+}

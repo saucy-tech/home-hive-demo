@@ -1,0 +1,17 @@
+{
+  "label": "Body & Doctor",
+  "weeks": [
+    {
+      "id": "body-01",
+      "start": "2026-08-10",
+      "label": "Unit 1",
+      "theme": "Real Names for Real Parts"
+    },
+    {
+      "id": "body-02",
+      "start": "2026-09-21",
+      "label": "Unit 2",
+      "theme": "Tell the Doctor What You Feel"
+    }
+  ]
+}

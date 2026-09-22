@@ -1,0 +1,543 @@
+{
+  "id": "body-02",
+  "start": "2026-09-21",
+  "label": "Unit 2",
+  "theme": "Tell the Doctor What You Feel",
+  "intro": "He has the part names. Now let him use them in a pretend visit: where it hurts, what it feels like, and when it started. Give him time to finish before you supply the missing bit.",
+  "focusLabel": "What this unit is training",
+  "gelds": [
+    {
+      "text": "A complete report of where, what and when"
+    },
+    {
+      "text": "Asking what a doctor tool does"
+    },
+    {
+      "text": "Heart and lungs recalled during a visit"
+    },
+    {
+      "text": "Visit and handwashing steps in order"
+    }
+  ],
+  "tryTitle": "Try these any evening",
+  "tryNote": "A stuffed animal can be the patient. Use pretend symptoms; he does not need a real hurt to practise.",
+  "daily": [
+    {
+      "id": "report",
+      "slot": "play",
+      "when": "After dinner · 3 min",
+      "title": "Let the patient talk",
+      "do": "Pretend the bear bumped its foot. He tells you which part hurts. Wait for the name.",
+      "stretch": "He speaks for the bear in a whole sentence, adds what the hurt feels like and when it began, then tells another grown-up without your help.",
+      "skill": "Reporting where, what and when"
+    },
+    {
+      "id": "visit",
+      "slot": "play",
+      "when": "Floor play · 4 min",
+      "title": "Ask before the tool",
+      "do": "Take turns being the doctor. He points to his chest and asks what the pretend stethoscope does before you listen.",
+      "stretch": "He explains how listening helps the doctor hear his heart, recalls that the heart pushes blood and lungs take in air, then puts arrival, telling, asking and listening in order.",
+      "skill": "Explaining a tool and sequencing a visit"
+    },
+    {
+      "id": "wash",
+      "slot": "play",
+      "when": "Before dinner · 2 min",
+      "title": "Hands before food",
+      "do": "Wash together: wet, soap, scrub for twenty seconds, rinse, dry. Let him supply the next step.",
+      "stretch": "He runs the same routine himself and says why it comes before food and after blowing his nose. Watch the fingertips; that is where the shortcut happens.",
+      "skill": "Independent hygiene and its reason"
+    }
+  ],
+  "goalsTitle": "What he should have by the end of this unit",
+  "goals": {
+    "his": [
+      "Names the part that hurts and describes the feeling in a complete sentence.",
+      "Tells what happened first and when the discomfort began.",
+      "Points to his heart and explains that the doctor's stethoscope helps listen to it, recalling what the heart and lungs do.",
+      "Puts a pretend visit in order and asks what a tool will do before the examination.",
+      "Washes his hands independently and explains why he does it before eating and after blowing his nose."
+    ]
+  },
+  "weekend": "Run a whole pretend visit with a different grown-up listening. Let him give the report, ask about the tool, and say what comes next.",
+  "songs": [
+    {
+      "id": "body-02-song",
+      "title": "Where, What, When",
+      "emoji": "🎤",
+      "style": "Start singing immediately, with no instrumental intro. Gentle ukulele, soft hand claps and a simple call-and-response tune. One clear warm voice, short repeated melody, steady preschool pace, clean ending without a long outro.",
+      "ms": 60000,
+      "lyrics": [
+        "Where does it hurt?",
+        "What do I feel?",
+        "When did it start?",
+        "I'll tell you what's real.",
+        "My foot feels sore.",
+        "I bumped it at play.",
+        "I'll tell my grown-up",
+        "What happened today.",
+        "Where, what, when,",
+        "Say it once again.",
+        "Heart goes thump, lungs take air.",
+        "Ask what the tools do there."
+      ]
+    }
+  ],
+  "games": {
+    "naming": [
+      {
+        "id": "body-02-visit",
+        "title": "At the Doctor",
+        "emoji": "🔎",
+        "sub": "Find the picture",
+        "matchName": "At the Doctor",
+        "noun": "pictures",
+        "basic": [
+          {
+            "id": "hand",
+            "label": "Hand",
+            "icon": "✋",
+            "say": "hand",
+            "note": "Your hand can point to the part that hurts."
+          },
+          {
+            "id": "foot",
+            "label": "Foot",
+            "icon": "🦶",
+            "say": "foot",
+            "note": "Say which foot hurts when you tell the doctor."
+          },
+          {
+            "id": "eye",
+            "label": "Eye",
+            "icon": "👁️",
+            "say": "eye",
+            "note": "Your eyes help you see the tool before it touches you."
+          },
+          {
+            "id": "ear",
+            "label": "Ear",
+            "icon": "👂",
+            "say": "ear",
+            "note": "Your ears hear the doctor explain the tool."
+          },
+          {
+            "id": "nose",
+            "label": "Nose",
+            "icon": "👃",
+            "say": "nose",
+            "note": "A tissue catches what comes out when you blow your nose."
+          },
+          {
+            "id": "mouth",
+            "label": "Mouth",
+            "icon": "👄",
+            "say": "mouth",
+            "note": "You can open your mouth for the doctor to look inside."
+          }
+        ],
+        "advanced": [
+          {
+            "id": "heart",
+            "label": "Heart",
+            "icon": "🫀",
+            "say": "heart",
+            "note": "Your heart pushes blood around your body."
+          },
+          {
+            "id": "lungs",
+            "label": "Lungs",
+            "icon": "🫁",
+            "say": "lungs",
+            "note": "Your lungs take in air when you breathe."
+          },
+          {
+            "id": "stethoscope",
+            "label": "Stethoscope",
+            "icon": "🩺",
+            "say": "stethoscope",
+            "note": "The doctor listens to sounds inside your chest with a stethoscope."
+          },
+          {
+            "id": "thermometer",
+            "label": "Thermometer",
+            "icon": "🌡️",
+            "say": "thermometer",
+            "note": "A thermometer measures how warm your body is."
+          },
+          {
+            "id": "scale",
+            "label": "Scale",
+            "icon": "⚖️",
+            "say": "scale",
+            "note": "A scale measures how much you weigh."
+          },
+          {
+            "id": "bandage",
+            "label": "Bandage",
+            "icon": "🩹",
+            "say": "bandage",
+            "note": "A bandage covers a small scrape."
+          },
+          {
+            "id": "soap",
+            "label": "Soap",
+            "icon": "🧼",
+            "say": "soap",
+            "note": "Soap helps wash dirt and germs off your hands."
+          },
+          {
+            "id": "tissue",
+            "label": "Tissue",
+            "icon": "🧻",
+            "say": "tissue",
+            "note": "Blow your nose into a tissue, then put it in the bin."
+          }
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "body-02-tell",
+        "title": "Where, What and When?",
+        "emoji": "🧺",
+        "sub": "All three parts or something missing",
+        "yes": {
+          "label": "All three parts",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Something missing",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Where, what and when.",
+        "noSay": "Right. One part still needs telling.",
+        "retry": "Listen for the part, the feeling and when it started.",
+        "items": [
+          {
+            "text": "You say, \"My foot feels sore since I bumped it at play.\"",
+            "yes": true,
+            "note": "Foot says where, sore says what, and the bump tells when."
+          },
+          {
+            "text": "You say, \"It hurts.\"",
+            "yes": false,
+            "note": "The listener still needs where and when."
+          },
+          {
+            "text": "You say, \"My ear started aching this morning.\"",
+            "yes": true,
+            "note": "Ear, aching and this morning give all three parts."
+          },
+          {
+            "text": "You say, \"Something feels bad.\"",
+            "yes": false,
+            "note": "Something does not name a part or a starting time."
+          },
+          {
+            "text": "You say, \"My knee has stung since I fell on the path.\"",
+            "yes": true,
+            "note": "Knee, stung and the fall give the listener a full report."
+          },
+          {
+            "text": "You say, \"Over there.\"",
+            "yes": false,
+            "note": "The listener needs the part, the feeling and when it began."
+          },
+          {
+            "text": "You say, \"My throat started hurting at breakfast.\"",
+            "yes": true,
+            "note": "Throat, hurting and breakfast give all three parts."
+          },
+          {
+            "text": "You say, \"I got hurt at play.\"",
+            "yes": false,
+            "note": "Play tells when, but the part and feeling are missing."
+          },
+          {
+            "text": "You say, \"My finger has felt sore since I pinched it in the toy box.\"",
+            "yes": true,
+            "note": "Finger, sore and the pinch give all three parts."
+          },
+          {
+            "text": "You say, \"My knee stings.\"",
+            "yes": false,
+            "note": "The part and feeling are there; when it started is missing.",
+            "hard": true
+          },
+          {
+            "text": "You say, \"After running, my ankle started aching.\"",
+            "yes": true,
+            "note": "The parts can come in a different order and still tell where, what and when.",
+            "hard": true
+          },
+          {
+            "text": "You say, \"It has stung since breakfast.\"",
+            "yes": false,
+            "note": "The feeling and time still leave out the body part.",
+            "hard": true
+          },
+          {
+            "text": "You say, \"At lunch my head began to ache.\"",
+            "yes": true,
+            "note": "Lunch gives when, head gives where and ache gives what.",
+            "hard": true
+          },
+          {
+            "text": "You point to your knee and say, \"It stings since I fell.\"",
+            "yes": false,
+            "note": "Pointing helps, but the words still need the name knee.",
+            "hard": true
+          }
+        ]
+      },
+      {
+        "id": "body-02-care",
+        "title": "Ready for Clean Hands?",
+        "emoji": "🧺",
+        "sub": "Helps keep clean or Needs a change",
+        "yes": {
+          "label": "Helps keep clean",
+          "emoji": "✅"
+        },
+        "no": {
+          "label": "Needs a change",
+          "emoji": "🚫"
+        },
+        "yesSay": "Yes. Helps keep clean.",
+        "noSay": "Right. Needs a change.",
+        "retry": "Listen again to what happened.",
+        "items": [
+          {
+            "text": "You wash with soap before eating.",
+            "yes": true,
+            "note": "Soap and rinsing help clean your hands before they touch food."
+          },
+          {
+            "text": "You wipe muddy hands on your shirt and eat.",
+            "yes": false,
+            "note": "The shirt does not wash your hands."
+          },
+          {
+            "text": "You put your used tissue in the bin.",
+            "yes": true,
+            "note": "A used tissue belongs in the bin."
+          },
+          {
+            "text": "You leave a used tissue on the dinner table.",
+            "yes": false,
+            "note": "The table needs to stay clear of used tissues."
+          },
+          {
+            "text": "You wash after blowing your nose.",
+            "yes": true,
+            "note": "Your hands touched the tissue near your nose."
+          },
+          {
+            "text": "You rinse off all the soap.",
+            "yes": true,
+            "note": "Rinsing carries the soap and loosened dirt away."
+          },
+          {
+            "text": "You eat with soap still on your fingers.",
+            "yes": false,
+            "note": "Rinse the soap off before touching food."
+          },
+          {
+            "text": "You dry washed hands with a clean towel.",
+            "yes": true,
+            "note": "The clean towel dries your clean hands."
+          },
+          {
+            "text": "You rub your eyes with muddy fingers.",
+            "yes": false,
+            "note": "Wash the mud off before touching your face."
+          },
+          {
+            "text": "Your hands look clean after blowing your nose, so you skip washing.",
+            "yes": false,
+            "note": "You cannot see every germ on your hands.",
+            "hard": true
+          },
+          {
+            "text": "You cough into your elbow instead of your hand.",
+            "yes": true,
+            "note": "Your hands stay out of the cough.",
+            "hard": true
+          },
+          {
+            "text": "You wash, then pick up muddy shoes and start eating.",
+            "yes": false,
+            "note": "Touching muddy shoes means the hands need washing again.",
+            "hard": true
+          },
+          {
+            "text": "You turn off the tap while you scrub with soap.",
+            "yes": true,
+            "note": "You can save water while you scrub, then turn it on to rinse.",
+            "hard": true
+          },
+          {
+            "text": "You share a towel that is already covered in dirt.",
+            "yes": false,
+            "note": "Use a clean towel after washing.",
+            "hard": true
+          }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "id": "body-02-visit-order",
+        "title": "Step by Step",
+        "emoji": "🪜",
+        "sub": "First, then, last",
+        "sets": [
+          {
+            "goal": "Tell about the pretend bump",
+            "steps": [
+              {
+                "icon": "🧸",
+                "text": "Bear bumps its foot"
+              },
+              {
+                "icon": "🙋",
+                "text": "Bear comes to a grown-up"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Bear says its foot hurts"
+              },
+              {
+                "icon": "👂",
+                "text": "The grown-up listens"
+              }
+            ]
+          },
+          {
+            "goal": "Ask about the stethoscope",
+            "steps": [
+              {
+                "icon": "🩺",
+                "text": "The doctor shows the stethoscope"
+              },
+              {
+                "icon": "❓",
+                "text": "Ask what it will do"
+              },
+              {
+                "icon": "👂",
+                "text": "Hear how it listens to your heart"
+              },
+              {
+                "icon": "🫀",
+                "text": "Let the doctor listen after the explanation"
+              }
+            ]
+          },
+          {
+            "goal": "Clear away a tissue",
+            "steps": [
+              {
+                "icon": "🧻",
+                "text": "Get a clean tissue"
+              },
+              {
+                "icon": "👃",
+                "text": "Blow into it"
+              },
+              {
+                "icon": "🗑️",
+                "text": "Put it in the bin"
+              },
+              {
+                "icon": "🧼",
+                "text": "Wash your hands"
+              }
+            ]
+          },
+          {
+            "goal": "Wash before dinner",
+            "steps": [
+              {
+                "icon": "💧",
+                "text": "Wet your hands"
+              },
+              {
+                "icon": "🧼",
+                "text": "Add soap"
+              },
+              {
+                "icon": "🫧",
+                "text": "Scrub for twenty seconds"
+              },
+              {
+                "icon": "🚰",
+                "text": "Rinse the soap off"
+              },
+              {
+                "icon": "🧻",
+                "text": "Dry with a clean towel"
+              }
+            ]
+          },
+          {
+            "goal": "Tell the bear story in order",
+            "steps": [
+              {
+                "icon": "🧸",
+                "text": "Bear runs across the rug"
+              },
+              {
+                "icon": "🦶",
+                "text": "Bear bumps a foot on a block"
+              },
+              {
+                "icon": "🙋",
+                "text": "Bear comes to Dad"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Bear says the foot feels sore"
+              },
+              {
+                "icon": "🕒",
+                "text": "Bear says it began after the bump"
+              }
+            ]
+          },
+          {
+            "goal": "A pretend doctor visit",
+            "steps": [
+              {
+                "icon": "🚪",
+                "text": "Arrive at the pretend office"
+              },
+              {
+                "icon": "🗣️",
+                "text": "Tell where, what and when"
+              },
+              {
+                "icon": "🩺",
+                "text": "The doctor shows a listening tool"
+              },
+              {
+                "icon": "❓",
+                "text": "Ask what the tool does"
+              },
+              {
+                "icon": "🫀",
+                "text": "The doctor explains, then listens"
+              },
+              {
+                "icon": "👋",
+                "text": "Say goodbye after the visit"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

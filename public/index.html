@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+<title>The Home Hive</title>
+<meta name="description" content="This week at preschool, folded into the night we're already having." />
+
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content="#FFC22E" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Home Hive" />
+<link rel="apple-touch-icon" href="/icons/icon-180.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/app.css" />
+</head>
+<body>
+
+<!-- ───────────────────────── top bar ───────────────────────── -->
+<header class="topbar" id="topbar">
+  <div class="topbar-in">
+    <!-- In Play this is also the door to everything on the right of the bar:
+         app.js opens them on a press and hold here, and only there. -->
+    <div class="brand" id="brand">
+      <span class="brand-hex" aria-hidden="true">🐝</span>
+      <span class="brand-txt">The Home <span class="drip">Hive</span></span>
+      <span class="brand-lock" aria-hidden="true">🔒</span>
+    </div>
+
+    <div class="topbar-right">
+      <!-- Topic first, week second: the topic is the standing choice about what
+           he's learning, the week is where inside it we are. Hidden entirely
+           when a deploy carries only one topic. -->
+      <label class="wk-pick topic-pick" id="topicPick">
+        <span class="sr-only">Topic</span>
+        <select id="topicSel"></select>
+      </label>
+
+      <label class="wk-pick">
+        <span class="sr-only">Week</span>
+        <select id="weekSel"></select>
+      </label>
+
+      <div class="modes" role="tablist" aria-label="Mode">
+        <button class="mode" id="modePlan" role="tab" aria-selected="true">Learn</button>
+        <button class="mode" id="modePlay" role="tab" aria-selected="false">Play</button>
+        <button class="mode" id="modeMap" role="tab" aria-selected="false">Map</button>
+      </div>
+
+      <button class="icon-btn" id="soundBtn" aria-pressed="true" title="Read aloud">🔊</button>
+      <button class="icon-btn" id="musicBtn" aria-pressed="true" title="Music">🎵</button>
+      <span class="sync" id="sync" aria-live="polite"></span>
+    </div>
+  </div>
+</header>
+
+<!-- ───────────────────────── PLAN MODE ───────────────────────── -->
+<main class="wrap" id="planMode">
+
+  <section class="hero">
+    <p class="eyebrow" id="heroEyebrow"></p>
+    <h1 id="heroTheme"></h1>
+    <p class="sub" id="heroIntro"></p>
+    <!-- Both the label and whether this exists at all come from the week doc:
+         a topic we wrote ourselves is measured against nothing official. -->
+    <details class="gelds" id="geldsBox">
+      <summary id="geldsLabel">What the school is measuring</summary>
+      <ul id="geldsList"></ul>
+    </details>
+  </section>
+
+  <div class="comb" id="comb" role="tablist" aria-label="Days of the week"></div>
+
+  <div class="cols">
+    <div class="col-main">
+      <section class="card" id="dayCard" role="tabpanel" aria-live="polite">
+        <h2 id="dayTitle"></h2>
+        <p class="school" id="daySchool"></p>
+        <div id="moves"></div>
+      </section>
+
+      <!-- Filled by renderWeekMeter: the week's two tallies and the done
+           button. Under the day rather than over it — on a phone it used to
+           put the whole scoreboard between the day he tapped and the first
+           thing to do that evening. -->
+      <section class="card weekbar" id="weekbar" hidden></section>
+    </div>
+
+    <div class="col-side">
+      <!-- Hidden unless the loaded week actually has notices. -->
+      <section class="card notices" id="noticesCard" hidden>
+        <h2>From the teacher</h2>
+        <p class="school">What came home this week. The ones with a box are jobs for us; the practice ones are in every day above.</p>
+        <ul id="noticesList"></ul>
+      </section>
+
+      <section class="card" id="booksCard">
+        <h2>The books</h2>
+        <p class="school">Read the real thing if you have it — he needs to see you turn the pages. The videos are for the car and the nights you're wiped out.</p>
+        <div id="books"></div>
+      </section>
+
+      <section class="card" id="goalsCard">
+        <h2 id="goalsTitle">What he should have by Friday</h2>
+        <div class="goal-split">
+          <!-- A topic track has no class to be measured against, so this half
+               collapses rather than standing over an empty list. -->
+          <div id="goalsClassCol">
+            <h3 class="goal-h class">The class</h3>
+            <ul class="goals" id="goalsClass"></ul>
+          </div>
+          <div>
+            <!-- Filled with the child's name from weeks/index.json. -->
+            <h3 class="goal-h his" id="goalsHisHead"></h3>
+            <ul class="goals his" id="goalsHis"></ul>
+          </div>
+        </div>
+        <p class="school weekend" id="weekend"></p>
+      </section>
+
+      <!-- The school's year map. Hidden for our own tracks, which answer to no
+           curriculum, and on any deploy that carries no calendar. -->
+      <section class="card term" id="termCard" hidden>
+        <h2>What's coming</h2>
+        <p class="school" id="termNow"></p>
+        <ul class="term-next" id="termNext"></ul>
+        <details class="term-all">
+          <summary>The whole year</summary>
+          <div id="termYear"></div>
+        </details>
+      </section>
+
+      <section class="card">
+        <h2>What I noticed</h2>
+        <p class="school">Shared between both of you. This is what you read back at the parent conference.</p>
+        <!-- Matches MAX_VALUE_LENGTH in src/index.js, which refuses a longer
+             value with a 400. Both count UTF-16 code units, so the box stops
+             at exactly what the API will take rather than near it. -->
+        <textarea id="notes" rows="5" maxlength="4000" placeholder="Wednesday — named &quot;frustrated&quot; on his own, no prompt."></textarea>
+        <p class="note-meta" id="noteMeta"></p>
+      </section>
+    </div>
+  </div>
+
+  <!-- The one control in Learn that throws a week's work away. It used to sit
+       open at the foot of the side column wearing the same quiet pill as
+       "Reopen the week" on the week bar; now it is folded shut, at the very
+       bottom, and the button inside it is the only red one in the app. -->
+  <details class="card quiet reset-box">
+    <summary>Start this week over</summary>
+    <p class="school">Clears every check, feeling and note for this week only. Other weeks are untouched.</p>
+    <button class="danger" id="reset">Clear every check and note</button>
+  </details>
+</main>
+
+<!-- ───────────────────────── MAP MODE ───────────────────────── -->
+<main class="wrap map" id="mapMode" hidden>
+  <div id="mapRoad"></div>
+  <section id="mapDetail" class="stop-detail" hidden></section>
+</main>
+
+<!-- ───────────────────────── PLAY MODE ───────────────────────── -->
+<main class="wrap play" id="playMode" hidden>
+  <div id="playHome">
+    <!-- Hidden until it loads: public/photos is one of the directories the
+         public fork drops, and a broken image is worse than no picture. -->
+    <figure class="play-photo" id="playPhoto" hidden>
+      <!-- No names in the alt text: this file is published in the fork even
+           though the picture it points at is not. -->
+      <img id="playPhotoImg" src="/photos/home.jpg" alt="Our family" />
+    </figure>
+
+    <div class="play-head">
+      <!-- Filled from weeks/index.json at render; no name lives in the markup. -->
+      <div>
+        <h1 id="playHi">Hi!</h1>
+        <p class="streak" id="playStreak" hidden></p>
+      </div>
+      <div class="jar" id="jar" title="Honey earned this week">
+        <div class="jar-fill" id="jarFill"></div>
+        <span class="jar-count" id="jarCount">0</span>
+      </div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+  </div>
+
+  <div id="playGame" hidden>
+    <button class="back" id="backBtn">‹ Back</button>
+    <div id="gameStage"></div>
+  </div>
+</main>
+
+<footer class="credit">© 2026 Saucy Tech LLC · Built by <a href="https://saucy.tech">saucy.tech</a> · <a href="https://saucy.tech/privacy">Privacy</a></footer>
+
+<!-- ───────────────────────── video overlay ───────────────────────── -->
+<div class="veil" id="veil" hidden>
+  <div class="veil-box">
+    <button class="veil-x" id="veilX" aria-label="Close video">✕</button>
+    <div class="veil-title" id="veilTitle"></div>
+    <!-- Rebuilt by app.js on every open, shield included. Nothing inside the
+         frame is reachable by touch: the shield is what stops a tap landing on
+         an end-screen card, the channel name, or "Watch on YouTube". -->
+    <div class="player-wrap">
+      <div id="player"></div>
+      <div class="player-shield"></div>
+      <div class="player-cover" hidden>Paused</div>
+    </div>
+    <!-- YouTube's own controls are turned off, so these are the controls. -->
+    <div class="player-ctrls" id="veilCtrls" hidden>
+      <button class="btn" id="veilPlay">Pause</button>
+      <button class="btn ghost" id="veilStop">Done</button>
+    </div>
+    <!-- Built fresh by app.js on every open — the "can't embed" fallback used
+         to overwrite fixed markup here and break the next video. -->
+    <div class="veil-done" id="veilDone" hidden></div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
